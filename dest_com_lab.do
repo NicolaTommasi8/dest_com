@@ -3107,7 +3107,7 @@ label define `nv' 23026 `"Cerro Veronese"', modify
 label define `nv' 23027 `"Cologna Veneta"', modify
 label define `nv' 23028 `"Colognola ai Colli"', modify
 label define `nv' 23029 `"Concamarise"', modify
-label define `nv' 23030 `"Costermano"', modify
+label define `nv' 23030 `"Costermano sul Garda"', modify
 label define `nv' 23031 `"Dolcè"', modify
 label define `nv' 23032 `"Erbè"', modify
 label define `nv' 23033 `"Erbezzo"', modify
