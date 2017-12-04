@@ -1,0 +1,14 @@
+v 3
+d Alcuni miei programmi
+
+p dest_prov Comando per convertire i nomi delle provincie italiane nel rispettivo codice ISTAT.
+
+p dest_com Comando per convertire i nomi dei comuni italiani nel rispettivo codice ISTAT.
+
+p uniout Comando per analizzare la presenza di valori outliers nel caso univariato.
+
+p lebp ... coming soon.
+
+p cquaids ... coming soon.
+
+
