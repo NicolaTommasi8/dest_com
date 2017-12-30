@@ -3298,6 +3298,7 @@ label define `nv' 24119 `"Zanè"', modify
 label define `nv' 24120 `"Zermeghedo"', modify
 label define `nv' 24121 `"Zovencedo"', modify
 label define `nv' 24122 `"Zugliano"', modify
+label define `nv'  24123 "Val Liona", modify
 label define `nv' 25001 `"Agordo"', modify
 label define `nv' 25002 `"Alano di Piave"', modify
 label define `nv' 25003 `"Alleghe"', modify
@@ -6655,6 +6656,7 @@ label define `nv' 78152 `"Vaccarizzo Albanese"', modify
 label define `nv' 78153 `"Verbicaro"', modify
 label define `nv' 78154 `"Villapiana"', modify
 label define `nv' 78155 `"Zumpano"', modify
+label define `nv' 78156 "Casali del Manco", modify
 label define `nv' 79002 `"Albi"', modify
 label define `nv' 79003 `"Amaroni"', modify
 label define `nv' 79004 `"Amato"', modify
