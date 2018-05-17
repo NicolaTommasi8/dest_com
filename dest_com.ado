@@ -299,9 +299,10 @@ if "`gnuts1'" != "" {
 qui save `TMPF', replace
 **save check, replace
 restore
-qui merge m:1 `_CLONE' `time' `mkc' using `TMPF', assert(1 3) keepusing(`nv' `gprov' `gregio' `macro3' `macro5' `gnuts3' `gnuts2' `gnuts1')
-qui keep if inlist(_merge,1,3)
-drop _merge
+tempvar merge
+qui merge m:1 `_CLONE' `time' `mkc' using `TMPF', assert(1 3) keepusing(`nv' `gprov' `gregio' `macro3' `macro5' `gnuts3' `gnuts2' `gnuts1') generate(`merge')
+qui keep if inlist(`merge',1,3)
+drop `merge'
 sort `ID'
 drop `ID'
 
@@ -323,7 +324,11 @@ capture assert `nv'!=. if `_CLONE'!="" & `touse', fast
 if _rc!=0 {
   local ERROR = 1
   di as error "Ci sono voci della variabile `varlist' non convertiti in numerici. Questa è la lista:"
-  fre `varlist' if `nv'==., all
+  **fre `varlist' if `nv'==., all
+  qui levelsof `varlist' if `nv'==., local(lista) clean
+  foreach i of local lista {
+	 di "`i'"
+	}
 }
 
 
