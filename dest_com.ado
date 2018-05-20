@@ -2,18 +2,16 @@ capture program drop dest_com
 program define dest_com, sortpreserve
 version 13
 
-** aggiugere macro3 e macro5
-
+**! version 3.2018
+**  aggiornati i nuovi comuni del 2018
+** minor bugs correction
 
 **! version 3.2
 **  aggiornati i nuovi comuni del 2017
-** ps manca Val Liona xchè ancora non c'è il codice istat
-
 
 **! version 3.1
 **  Imposto Stata 13 come versione minima
 **  Uso della funzione ustrfrom() per risolvere problemi legati a databse non in fomrato utf-8 (solo per Stata 14 e successivi  )
-
 
 **! version 3.0
 **  aggiunte le opzioni per creare le variabili
@@ -28,18 +26,10 @@ version 13
 **     aggiunte le variazioni amministrative del 2016
 **     introdotta l'opzione time: x esempio Campiglia Cervo fino al 2015 ha codice 96011, dal 2016 ha codice 96086
 
-
 **! version 2
 **     eliminata la  necessità di installare il comando unlabeld
 **     creazione file di help
 **     aggiornato elenco comuni al 30/01/2015
-
-
-**! version 1.1.1
-**               aggiunto comune di Fabbriche di Vergemoli (046036)
-**               codifica di Ruffrè in Ruffrè Mendola (022162)
-
-
 
 **! version 1.1.0  06nov2014 aggiunta opzione ignore
 
@@ -50,7 +40,6 @@ version 13
 **                   -correzioni nel riconoscimento di alcuni comuni
 **                   -eliminazione di codebook, problems che per dataset molto numerosi poteva allungare i tempi di esecuzione
 **                   -il label della variabile con i codici dei comuni corrisponde al nome della variabile stessa
-
 
 **! version 0.0.2  01sep2014  aggiunta di parallel (ora tolta)
 
@@ -325,11 +314,23 @@ if _rc!=0 {
   local ERROR = 1
   di as error "Ci sono voci della variabile `varlist' non convertiti in numerici. Questa è la lista:"
   **fre `varlist' if `nv'==., all
-  qui levelsof `varlist' if `nv'==., local(lista) clean
+  qui levelsof `varlist' if `nv'==., local(lista)
+  local cnt = 1
   foreach i of local lista {
-	 di "`i'"
+	 di `"`cnt'. `i'"'
+   local cnt `++cnt'
 	}
 }
+
+
+qui count if `nv'==11020
+if r(N)>0 di "Il comune di Ortonovo da aprile 2017 si chiama Luni"
+qui count if `nv'==20061
+if r(N)>0 di "Il comune di Sermide da marzo 2017 si chiama Sermide e felonica"
+
+
+label define `nv' 11020 `"Ortonovo"', modify
+
 
 
 
@@ -343,7 +344,7 @@ foreach k of local test {
 	 di "Associato a questi valori di `varlist'"
 	 qui levelsof `varlist' if `nv'==`k', local(lista) clean
 	 foreach i of local lista {
-	 di "`i'"
+	 di `" `i' "'
 	 }
 
    }
@@ -364,8 +365,8 @@ if $S_1==1 {
 drop `_CLONE'
 
 if `ERROR'==1 & "`ignore'" == "" {
-   di "Non sono stati passati tutti i check!"
-   di "correggere i valori nella variabile `varlist', quindi riprovare. Oppure specifica l'opzione ignore"
+   di _newline "Non sono stati passati tutti i check!"
+   di "Correggere i valori nella variabile `varlist', quindi riprovare. Oppure specifica l'opzione ignore"
    capture drop `nv'
    exit
 

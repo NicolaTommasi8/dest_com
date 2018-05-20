@@ -313,6 +313,7 @@ label define `nv' 1312 `"Vistrorio"', modify
 label define `nv' 1313 `"Viù"', modify
 label define `nv' 1314 `"Volpiano"', modify
 label define `nv' 1315 `"Volvera"', modify
+label define `nv' 1316 `"Mappano"', modify
 label define `nv' 2002 `"Alagna Valsesia"', modify
 label define `nv' 2003 `"Albano Vercellese"', modify
 label define `nv' 2004 `"Alice Castello"', modify
@@ -399,6 +400,8 @@ label define `nv' 2158 `"Vercelli"', modify
 label define `nv' 2163 `"Villarboit"', modify
 label define `nv' 2164 `"Villata"', modify
 label define `nv' 2166 `"Vocca"', modify
+label define `nv' 2170 `"Alto Sermenza"', modify
+label define `nv' 2171 `"Cellio con Breia"', modify
 label define `nv' 3001 `"Agrate Conturbia"', modify
 label define `nv' 3002 `"Ameno"', modify
 label define `nv' 3006 `"Armeno"', modify
@@ -1048,6 +1051,8 @@ label define `nv' 6187 `"Visone"', modify
 label define `nv' 6188 `"Volpedo"', modify
 label define `nv' 6189 `"Volpeglino"', modify
 label define `nv' 6190 `"Voltaggio"', modify
+label define `nv' 6191 `"Cassano Spinola"', modify
+label define `nv' 6192 `"Alluvioni Piovera"', modify
 label define `nv' 7001 `"Allein"', modify
 label define `nv' 7002 `"Antey-Saint-André"', modify
 label define `nv' 7003 `"Aosta"', modify
@@ -1189,6 +1194,7 @@ label define `nv' 8064 `"Vasia"', modify
 label define `nv' 8065 `"Ventimiglia"', modify
 label define `nv' 8066 `"Vessalico"', modify
 label define `nv' 8067 `"Villa Faraldi"', modify
+label define `nv' 8068 `"Montalto Carpasio"', modify
 label define `nv' 9001 `"Alassio"', modify
 label define `nv' 9002 `"Albenga"', modify
 label define `nv' 9003 `"Albissola Marina"', modify
@@ -1668,6 +1674,7 @@ label define `nv' 13250 `"Bellagio"', modify
 label define `nv' 13251 `"Colverde"', modify
 label define `nv' 13252 `"Tremezzina"', modify
 label define `nv' 13253 `"Alta Valle Intelvi"', modify
+label define `nv' 13254 `"Centro Valle Intelvi"', modify
 label define `nv' 14001 `"Albaredo per San Marco"', modify
 label define `nv' 14002 `"Albosaggia"', modify
 label define `nv' 14003 `"Andalo Valtellino"', modify
@@ -2711,6 +2718,7 @@ label define `nv' 20068 `"Villimpenta"', modify
 label define `nv' 20069 `"Virgilio"', modify
 label define `nv' 20070 `"Volta Mantovana"', modify
 label define `nv' 20071 `"Borgo Virgilio"', modify
+label define `nv' 20072 `"Borgo Mantovano"', modify
 label define `nv' 21001 `"Aldino"', modify
 label define `nv' 21002 `"Andriano"', modify
 label define `nv' 21003 `"Anterivo"', modify
@@ -3078,6 +3086,7 @@ label define `nv' 22246 `"Sella Giudicarie"', modify
 label define `nv' 22247 `"Tre Ville"', modify
 label define `nv' 22248 `"Vallelaghi"', modify
 label define `nv' 22249 `"Ville d'Anaunia"', modify
+label define `nv' 22250 `"Sèn Jan di Fassa"', modify
 label define `nv' 23001 `"Affi"', modify
 label define `nv' 23002 `"Albaredo d'Adige"', modify
 label define `nv' 23003 `"Angiari"', modify
@@ -3298,7 +3307,8 @@ label define `nv' 24119 `"Zanè"', modify
 label define `nv' 24120 `"Zermeghedo"', modify
 label define `nv' 24121 `"Zovencedo"', modify
 label define `nv' 24122 `"Zugliano"', modify
-label define `nv'  24123 "Val Liona", modify
+label define `nv' 24123 `"Val Liona"', modify
+label define `nv' 24124 `"Barbarano Mossano"', modify
 label define `nv' 25001 `"Agordo"', modify
 label define `nv' 25002 `"Alano di Piave"', modify
 label define `nv' 25003 `"Alleghe"', modify
@@ -3617,6 +3627,7 @@ label define `nv' 28103 `"Villafranca Padovana"', modify
 label define `nv' 28104 `"Villanova di Camposampiero"', modify
 label define `nv' 28105 `"Vo'"', modify
 label define `nv' 28106 `"Due Carrare"', modify
+label define `nv' 28107 `"Borgo Veneto"', modify
 label define `nv' 29001 `"Adria"', modify
 label define `nv' 29002 `"Ariano nel Polesine"', modify
 label define `nv' 29003 `"Arquà Polesine"', modify
@@ -3808,6 +3819,9 @@ label define `nv' 30136 `"Zuglio"', modify
 label define `nv' 30137 `"Forgaria nel Friuli"', modify
 label define `nv' 30138 `"Campolongo Tapogliano"', modify
 label define `nv' 30188 `"Rivignano Teor"', modify
+label define `nv' 30189 `"Sappada"', modify
+label define `nv' 30190 `"Fiumicello Villa Vicentina"', modify
+label define `nv' 30191 `"Treppo Ligosullo"', modify
 label define `nv' 31001 `"Capriva del Friuli"', modify
 label define `nv' 31002 `"Cormons"', modify
 label define `nv' 31003 `"Doberdò del Lago"', modify
@@ -3935,6 +3949,7 @@ label define `nv' 33045 `"Vigolzone"', modify
 label define `nv' 33046 `"Villanova sull'Arda"', modify
 label define `nv' 33047 `"Zerba"', modify
 label define `nv' 33048 `"Ziano Piacentino"', modify
+label define `nv' 33049 `"Alta Val Tidone"', modify
 label define `nv' 34001 `"Albareto"', modify
 label define `nv' 34002 `"Bardi"', modify
 label define `nv' 34003 `"Bedonia"', modify
@@ -4563,6 +4578,7 @@ label define `nv' 49017 `"Rosignano Marittimo"', modify
 label define `nv' 49018 `"San Vincenzo"', modify
 label define `nv' 49019 `"Sassetta"', modify
 label define `nv' 49020 `"Suvereto"', modify
+label define `nv' 49021 `"Rio"', modify
 label define `nv' 50001 `"Bientina"', modify
 label define `nv' 50002 `"Buti"', modify
 label define `nv' 50003 `"Calci"', modify
@@ -4645,6 +4661,7 @@ label define `nv' 51038 `"Talla"', modify
 label define `nv' 51039 `"Terranuova Bracciolini"', modify
 label define `nv' 51040 `"Castelfranco Piandiscò"', modify
 label define `nv' 51041 `"Pratovecchio Stia"', modify
+label define `nv' 51042 `"Laterina Pergine Valdarno"', modify
 label define `nv' 52001 `"Abbadia San Salvatore"', modify
 label define `nv' 52002 `"Asciano"', modify
 label define `nv' 52003 `"Buonconvento"', modify
@@ -6656,7 +6673,8 @@ label define `nv' 78152 `"Vaccarizzo Albanese"', modify
 label define `nv' 78153 `"Verbicaro"', modify
 label define `nv' 78154 `"Villapiana"', modify
 label define `nv' 78155 `"Zumpano"', modify
-label define `nv' 78156 "Casali del Manco", modify
+label define `nv' 78156 `"Casali del Manco"', modify
+label define `nv' 78157 `"Corigliano-Rossano"', modify
 label define `nv' 79002 `"Albi"', modify
 label define `nv' 79003 `"Amaroni"', modify
 label define `nv' 79004 `"Amato"', modify
@@ -7786,6 +7804,7 @@ label define `nv' 97089 `"Vestreno"', modify
 label define `nv' 97090 `"Viganò"', modify
 label define `nv' 97091 `"Verderio"', modify
 label define `nv' 97092 `"La Valletta Brianza"', modify
+label define `nv' 97093 `"Valvarrone"', modify
 label define `nv' 98001 `"Abbadia Cerreto"', modify
 label define `nv' 98002 `"Bertonico"', modify
 label define `nv' 98003 `"Boffalora d'Adda"', modify
@@ -7847,6 +7866,7 @@ label define `nv' 98058 `"Turano Lodigiano"', modify
 label define `nv' 98059 `"Valera Fratta"', modify
 label define `nv' 98060 `"Villanova del Sillaro"', modify
 label define `nv' 98061 `"Zelo Buon Persico"', modify
+label define `nv' 98062 `"castelgerundo"', modify
 label define `nv' 99001 `"Bellaria-Igea Marina"', modify
 label define `nv' 99002 `"Cattolica"', modify
 label define `nv' 99003 `"Coriano"', modify
