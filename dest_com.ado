@@ -2,6 +2,11 @@ capture program drop dest_com
 program define dest_com, sortpreserve
 version 13
 
+
+**! version 3.2019
+**  aggiornati i nuovi comuni del 2019
+** minor bugs correction
+
 **! version 3.2018
 **  aggiornati i nuovi comuni del 2018
 ** minor bugs correction
@@ -324,12 +329,17 @@ if _rc!=0 {
 
 
 qui count if `nv'==11020
-if r(N)>0 di "Il comune di Ortonovo da aprile 2017 si chiama Luni"
+if r(N)>0 di "Luni si chiamava Ortonovo fino ad aprile 2017"
 qui count if `nv'==20061
-if r(N)>0 di "Il comune di Sermide da marzo 2017 si chiama Sermide e felonica"
-
-
-label define `nv' 11020 `"Ortonovo"', modify
+if r(N)>0 di "Sermide e Felonica si chiamava Sermide fino a marzo 2017"
+qui count if `nv'==23014
+if r(N)>0 di "Brenzone sul Garda si chiamava Brenzone fino al 2013"
+qui count if `nv'==65025
+if r(N)>0 di "Capaccio Paestum si chiamava Capaccio fino a metà 2016"
+qui count if `nv'==4051
+if r(N)>0 di "Castellinaldo d'Alba si chiamava Castellinaldo fino al 2014"
+qui count if `nv'==20057
+if r(N)>0 di "San Giorgio Bigarello si chiamava San Giorgio di Mantova fino al 2018"
 
 
 

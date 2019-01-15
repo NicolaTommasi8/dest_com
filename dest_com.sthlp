@@ -1,11 +1,11 @@
 {smcl}
-{* *! version 3.0  aug2016}{...}
+{* *! version 3.3  jan2019}{...}
 {cmd:help dest_com}
 {hline}
 
 
 {title:Version}
-3.2  February 2017
+3.3  January 2019
 
 
 
