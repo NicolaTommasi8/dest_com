@@ -1056,6 +1056,7 @@ label define `nv' 6189 `"Volpeglino"', modify
 label define `nv' 6190 `"Voltaggio"', modify
 label define `nv' 6191 `"Cassano Spinola"', modify
 label define `nv' 6192 `"Alluvioni Piovera"', modify
+label define `nv' 6193 `"Lu e Cuccaro Monferrato"', modify
 label define `nv' 7001 `"Allein"', modify
 label define `nv' 7002 `"Antey-Saint-André"', modify
 label define `nv' 7003 `"Aosta"', modify
@@ -1508,6 +1509,7 @@ label define `nv' 12139 `"Viggiù"', modify
 label define `nv' 12140 `"Vizzola Ticino"', modify
 label define `nv' 12141 `"Sangiano"', modify
 label define `nv' 12142 `"Maccagno con Pino e Veddasca"', modify
+label define `nv' 12143 `"Cadrezzate con Osmate"', modify
 label define `nv' 13003 `"Albavilla"', modify
 label define `nv' 13004 `"Albese con Cassano"', modify
 label define `nv' 13005 `"Albiolo"', modify
@@ -1891,6 +1893,7 @@ label define `nv' 15247 `"Zibido San Giacomo"', modify
 label define `nv' 15248 `"Villa Cortese"', modify
 label define `nv' 15249 `"Vanzaghello"', modify
 label define `nv' 15250 `"Baranzate"', modify
+label define `nv' 15251 `"Vermezzo con Zelo"', modify
 label define `nv' 16001 `"Adrara San Martino"', modify
 label define `nv' 16002 `"Adrara San Rocco"', modify
 label define `nv' 16003 `"Albano Sant'Alessandro"', modify
@@ -3317,6 +3320,9 @@ label define `nv' 24121 `"Zovencedo"', modify
 label define `nv' 24122 `"Zugliano"', modify
 label define `nv' 24123 `"Val Liona"', modify
 label define `nv' 24124 `"Barbarano Mossano"', modify
+label define `nv' 24125 `"Valbrenta"', modify
+label define `nv' 24126 `"Colceresa"', modify
+label define `nv' 24127 `"Lusiana Conco"', modify
 label define `nv' 25001 `"Agordo"', modify
 label define `nv' 25002 `"Alano di Piave"', modify
 label define `nv' 25003 `"Alleghe"', modify
@@ -3390,6 +3396,7 @@ label define `nv' 25070 `"Quero Vas"', modify
 label define `nv' 25071 `"Longarone"', modify
 label define `nv' 25072 `"Alpago"', modify
 label define `nv' 25073 `"Val di Zoldo"', modify
+label define `nv' 25074 `"Borgo Valbelluna"', modify
 label define `nv' 26001 `"Altivole"', modify
 label define `nv' 26002 `"Arcade"', modify
 label define `nv' 26003 `"Asolo"', modify
@@ -3485,6 +3492,7 @@ label define `nv' 26092 `"Vittorio Veneto"', modify
 label define `nv' 26093 `"Volpago del Montello"', modify
 label define `nv' 26094 `"Zenson di Piave"', modify
 label define `nv' 26095 `"Zero Branco"', modify
+label define `nv' 26096 `"Pieve del Grappa"', modify
 label define `nv' 27001 `"Annone Veneto"', modify
 label define `nv' 27002 `"Campagna Lupia"', modify
 label define `nv' 27003 `"Campolongo Maggiore"', modify

@@ -2,7 +2,6 @@ capture program drop dest_com
 program define dest_com, sortpreserve
 version 13
 
-
 **! version 3.2019
 **  aggiornati i nuovi comuni del 2019
 ** minor bugs correction
