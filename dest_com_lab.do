@@ -7485,19 +7485,29 @@ label define `nv' 91009 `"Bitti"', modify
 label define `nv' 91010 `"Bolotana"', modify
 label define `nv' 91011 `"Borore"', modify
 label define `nv' 91012 `"Bortigali"', modify
+label define `nv' 91013 `"Bosa"', modify
+label define `nv' 91014 `"Budoni"', modify
 label define `nv' 91016 `"Desulo"', modify
 label define `nv' 91017 `"Dorgali"', modify
 label define `nv' 91018 `"Dualchi"', modify
 label define `nv' 91019 `"Elini"', modify
+label define `nv' 91020 `"Escalaplano"', modify
+label define `nv' 91021 `"Escolca"', modify
+label define `nv' 91022 `"Esterzili"', modify
+label define `nv' 91023 `"Flussio"', modify
 label define `nv' 91024 `"Fonni"', modify
 label define `nv' 91025 `"Gadoni"', modify
 label define `nv' 91026 `"Gairo"', modify
 label define `nv' 91027 `"Galtellì"', modify
 label define `nv' 91028 `"Gavoi"', modify
+label define `nv' 91029 `"Genoni"', modify
+label define `nv' 91030 `"Gergei"', modify
 label define `nv' 91031 `"Girasole"', modify
 label define `nv' 91032 `"Ilbono"', modify
 label define `nv' 91033 `"Irgoli"', modify
+label define `nv' 91034 `"Isili"', modify
 label define `nv' 91035 `"Jerzu"', modify
+label define `nv' 91036 `"Laconi"', modify
 label define `nv' 91037 `"Lanusei"', modify
 label define `nv' 91038 `"Lei"', modify
 label define `nv' 91039 `"Loceri"', modify
@@ -7506,10 +7516,16 @@ label define `nv' 91041 `"Lodè"', modify
 label define `nv' 91042 `"Lotzorai"', modify
 label define `nv' 91043 `"Lula"', modify
 label define `nv' 91044 `"Macomer"', modify
+label define `nv' 91045 `"Magomadas"', modify
 label define `nv' 91046 `"Mamoiada"', modify
 label define `nv' 91047 `"Meana Sardo"', modify
+label define `nv' 91048 `"Modolo"', modify
+label define `nv' 91049 `"Montresta"', modify
 label define `nv' 91050 `"Noragugume"', modify
 label define `nv' 91051 `"Nuoro"', modify
+label define `nv' 91052 `"Nuragus"', modify
+label define `nv' 91053 `"Nurallao"', modify
+label define `nv' 91054 `"Nurri"', modify
 label define `nv' 91055 `"Oliena"', modify
 label define `nv' 91056 `"Ollolai"', modify
 label define `nv' 91057 `"Olzai"', modify
@@ -7520,6 +7536,7 @@ label define `nv' 91061 `"Orani"', modify
 label define `nv' 91062 `"Orgosolo"', modify
 label define `nv' 91063 `"Orosei"', modify
 label define `nv' 91064 `"Orotelli"', modify
+label define `nv' 91065 `"Orroli"', modify
 label define `nv' 91066 `"Ortueri"', modify
 label define `nv' 91067 `"Orune"', modify
 label define `nv' 91068 `"Osidda"', modify
@@ -7528,15 +7545,23 @@ label define `nv' 91070 `"Ottana"', modify
 label define `nv' 91071 `"Ovodda"', modify
 label define `nv' 91072 `"Perdasdefogu"', modify
 label define `nv' 91073 `"Posada"', modify
+label define `nv' 91074 `"Sadali"', modify
+label define `nv' 91075 `"Sagama"', modify
+label define `nv' 91076 `"San Teodoro"', modify
 label define `nv' 91077 `"Sarule"', modify
+label define `nv' 91080 `"Serri"', modify
+label define `nv' 91081 `"Seui"', modify
+label define `nv' 91082 `"Seulo"', modify
 label define `nv' 91083 `"Silanus"', modify
 label define `nv' 91084 `"Sindia"', modify
 label define `nv' 91085 `"Siniscola"', modify
 label define `nv' 91086 `"Sorgono"', modify
+label define `nv' 91087 `"Suni"', modify
 label define `nv' 91088 `"Talana"', modify
 label define `nv' 91089 `"Tertenia"', modify
 label define `nv' 91090 `"Teti"', modify
 label define `nv' 91091 `"Tiana"', modify
+label define `nv' 91092 `"Tinnura"', modify
 label define `nv' 91093 `"Tonara"', modify
 label define `nv' 91094 `"Torpè"', modify
 label define `nv' 91095 `"Tortolì"', modify
@@ -7547,44 +7572,83 @@ label define `nv' 91100 `"Ussassai"', modify
 label define `nv' 91101 `"Villagrande Strisaili"', modify
 label define `nv' 91103 `"Cardedu"', modify
 label define `nv' 91104 `"Lodine"', modify
+label define `nv' 92001 `"Arbus"', modify
 label define `nv' 92002 `"Armungia"', modify
 label define `nv' 92003 `"Assemini"', modify
 label define `nv' 92004 `"Ballao"', modify
 label define `nv' 92005 `"Barrali"', modify
+label define `nv' 92006 `"Barumini"', modify
+label define `nv' 92007 `"Buggerru"', modify
 label define `nv' 92008 `"Burcei"', modify
 label define `nv' 92009 `"Cagliari"', modify
+label define `nv' 92010 `"Calasetta"', modify
 label define `nv' 92011 `"Capoterra"', modify
+label define `nv' 92012 `"Carbonia"', modify
+label define `nv' 92013 `"Carloforte"', modify
+label define `nv' 92014 `"Collinas"', modify
 label define `nv' 92015 `"Decimomannu"', modify
 label define `nv' 92016 `"Decimoputzu"', modify
 label define `nv' 92017 `"Dolianova"', modify
 label define `nv' 92018 `"Domus de Maria"', modify
+label define `nv' 92019 `"Domusnovas"', modify
 label define `nv' 92020 `"Donori"', modify
+label define `nv' 92021 `"Fluminimaggiore"', modify
+label define `nv' 92022 `"Furtei"', modify
+label define `nv' 92023 `"Genuri"', modify
 label define `nv' 92024 `"Gesico"', modify
+label define `nv' 92025 `"Gesturi"', modify
+label define `nv' 92026 `"Giba"', modify
 label define `nv' 92027 `"Goni"', modify
+label define `nv' 92028 `"Gonnesa"', modify
+label define `nv' 92029 `"Gonnosfanadiga"', modify
 label define `nv' 92030 `"Guamaggiore"', modify
 label define `nv' 92031 `"Guasila"', modify
+label define `nv' 92032 `"Guspini"', modify
+label define `nv' 92033 `"Iglesias"', modify
+label define `nv' 92034 `"Las Plassas"', modify
+label define `nv' 92035 `"Lunamatrona"', modify
 label define `nv' 92036 `"Mandas"', modify
 label define `nv' 92037 `"Maracalagonis"', modify
 label define `nv' 92038 `"Monastir"', modify
 label define `nv' 92039 `"Muravera"', modify
+label define `nv' 92040 `"Musei"', modify
+label define `nv' 92041 `"Narcao"', modify
 label define `nv' 92042 `"Nuraminis"', modify
+label define `nv' 92043 `"Nuxis"', modify
 label define `nv' 92044 `"Ortacesus"', modify
+label define `nv' 92045 `"Pabillonis"', modify
+label define `nv' 92046 `"Pauli Arbarei"', modify
+label define `nv' 92047 `"Perdaxius"', modify
+label define `nv' 92049 `"Portoscuso"', modify
 label define `nv' 92048 `"Pimentel"', modify
 label define `nv' 92050 `"Pula"', modify
 label define `nv' 92051 `"Quartu Sant'Elena"', modify
+label define `nv' 92052 `"Samassi"', modify
 label define `nv' 92053 `"Samatzai"', modify
 label define `nv' 92054 `"San Basilio"', modify
+label define `nv' 92055 `"San Gavino Monreale"', modify
+label define `nv' 92056 `"San Giovanni Suergiu"', modify
+label define `nv' 92057 `"Sanluri"', modify
 label define `nv' 92058 `"San Nicolò Gerrei"', modify
 label define `nv' 92059 `"San Sperate"', modify
+label define `nv' 92060 `"Santadi"', modify
 label define `nv' 92061 `"Sant'Andrea Frius"', modify
+label define `nv' 92062 `"Sant'anna Arresi"', modify
+label define `nv' 92063 `"Sant'antioco"', modify
 label define `nv' 92064 `"San Vito"', modify
+label define `nv' 92065 `"Sardara"', modify
 label define `nv' 92066 `"Sarroch"', modify
+label define `nv' 92067 `"Segariu"', modify
 label define `nv' 92068 `"Selargius"', modify
 label define `nv' 92069 `"Selegas"', modify
 label define `nv' 92070 `"Senorbì"', modify
 label define `nv' 92071 `"Serdiana"', modify
+label define `nv' 92072 `"Serramanna"', modify
+label define `nv' 92073 `"Serrenti"', modify
 label define `nv' 92074 `"Sestu"', modify
 label define `nv' 92075 `"Settimo San Pietro"', modify
+label define `nv' 92076 `"Setzu"', modify
+label define `nv' 92077 `"Siddi"', modify
 label define `nv' 92078 `"Siliqua"', modify
 label define `nv' 92079 `"Silius"', modify
 label define `nv' 92080 `"Sinnai"', modify
@@ -7592,17 +7656,29 @@ label define `nv' 92081 `"Siurgus Donigala"', modify
 label define `nv' 92082 `"Soleminis"', modify
 label define `nv' 92083 `"Suelli"', modify
 label define `nv' 92084 `"Teulada"', modify
+label define `nv' 92085 `"Tratalias"', modify
+label define `nv' 92086 `"Tuili"', modify
+label define `nv' 92087 `"Turri"', modify
 label define `nv' 92088 `"Ussana"', modify
+label define `nv' 92089 `"Ussaramanna"', modify
 label define `nv' 92090 `"Uta"', modify
 label define `nv' 92091 `"Vallermosa"', modify
+label define `nv' 92092 `"Villacidro"', modify
+label define `nv' 92093 `"Villamar"', modify
+label define `nv' 92094 `"Villamassargia"', modify
+label define `nv' 92095 `"Villanovaforru"', modify
+label define `nv' 92096 `"Villanovafranca"', modify
 label define `nv' 92097 `"Villaputzu"', modify
 label define `nv' 92098 `"Villasalto"', modify
 label define `nv' 92099 `"Villa San Pietro"', modify
 label define `nv' 92100 `"Villasimius"', modify
 label define `nv' 92101 `"Villasor"', modify
 label define `nv' 92102 `"Villaspeciosa"', modify
+label define `nv' 92103 `"Masainas"', modify
+label define `nv' 92104 `"Villaperuccio"', modify
 label define `nv' 92105 `"Quartucciu"', modify
 label define `nv' 92106 `"Castiadas"', modify
+label define `nv' 92107 `"Piscinas"', modify
 label define `nv' 92108 `"Elmas"', modify
 label define `nv' 92109 `"Monserrato"', modify
 label define `nv' 92110 `"Escalaplano"', modify
