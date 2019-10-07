@@ -18,7 +18,8 @@
 {title:Syntax}
 
 {p 8 14 2}
-{opt dest_com} {it:varname} {ifin} {cmd:,} {opt gen:erate(varname)} {opt time(varname)} [ {opt mkc(varname)} {opt ignore} {opt onlylab}  {opt gprov(varname)} {opt gregio(name)} {opt macro3(name)} {opt macro5(name)} {opt gnuts3(name)} {opt gnuts2(name)} {opt gnuts1(name)} ]
+{opt dest_com} {it:varname} {ifin} {cmd:,} {opt gen:erate(varname)} {opt time(varname)} [ {opt mkc(varname)} {opt ignore} {opt onlylab}  {opt gprov(varname)} {opt gregio(name)} {opt macro3(name)}
+  {opt macro5(name)} {opt gnuts3(name)} {opt gnuts2(name)} {opt gnuts1(name)} ]
 
 
 {pstd}
@@ -55,12 +56,12 @@ si assume che l'anno di riferimento sia il 2015.{p_end}
 
 {pstd}
 codifica la variabile stringa {cmd:comune} nella variabile numerica {cmd:com_num}:{p_end}
-{phang2}{cmd:. dest_com comune, gen(com_num)}
+{phang2}{cmd:. dest_com comune, gen(com_num) time(anno)}
 {p_end}
 
 {pstd}
 come la precedente, ma i casi di omonimia vengono risolti con l'ausilio della variabile {cmd:prov_num}:{p_end}
-{phang2}{cmd:. dest_com comune, gen(com_num) mkc(prov_num)}
+{phang2}{cmd:. dest_com comune, gen(com_num) time(anno) mkc(prov_num)}
 
 
 {title:Saved results}
@@ -108,6 +109,3 @@ ISTAT {browse "http://www.istat.it/it/archivio/6789": Pagina di riferimento}
 
 
 {p 7 14 2}Help:  {help dest_prov}{p_end}
-
-
-

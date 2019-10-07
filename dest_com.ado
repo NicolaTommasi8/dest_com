@@ -1,6 +1,15 @@
 capture program drop dest_com
 program define dest_com, sortpreserve
-version 13
+
+if c(stata_version) >= 16 & c(processors_lic) > 1 version 16
+else version 13
+
+**! version 4.2019
+** adesso i comuni che hanno cambiato provincia vengono correttamente riconosciuti
+** completato il label dei nomi dei comuni
+** se il comando viene lanciato su Stata 16MP dovrebbe essere più veloce
+** minor bugs correction
+
 
 **! version 3.2019
 **  aggiornati i nuovi comuni del 2019
@@ -94,8 +103,7 @@ qui clonevar `_CLONE' = `varlist'
 qui replace `_CLONE' = trim(`_CLONE')
 qui replace `_CLONE' = lower(`_CLONE')
 
-if "`time'" == "" qui gen `TIME' = 2015
-else qui clonevar `TIME' = `time'
+qui clonevar `TIME' = `time'
 
 
 

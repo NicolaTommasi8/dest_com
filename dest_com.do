@@ -56,13 +56,15 @@ replace `_NV' = 063002 if strmatch(`_CLONE',"afragola")
 replace `_NV' = 080001 if strmatch(`_CLONE',"africo")
 replace `_NV' = 033001 if strmatch(`_CLONE',"agazzano")
 replace `_NV' = 063003 if strmatch(`_CLONE',"agerola")
-replace `_NV' = 104001 if strmatch(`_CLONE',"aggius")
+replace `_NV' = 104001 if strmatch(`_CLONE',"aggius") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090001 if strmatch(`_CLONE',"aggius") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 086001 if strmatch(`_CLONE',"agira")
 replace `_NV' = 047002 if strmatch(`_CLONE',"agliana")
 replace `_NV' = 005001 if strmatch(`_CLONE',"agliano terme")
 replace `_NV' = 001001 if strmatch(`_CLONE',"agli?") | strmatch(`_CLONE',"agli??")
 if `c(stata_version)'>=14 replace `_NV' = 001001 if strmatch(`sec_check_var',"agli%X*")
-replace `_NV' = 104002 if strmatch(`_CLONE',"aglientu")
+replace `_NV' = 104002 if strmatch(`_CLONE',"aglientu") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090062 if strmatch(`_CLONE',"aglientu") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 028002 if strmatch(`_CLONE',"agna")
 replace `_NV' = 019002 if strmatch(`_CLONE',"agnadello")
 replace `_NV' = 080002 if strmatch(`_CLONE',"agnana calabra")
@@ -71,13 +73,15 @@ replace `_NV' = 017003 if strmatch(`_CLONE',"agnosine")
 replace `_NV' = 025001 if strmatch(`_CLONE',"agordo")
 replace `_NV' = 058002 if strmatch(`_CLONE',"agosta")
 replace `_NV' = 012001 if strmatch(`_CLONE',"agra")
-replace `_NV' = 108001 if strmatch(`_CLONE',"agrate brianza")
+replace `_NV' = 108001 if strmatch(`_CLONE',"agrate brianza") & `TIME'>=2010
+replace `_NV' =  15003 if strmatch(`_CLONE',"agrate brianza") & `TIME'<2010
 replace `_NV' = 003001 if strmatch(`_CLONE',"agrate conturbia")
 replace `_NV' = 084001 if strmatch(`_CLONE',"agrigento")
 replace `_NV' = 065002 if strmatch(`_CLONE',"agropoli")
 replace `_NV' = 042001 if strmatch(`_CLONE',"agugliano")
 replace `_NV' = 024001 if strmatch(`_CLONE',"agugliaro")
-replace `_NV' = 108002 if strmatch(`_CLONE',"aicurzio")
+replace `_NV' = 108002 if strmatch(`_CLONE',"aicurzio")  & `TIME'>=2010
+replace `_NV' = 015004 if strmatch(`_CLONE',"aicurzio")  & `TIME'<2010
 replace `_NV' = 095002 if strmatch(`_CLONE',"aidomaggiore")
 replace `_NV' = 086002 if strmatch(`_CLONE',"aidone")
 replace `_NV' = 066002 if strmatch(`_CLONE',"aielli")
@@ -93,7 +97,8 @@ replace `_NV' = 008001 if strmatch(`_CLONE',"airole")
 replace `_NV' = 097002 if strmatch(`_CLONE',"airuno")
 replace `_NV' = 004002 if strmatch(`_CLONE',"aisone")
 replace `_NV' = 022001 if strmatch(`_CLONE',"ala")
-replace `_NV' = 104003 if strmatch(`_CLONE',"al*dei*sardi")
+replace `_NV' = 104003 if strmatch(`_CLONE',"al*dei*sardi") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090002 if strmatch(`_CLONE',"al*dei*sardi") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 001003 if strmatch(`_CLONE',"ala di stura")
 replace `_NV' = 018001 if strmatch(`_CLONE',"alagna")
 replace `_NV' = 002002 if strmatch(`_CLONE',"alagna valsesia")
@@ -125,7 +130,8 @@ replace `_NV' = 024002 if strmatch(`_CLONE',"albettone")
 replace `_NV' = 079002 if strmatch(`_CLONE',"albi")
 replace `_NV' = 022002 if strmatch(`_CLONE',"albiano")
 replace `_NV' = 001004 if strmatch(`_CLONE',"albiano*ivrea")
-replace `_NV' = 108003 if strmatch(`_CLONE',"albiate")
+replace `_NV' = 108003 if strmatch(`_CLONE',"albiate") & `TIME'>=2010
+replace `_NV' = 015006 if strmatch(`_CLONE',"albiate") & `TIME'<2010
 replace `_NV' = 078006 if strmatch(`_CLONE',"albidona")
 replace `_NV' = 028003 if strmatch(`_CLONE',"albignasego")
 replace `_NV' = 035001 if strmatch(`_CLONE',"albinea")
@@ -195,7 +201,8 @@ replace `_NV' = 082004 if strmatch(`_CLONE',"altavilla milicia")
 replace `_NV' = 006007 if strmatch(`_CLONE',"altavilla monferrato")
 replace `_NV' = 065005 if strmatch(`_CLONE',"altavilla silentina")
 replace `_NV' = 024004 if strmatch(`_CLONE',"altavilla vicentina")
-replace `_NV' = 109001 if strmatch(`_CLONE',"altidona")
+replace `_NV' = 109001 if strmatch(`_CLONE',"altidona") & `TIME'>=2010
+replace `_NV' = 044003 if strmatch(`_CLONE',"altidona") & `TIME'<2010
 replace `_NV' = 078008 if strmatch(`_CLONE',"altilia")
 replace `_NV' = 069001 if strmatch(`_CLONE',"altino")
 replace `_NV' = 024005 if strmatch(`_CLONE',"altissimo")
@@ -214,7 +221,8 @@ replace `_NV' = 016008 if strmatch(`_CLONE',"alzano lombardo")
 replace `_NV' = 006008 if strmatch(`_CLONE',"alzano scrivia")
 replace `_NV' = 013007 if strmatch(`_CLONE',"alzate brianza")
 replace `_NV' = 065006 if strmatch(`_CLONE',"amalfi")
-replace `_NV' = 109002 if strmatch(`_CLONE',"amandola")
+replace `_NV' = 109002 if strmatch(`_CLONE',"amandola") & `TIME'>=2010
+replace `_NV' = 044004 if strmatch(`_CLONE',"amandola") & `TIME'<2010
 replace `_NV' = 078010 if strmatch(`_CLONE',"amantea")
 replace `_NV' = 030002 if strmatch(`_CLONE',"amaro")
 replace `_NV' = 079003 if strmatch(`_CLONE',"amaroni")
@@ -244,7 +252,8 @@ replace `_NV' = 075005 if strmatch(`_CLONE',"andrano")
 replace `_NV' = 001010 if strmatch(`_CLONE',"andrate")
 replace `_NV' = 093001 if strmatch(`_CLONE',"andreis")
 replace `_NV' = 064003 if strmatch(`_CLONE',"andretta")
-replace `_NV' = 110001 if strmatch(`_CLONE',"andria")
+replace `_NV' = 110001 if strmatch(`_CLONE',"andria") & `TIME'>=2010
+replace `_NV' = 072005 if strmatch(`_CLONE',"andria") & `TIME'<2010
 replace `_NV' = 021002 if strmatch(`_CLONE',"andriano*") | strmatch(`_CLONE',"andrian")
 replace `_NV' = 090004 if strmatch(`_CLONE',"anela")
 replace `_NV' = 017005 if strmatch(`_CLONE',"anfo")
@@ -301,7 +310,9 @@ replace `_NV' = 005004 if strmatch(`_CLONE',"aramengo")
 replace `_NV' = 093002 if strmatch(`_CLONE',"arba")
 replace `_NV' = 095006 if strmatch(`_CLONE',"arborea")
 replace `_NV' = 002006 if strmatch(`_CLONE',"arborio")
-replace `_NV' = 106001 if strmatch(`_CLONE',"arbus")
+replace `_NV' = 106001 if strmatch(`_CLONE',"arbus") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092001 if strmatch(`_CLONE',"arbus") & `TIME'<2006
+replace `_NV' = 111001 if strmatch(`_CLONE',"arbus") & `TIME'>2016
 replace `_NV' = 026002 if strmatch(`_CLONE',"arcade")
 replace `_NV' = 060008 if strmatch(`_CLONE',"arce")
 replace `_NV' = 016011 if strmatch(`_CLONE',"arcene")
@@ -314,7 +325,8 @@ replace `_NV' = 022006 if strmatch(`_CLONE',"arco")
 replace `_NV' = 011002 if strmatch(`_CLONE',"arcola")
 replace `_NV' = 023004 if strmatch(`_CLONE',"arcole")
 replace `_NV' = 015007 if strmatch(`_CLONE',"arconate")
-replace `_NV' = 108004 if strmatch(`_CLONE',"arcore")
+replace `_NV' = 108004 if strmatch(`_CLONE',"arcore") & `TIME'>=2010
+replace `_NV' = 015008 if strmatch(`_CLONE',"arcore") & `TIME'<2010
 replace `_NV' = 024006 if strmatch(`_CLONE',"arcugnano")
 replace `_NV' = 090005 if strmatch(`_CLONE',"ardara")
 replace `_NV' = 095007 if strmatch(`_CLONE',"ardauli")
@@ -347,7 +359,8 @@ replace `_NV' = 015010 if strmatch(`_CLONE',"arluno")
 replace `_NV' = 003006 if strmatch(`_CLONE',"armeno")
 replace `_NV' = 076005 if strmatch(`_CLONE',"armento")
 replace `_NV' = 008004 if strmatch(`_CLONE',"armo")
-replace `_NV' = 092002 if strmatch(`_CLONE',"armungia")
+replace `_NV' = 092002 if strmatch(`_CLONE',"armungia") & `TIME'<=2016
+replace `_NV' = 111002 if strmatch(`_CLONE',"armungia") & `TIME'>2016
 replace `_NV' = 007004 if strmatch(`_CLONE',"arnad")
 replace `_NV' = 060009 if strmatch(`_CLONE',"arnara")
 replace `_NV' = 009007 if strmatch(`_CLONE',"arnasco")
@@ -374,9 +387,11 @@ replace `_NV' = 030006 if strmatch(`_CLONE',"artegna")
 replace `_NV' = 058011 if strmatch(`_CLONE',"artena")
 replace `_NV' = 017007 if strmatch(`_CLONE',"artogne")
 replace `_NV' = 007005 if strmatch(`_CLONE',"arvier")
-replace `_NV' = 104004 if strmatch(`_CLONE',"arzachena")
+replace `_NV' = 104004 if strmatch(`_CLONE',"arzachena") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090006 if strmatch(`_CLONE',"arzachena") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 016013 if strmatch(`_CLONE',"arzago d*adda")
-replace `_NV' = 105001 if strmatch(`_CLONE',"arzana")
+replace `_NV' = 105001 if strmatch(`_CLONE',"arzana") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091002 if strmatch(`_CLONE',"arzana") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 063005 if strmatch(`_CLONE',"arzano")
 replace `_NV' = 093003 if strmatch(`_CLONE',"arzene")
 replace `_NV' = 028007 if strmatch(`_CLONE',"arzergrande")
@@ -450,7 +465,8 @@ replace `_NV' = 016017 if strmatch(`_CLONE',"azzone")
 replace `_NV' = 103006 if strmatch(`_CLONE',"baceno")
 replace `_NV' = 063006 if strmatch(`_CLONE',"bacoli")
 replace `_NV' = 008006 if strmatch(`_CLONE',"badalucco")
-replace `_NV' = 104005 if strmatch(`_CLONE',"badesi")
+replace `_NV' = 104005 if strmatch(`_CLONE',"badesi") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090081 if strmatch(`_CLONE',"badesi") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 021006 if strmatch(`_CLONE',"badia*abtei*") | strmatch(`_CLONE',"badia") | strmatch(`_CLONE',"abtei")
 replace `_NV' = 023005 if strmatch(`_CLONE',"badia calavena")
 replace `_NV' = 018006 if strmatch(`_CLONE',"badia pavese")
@@ -495,7 +511,8 @@ replace `_NV' = 001018 if strmatch(`_CLONE',"baldissero torinese")
 replace `_NV' = 082007 if strmatch(`_CLONE',"balestrate")
 replace `_NV' = 009008 if strmatch(`_CLONE',"balestrino")
 replace `_NV' = 097004 if strmatch(`_CLONE',"ballabio")
-replace `_NV' = 092004 if strmatch(`_CLONE',"ballao")
+replace `_NV' = 092004 if strmatch(`_CLONE',"ballao") & `TIME'<=2016
+replace `_NV' = 111003 if strmatch(`_CLONE',"ballao") & `TIME'>2016
 replace `_NV' = 001019 if strmatch(`_CLONE',"balme")
 replace `_NV' = 002008 if strmatch(`_CLONE',"balmuccia")
 replace `_NV' = 002009 if strmatch(`_CLONE',"balocco")
@@ -546,21 +563,27 @@ replace `_NV' = 010003 if strmatch(`_CLONE',"bargagli")
 replace `_NV' = 004012 if strmatch(`_CLONE',"barge")
 replace `_NV' = 017012 if strmatch(`_CLONE',"barghe")
 replace `_NV' = 072006 if strmatch(`_CLONE',"bari")
-replace `_NV' = 105002 if strmatch(`_CLONE',"bari sardo")
+replace `_NV' = 105002 if strmatch(`_CLONE',"bari sardo") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091005 if strmatch(`_CLONE',"bari sardo") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 016020 if strmatch(`_CLONE',"bariano")
 replace `_NV' = 037003 if strmatch(`_CLONE',"baricella")
 replace `_NV' = 076011 if strmatch(`_CLONE',"barile")
 replace `_NV' = 066009 if strmatch(`_CLONE',"barisciano")
-replace `_NV' = 108005 if strmatch(`_CLONE',"barlassina")
-replace `_NV' = 110002 if strmatch(`_CLONE',"barletta")
+replace `_NV' = 108005 if strmatch(`_CLONE',"barlassina") & `TIME'>=2010
+replace `_NV' = 015013 if strmatch(`_CLONE',"barlassina") & `TIME'<2010
+replace `_NV' = 110002 if strmatch(`_CLONE',"barletta") & `TIME'>=2010
+replace `_NV' = 072007 if strmatch(`_CLONE',"barletta") & `TIME'<2010
 replace `_NV' = 013015 if strmatch(`_CLONE',"barni")
 replace `_NV' = 004013 if strmatch(`_CLONE',"barolo")
 replace `_NV' = 001023 if strmatch(`_CLONE',"barone canavese")
 replace `_NV' = 065013 if strmatch(`_CLONE',"baronissi")
 replace `_NV' = 086004 if strmatch(`_CLONE',"barrafranca")
-replace `_NV' = 092005 if strmatch(`_CLONE',"barrali")
+replace `_NV' = 092005 if strmatch(`_CLONE',"barrali") & `TIME'<=2016
+replace `_NV' = 111004 if strmatch(`_CLONE',"barrali") & `TIME'>2016
 replace `_NV' = 066010 if strmatch(`_CLONE',"barrea")
-replace `_NV' = 106002 if strmatch(`_CLONE',"barumini")
+replace `_NV' = 106002 if strmatch(`_CLONE',"barumini") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092006 if strmatch(`_CLONE',"barumini") & `TIME'<2006
+replace `_NV' = 111005 if strmatch(`_CLONE',"barumini") & `TIME'>2016
 replace `_NV' = 097005 if strmatch(`_CLONE',"barzago")
 replace `_NV' = 016021 if strmatch(`_CLONE',"barzana")
 replace `_NV' = 097006 if strmatch(`_CLONE',"barzano") | strmatch(`_CLONE',"barzanò") | strmatch(`_CLONE',"barzano'")
@@ -594,7 +617,8 @@ replace `_NV' = 065014 if strmatch(`_CLONE',"battipaglia")
 replace `_NV' = 018012 if strmatch(`_CLONE',"battuda")
 replace `_NV' = 082008 if strmatch(`_CLONE',"baucina")
 replace `_NV' = 095013 if strmatch(`_CLONE',"bauladu")
-replace `_NV' = 105003 if strmatch(`_CLONE',"baunei")
+replace `_NV' = 105003 if strmatch(`_CLONE',"baunei") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091006 if strmatch(`_CLONE',"baunei") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 103008 if strmatch(`_CLONE',"baveno")
 replace `_NV' = 037004 if strmatch(`_CLONE',"bazzano")
 replace `_NV' = 012010 if strmatch(`_CLONE',"bedero valcuvia")
@@ -626,13 +650,16 @@ replace `_NV' = 065158 if strmatch(`_CLONE',"bellizzi")
 replace `_NV' = 061007 if strmatch(`_CLONE',"bellona")
 replace `_NV' = 065015 if strmatch(`_CLONE',"bellosguardo")
 replace `_NV' = 025006 if strmatch(`_CLONE',"belluno")
-replace `_NV' = 108006 if strmatch(`_CLONE',"bellusco")
+replace `_NV' = 108006 if strmatch(`_CLONE',"bellusco") & `TIME'>=2010
+replace `_NV' = 015017 if strmatch(`_CLONE',"bellusco") & `TIME'<2010
 replace `_NV' = 078013 if strmatch(`_CLONE',"belmonte calabro")
 replace `_NV' = 060013 if strmatch(`_CLONE',"belmonte castello")
 replace `_NV' = 094004 if strmatch(`_CLONE',"belmonte del sannio")
 replace `_NV' = 057005 if strmatch(`_CLONE',"belmonte in sabina")
 replace `_NV' = 082009 if strmatch(`_CLONE',"belmonte mezzagno")
-replace `_NV' = 109003 if strmatch(`_CLONE',"belmonte piceno")
+replace `_NV' = 109003 if strmatch(`_CLONE',"belmonte piceno") & `TIME'>=2010
+replace `_NV' = 044008 if strmatch(`_CLONE',"belmonte piceno") & `TIME'<2010
+
 replace `_NV' = 087007 if strmatch(`_CLONE',"belpasso")
 replace `_NV' = 078014 if strmatch(`_CLONE',"belsito")
 replace `_NV' = 101001 if strmatch(`_CLONE',"belvedere di spinello")
@@ -653,7 +680,8 @@ replace `_NV' = 037005 if strmatch(`_CLONE',"bentivoglio")
 replace `_NV' = 016023 if strmatch(`_CLONE',"berbenno")
 replace `_NV' = 014007 if strmatch(`_CLONE',"berbenno di valtellina")
 replace `_NV' = 034004 if strmatch(`_CLONE',"berceto")
-replace `_NV' = 104006 if strmatch(`_CLONE',"berchidda")
+replace `_NV' = 104006 if strmatch(`_CLONE',"berchidda") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090009 if strmatch(`_CLONE',"berchidda") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 013022 if strmatch(`_CLONE',"beregazzo con figliaro")
 replace `_NV' = 018014 if strmatch(`_CLONE',"bereguardo")
 replace `_NV' = 006015 if strmatch(`_CLONE',"bergamasco")
@@ -663,7 +691,8 @@ replace `_NV' = 009010 if strmatch(`_CLONE',"bergeggi")
 replace `_NV' = 004021 if strmatch(`_CLONE',"bergolo")
 replace `_NV' = 017015 if strmatch(`_CLONE',"berlingo")
 replace `_NV' = 077003 if strmatch(`_CLONE',"bernalda")
-replace `_NV' = 108007 if strmatch(`_CLONE',"bernareggio")
+replace `_NV' = 108007 if strmatch(`_CLONE',"bernareggio") & `TIME'>=2010
+replace `_NV' = 015018 if strmatch(`_CLONE',"bernareggio") & `TIME'<2010
 replace `_NV' = 015019 if strmatch(`_CLONE',"bernate ticino")
 replace `_NV' = 004022 if strmatch(`_CLONE',"bernezzo")
 replace `_NV' = 038002 if strmatch(`_CLONE',"berra")
@@ -676,7 +705,8 @@ replace `_NV' = 006016 if strmatch(`_CLONE',"berzano di tortona")
 replace `_NV' = 017016 if strmatch(`_CLONE',"berzo demo")
 replace `_NV' = 017017 if strmatch(`_CLONE',"berzo inferiore")
 replace `_NV' = 016025 if strmatch(`_CLONE',"berzo san fermo")
-replace `_NV' = 108008 if strmatch(`_CLONE',"besana in brianza")
+replace `_NV' = 108008 if strmatch(`_CLONE',"besana in brianza") & `TIME'>=2010
+replace `_NV' = 015021 if strmatch(`_CLONE',"besana in brianza") & `TIME'<2010
 replace `_NV' = 012011 if strmatch(`_CLONE',"besano")
 replace `_NV' = 015022 if strmatch(`_CLONE',"besate")
 replace `_NV' = 022013 if strmatch(`_CLONE',"besenello")
@@ -699,7 +729,8 @@ replace `_NV' = 012014 if strmatch(`_CLONE',"biandronno")
 replace `_NV' = 016026 if strmatch(`_CLONE',"bianzano")
 replace `_NV' = 002011 if strmatch(`_CLONE',"bianz?") | strmatch(`_CLONE',"bianz??")
 replace `_NV' = 014008 if strmatch(`_CLONE',"bianzone")
-replace `_NV' = 108009 if strmatch(`_CLONE',"biassono")
+replace `_NV' = 108009 if strmatch(`_CLONE',"biassono") & `TIME'>=2010
+replace `_NV' = 015023 if strmatch(`_CLONE',"biassono") & `TIME'<2010
 replace `_NV' = 035004 if strmatch(`_CLONE',"bibbiano")
 replace `_NV' = 051004 if strmatch(`_CLONE',"bibbiena")
 replace `_NV' = 049001 if strmatch(`_CLONE',"bibbona")
@@ -721,7 +752,8 @@ replace `_NV' = 017019 if strmatch(`_CLONE',"bione")
 replace `_NV' = 091008 if strmatch(`_CLONE',"birori")
 replace `_NV' = 064011 if strmatch(`_CLONE',"bisaccia")
 replace `_NV' = 082010 if strmatch(`_CLONE',"bisacquino")
-replace `_NV' = 110003 if strmatch(`_CLONE',"bisceglie")
+replace `_NV' = 110003 if strmatch(`_CLONE',"bisceglie") & `TIME'>=2010
+replace `_NV' = 072009 if strmatch(`_CLONE',"bisceglie") & `TIME'<2010
 replace `_NV' = 066011 if strmatch(`_CLONE',"bisegna")
 replace `_NV' = 067007 if strmatch(`_CLONE',"bisenti")
 replace `_NV' = 078017 if strmatch(`_CLONE',"bisignano")
@@ -863,10 +895,12 @@ replace `_NV' = 069007 if strmatch(`_CLONE',"borrello")
 replace `_NV' = 096006 if strmatch(`_CLONE',"borriana")
 replace `_NV' = 026004 if strmatch(`_CLONE',"borso del grappa")
 replace `_NV' = 091012 if strmatch(`_CLONE',"bortigali")
-replace `_NV' = 104007 if strmatch(`_CLONE',"bortigiadas")
+replace `_NV' = 104007 if strmatch(`_CLONE',"bortigiadas") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090014 if strmatch(`_CLONE',"bortigiadas") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 090015 if strmatch(`_CLONE',"borutta")
 replace `_NV' = 010005 if strmatch(`_CLONE',"borzonasca")
-replace `_NV' = 095079 if strmatch(`_CLONE',"bosa")
+replace `_NV' = 095079 if strmatch(`_CLONE',"bosa") & `TIME'>=2006
+replace `_NV' = 091013 if strmatch(`_CLONE',"bosa") & `TIME'<2006
 replace `_NV' = 029007 if strmatch(`_CLONE',"bosaro")
 replace `_NV' = 023010 if strmatch(`_CLONE',"boschi*anna")
 replace `_NV' = 023011 if strmatch(`_CLONE',"bosco chiesanuova")
@@ -894,7 +928,8 @@ replace `_NV' = 004028 if strmatch(`_CLONE',"boves")
 replace `_NV' = 017025 if strmatch(`_CLONE',"bovezzo")
 replace `_NV' = 060014 if strmatch(`_CLONE',"boville ernica")
 replace `_NV' = 071007 if strmatch(`_CLONE',"bovino")
-replace `_NV' = 108010 if strmatch(`_CLONE',"bovisio*masciago")
+replace `_NV' = 108010 if strmatch(`_CLONE',"bovisio*masciago") & `TIME'>=2010
+replace `_NV' = 015030 if strmatch(`_CLONE',"bovisio*masciago") & `TIME'<2010
 replace `_NV' = 028014 if strmatch(`_CLONE',"bovolenta")
 replace `_NV' = 023012 if strmatch(`_CLONE',"bovolone")
 replace `_NV' = 006023 if strmatch(`_CLONE',"bozzole")
@@ -954,7 +989,8 @@ replace `_NV' = 012021 if strmatch(`_CLONE',"brinzio")
 replace `_NV' = 003027 if strmatch(`_CLONE',"briona")
 replace `_NV' = 017030 if strmatch(`_CLONE',"brione")
 **replace `_NV' = 022028 if strmatch(`_CLONE',"brione")
-replace `_NV' = 108011 if strmatch(`_CLONE',"briosco")
+replace `_NV' = 108011 if strmatch(`_CLONE',"briosco") & `TIME'>=2010
+replace `_NV' = 015033 if strmatch(`_CLONE',"briosco") & `TIME'<2010
 replace `_NV' = 039004 if strmatch(`_CLONE',"brisighella")
 replace `_NV' = 012022 if strmatch(`_CLONE',"brissago*valtravaglia")
 replace `_NV' = 007011 if strmatch(`_CLONE',"brissogne")
@@ -972,7 +1008,8 @@ replace `_NV' = 004033 if strmatch(`_CLONE',"brossasco")
 replace `_NV' = 001036 if strmatch(`_CLONE',"brosso")
 replace `_NV' = 103013 if strmatch(`_CLONE',"brovello*carpugnino")
 replace `_NV' = 001037 if strmatch(`_CLONE',"brozolo")
-replace `_NV' = 108012 if strmatch(`_CLONE',"brugherio")
+replace `_NV' = 108012 if strmatch(`_CLONE',"brugherio") & `TIME'>=2010
+replace `_NV' = 015034 if strmatch(`_CLONE',"brugherio") & `TIME'<2010
 replace `_NV' = 028015 if strmatch(`_CLONE',"brugine")
 replace `_NV' = 011007 if strmatch(`_CLONE',"brugnato")
 replace `_NV' = 093007 if strmatch(`_CLONE',"brugnera")
@@ -998,11 +1035,16 @@ replace `_NV' = 062010 if strmatch(`_CLONE',"bucciano")
 replace `_NV' = 015036 if strmatch(`_CLONE',"buccinasco")
 replace `_NV' = 065017 if strmatch(`_CLONE',"buccino")
 replace `_NV' = 051005 if strmatch(`_CLONE',"bucine")
-replace `_NV' = 104008 if strmatch(`_CLONE',"buddus*")
+replace `_NV' = 104008 if strmatch(`_CLONE',"buddus*") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090017 if strmatch(`_CLONE',"buddus*") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 093008 if strmatch(`_CLONE',"budoia")
-replace `_NV' = 104009 if strmatch(`_CLONE',"budoni")
+replace `_NV' = 104009 if strmatch(`_CLONE',"budoni") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091014 if strmatch(`_CLONE',"budoni") & `TIME'<2006
+replace `_NV' = 090091 if strmatch(`_CLONE',"budoni") & `TIME'>2016
 replace `_NV' = 037008 if strmatch(`_CLONE',"budrio")
-replace `_NV' = 107001 if strmatch(`_CLONE',"buggerru")
+replace `_NV' = 107001 if strmatch(`_CLONE',"buggerru") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092007 if strmatch(`_CLONE',"buggerru") & `TIME'<2006
+replace `_NV' = 111006 if strmatch(`_CLONE',"buggerru") & `TIME'>2016
 replace `_NV' = 047003 if strmatch(`_CLONE',"buggiano")
 replace `_NV' = 014010 if strmatch(`_CLONE',"buglio in monte")
 replace `_NV' = 066012 if strmatch(`_CLONE',"bugnara")
@@ -1016,8 +1058,10 @@ replace `_NV' = 065018 if strmatch(`_CLONE',"buonabitacolo")
 replace `_NV' = 062011 if strmatch(`_CLONE',"buonalbergo")
 replace `_NV' = 052003 if strmatch(`_CLONE',"buonconvento")
 replace `_NV' = 078020 if strmatch(`_CLONE',"buonvicino")
-replace `_NV' = 108013 if strmatch(`_CLONE',"burago di molgora")
-replace `_NV' = 092008 if strmatch(`_CLONE',"burcei")
+replace `_NV' = 108013 if strmatch(`_CLONE',"burago di molgora") & `TIME'>=2010
+replace `_NV' = 015037 if strmatch(`_CLONE',"burago di molgora") & `TIME'<2010
+replace `_NV' = 092008 if strmatch(`_CLONE',"burcei") & `TIME'<=2016
+replace `_NV' = 111007 if strmatch(`_CLONE',"burcei") & `TIME'>2016
 replace `_NV' = 084005 if strmatch(`_CLONE',"burgio")
 replace `_NV' = 090020 if strmatch(`_CLONE',"burgos")
 replace `_NV' = 001041 if strmatch(`_CLONE',"buriasco")
@@ -1031,7 +1075,8 @@ replace `_NV' = 004034 if strmatch(`_CLONE',"busca")
 replace `_NV' = 015038 if strmatch(`_CLONE',"buscate")
 replace `_NV' = 089004 if strmatch(`_CLONE',"buscemi")
 replace `_NV' = 081002 if strmatch(`_CLONE',"buseto palizzolo")
-replace `_NV' = 108051 if strmatch(`_CLONE',"busnago")
+replace `_NV' = 108051 if strmatch(`_CLONE',"busnago") & `TIME'>=2010
+replace `_NV' = 015039 if strmatch(`_CLONE',"busnago") & `TIME'<2010
 replace `_NV' = 015040 if strmatch(`_CLONE',"bussero")
 replace `_NV' = 034007 if strmatch(`_CLONE',"busseto")
 replace `_NV' = 068005 if strmatch(`_CLONE',"bussi sul tirino")
@@ -1084,12 +1129,15 @@ replace `_NV' = 064014 if strmatch(`_CLONE',"calabritto")
 replace `_NV' = 025008 if strmatch(`_CLONE',"calalzo di cadore")
 replace `_NV' = 005013 if strmatch(`_CLONE',"calamandrana")
 replace `_NV' = 084006 if strmatch(`_CLONE',"calamonaci")
-replace `_NV' = 104010 if strmatch(`_CLONE',"calangianus")
+replace `_NV' = 104010 if strmatch(`_CLONE',"calangianus") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090021 if strmatch(`_CLONE',"calangianus") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 080016 if strmatch(`_CLONE',"calanna")
 replace `_NV' = 103014 if strmatch(`_CLONE',"calasca*castiglione")
 replace `_NV' = 086005 if strmatch(`_CLONE',"calascibetta")
 replace `_NV' = 066014 if strmatch(`_CLONE',"calascio")
-replace `_NV' = 107002 if strmatch(`_CLONE',"calasetta")
+replace `_NV' = 107002 if strmatch(`_CLONE',"calasetta") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092010 if strmatch(`_CLONE',"calasetta") & `TIME'<2006
+replace `_NV' = 111008 if strmatch(`_CLONE',"calasetta") & `TIME'>2016
 replace `_NV' = 087010 if strmatch(`_CLONE',"calatabiano")
 replace `_NV' = 081003 if strmatch(`_CLONE',"calatafimi*")
 replace `_NV' = 022031 if strmatch(`_CLONE',"calavino")
@@ -1182,7 +1230,8 @@ replace `_NV' = 053002 if strmatch(`_CLONE',"campagnatico")
 replace `_NV' = 019011 if strmatch(`_CLONE',"campagnola cremasca")
 replace `_NV' = 035009 if strmatch(`_CLONE',"campagnola emilia")
 replace `_NV' = 078023 if strmatch(`_CLONE',"campana")
-replace `_NV' = 108014 if strmatch(`_CLONE',"camparada")
+replace `_NV' = 108014 if strmatch(`_CLONE',"camparada") & `TIME'>=2010
+replace `_NV' = 015045 if strmatch(`_CLONE',"camparada") & `TIME'<2010
 replace `_NV' = 035010 if strmatch(`_CLONE',"campegine")
 replace `_NV' = 054005 if strmatch(`_CLONE',"campello sul clitunno")
 replace `_NV' = 002025 if strmatch(`_CLONE',"campertogno")
@@ -1215,7 +1264,8 @@ replace `_NV' = 014012 if strmatch(`_CLONE',"campodolcino")
 replace `_NV' = 028018 if strmatch(`_CLONE',"campodoro")
 replace `_NV' = 082016 if strmatch(`_CLONE',"campofelice di fitalia")
 replace `_NV' = 082017 if strmatch(`_CLONE',"campofelice di roccella")
-replace `_NV' = 109004 if strmatch(`_CLONE',"campofilone")
+replace `_NV' = 109004 if strmatch(`_CLONE',"campofilone") & `TIME'>=2010
+replace `_NV' = 044009 if strmatch(`_CLONE',"campofilone") & `TIME'<2010
 replace `_NV' = 082018 if strmatch(`_CLONE',"campofiorito")
 replace `_NV' = 030016 if strmatch(`_CLONE',"campoformido")
 replace `_NV' = 085005 if strmatch(`_CLONE',"campofranco")
@@ -1281,7 +1331,8 @@ replace `_NV' = 103017 if strmatch(`_CLONE',"cannobio")
 replace `_NV' = 075012 if strmatch(`_CLONE',"cannole")
 replace `_NV' = 080020 if strmatch(`_CLONE',"canolo")
 replace `_NV' = 016049 if strmatch(`_CLONE',"canonica *adda")
-replace `_NV' = 110004 if strmatch(`_CLONE',"canosa di puglia")
+replace `_NV' = 110004 if strmatch(`_CLONE',"canosa di puglia") & `TIME'>=2010
+replace `_NV' = 072013 if strmatch(`_CLONE',"canosa di puglia") & `TIME'<2010
 replace `_NV' = 069010 if strmatch(`_CLONE',"canosa sannita")
 replace `_NV' = 004038 if strmatch(`_CLONE',"canosio")
 replace `_NV' = 035018 if strmatch(`_CLONE',"canossa")
@@ -1322,7 +1373,9 @@ replace `_NV' = 056013 if strmatch(`_CLONE',"capodimonte")
 replace `_NV' = 061013 if strmatch(`_CLONE',"capodrise")
 replace `_NV' = 049004 if strmatch(`_CLONE',"capoliveri")
 replace `_NV' = 051006 if strmatch(`_CLONE',"capolona")
-replace `_NV' = 108052 if strmatch(`_CLONE',"caponago")
+replace `_NV' = 108052 if strmatch(`_CLONE',"caponago") & `TIME'>=2010
+replace `_NV' = 015047 if strmatch(`_CLONE',"caponago") & `TIME'<2010
+
 replace `_NV' = 066022 if strmatch(`_CLONE',"caporciano")
 replace `_NV' = 064017 if strmatch(`_CLONE',"caposele")
 replace `_NV' = 092011 if strmatch(`_CLONE',"capoterra")
@@ -1370,7 +1423,8 @@ replace `_NV' = 071010 if strmatch(`_CLONE',"carapelle")
 replace `_NV' = 066024 if strmatch(`_CLONE',"carapelle calvisio")
 replace `_NV' = 010010 if strmatch(`_CLONE',"carasco")
 replace `_NV' = 044010 if strmatch(`_CLONE',"carassai")
-replace `_NV' = 108015 if strmatch(`_CLONE',"carate brianza")
+replace `_NV' = 108015 if strmatch(`_CLONE',"carate brianza") & `TIME'>=2010
+replace `_NV' = 015048 if strmatch(`_CLONE',"carate brianza") & `TIME'<2010
 replace `_NV' = 013044 if strmatch(`_CLONE',"carate urio")
 replace `_NV' = 016053 if strmatch(`_CLONE',"caravaggio")
 replace `_NV' = 012031 if strmatch(`_CLONE',"caravate")
@@ -1384,13 +1438,16 @@ replace `_NV' = 006030 if strmatch(`_CLONE',"carbonara scrivia")
 replace `_NV' = 013045 if strmatch(`_CLONE',"carbonate")
 replace `_NV' = 076019 if strmatch(`_CLONE',"carbone")
 replace `_NV' = 026008 if strmatch(`_CLONE',"carbonera")
-replace `_NV' = 107003 if strmatch(`_CLONE',"carbonia")
+replace `_NV' = 107003 if strmatch(`_CLONE',"carbonia") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092012 if strmatch(`_CLONE',"carbonia") & `TIME'<2006
+replace `_NV' = 111009 if strmatch(`_CLONE',"carbonia") & `TIME'>2016
 replace `_NV' = 009018 if strmatch(`_CLONE',"carcare")
 replace `_NV' = 028022 if strmatch(`_CLONE',"carceri")
 replace `_NV' = 002029 if strmatch(`_CLONE',"carcoforo")
 replace `_NV' = 012032 if strmatch(`_CLONE',"cardano al campo")
 replace `_NV' = 004042 if strmatch(`_CLONE',"card?") | strmatch(`_CLONE',"card??")
-replace `_NV' = 105004 if strmatch(`_CLONE',"cardedu")
+replace `_NV' = 105004 if strmatch(`_CLONE',"cardedu") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091103 if strmatch(`_CLONE',"cardedu") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 080022 if strmatch(`_CLONE',"cardeto")
 replace `_NV' = 079018 if strmatch(`_CLONE',"cardinale")
 replace `_NV' = 063016 if strmatch(`_CLONE',"cardito")
@@ -1417,14 +1474,17 @@ replace `_NV' = 071011 if strmatch(`_CLONE',"carlantino")
 replace `_NV' = 013047 if strmatch(`_CLONE',"carlazzo")
 replace `_NV' = 089006 if strmatch(`_CLONE',"carlentini")
 replace `_NV' = 030018 if strmatch(`_CLONE',"carlino")
-replace `_NV' = 107004 if strmatch(`_CLONE',"carloforte")
+replace `_NV' = 107004 if strmatch(`_CLONE',"carloforte") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092013 if strmatch(`_CLONE',"carloforte") & `TIME'<2006
+replace `_NV' = 111010 if strmatch(`_CLONE',"carloforte") & `TIME'>2016
 replace `_NV' = 079020 if strmatch(`_CLONE',"carlopoli")
 replace `_NV' = 001059 if strmatch(`_CLONE',"carmagnola")
 replace `_NV' = 075014 if strmatch(`_CLONE',"carmiano")
 replace `_NV' = 100002 if strmatch(`_CLONE',"carmignano")
 replace `_NV' = 028023 if strmatch(`_CLONE',"carmignano di brenta")
 replace `_NV' = 012033 if strmatch(`_CLONE',"carnago")
-replace `_NV' = 108016 if strmatch(`_CLONE',"carnate")
+replace `_NV' = 108016 if strmatch(`_CLONE',"carnate") & `TIME'>=2010
+replace `_NV' = 015049 if strmatch(`_CLONE',"carnate") & `TIME'<2010
 replace `_NV' = 016055 if strmatch(`_CLONE',"carobbio degli angeli")
 replace `_NV' = 078026 if strmatch(`_CLONE',"carolei")
 replace `_NV' = 016056 if strmatch(`_CLONE',"carona")
@@ -1677,7 +1737,8 @@ replace `_NV' = 065030 if strmatch(`_CLONE',"castelcivita")
 replace `_NV' = 017041 if strmatch(`_CLONE',"castelcovati")
 replace `_NV' = 026011 if strmatch(`_CLONE',"castelcucco")
 replace `_NV' = 082023 if strmatch(`_CLONE',"casteldaccia")
-replace `_NV' = 099021 if strmatch(`_CLONE',"casteldelci")
+replace `_NV' = 099021 if strmatch(`_CLONE',"casteldelci") & `TIME'>=2010
+replace `_NV' = 041011 if strmatch(`_CLONE',"casteldelci") & `TIME'<2010
 replace `_NV' = 004047 if strmatch(`_CLONE',"casteldelfino")
 replace `_NV' = 019023 if strmatch(`_CLONE',"casteldidone")
 replace `_NV' = 042010 if strmatch(`_CLONE',"castelfidardo")
@@ -1708,7 +1769,7 @@ replace `_NV' = 001066 if strmatch(`_CLONE',"castellamonte")
 replace `_NV' = 072017 if strmatch(`_CLONE',"castellana grotte")
 replace `_NV' = 082024 if strmatch(`_CLONE',"castellana sicula")
 replace `_NV' = 073003 if strmatch(`_CLONE',"castellaneta")
-replace `_NV' = 006045 if strmatch(`_CLONE',"castellania")
+replace `_NV' = 006045 if strmatch(`_CLONE',"castellania") | strmatch(`_CLONE',"castellania coppi")
 replace `_NV' = 012042 if strmatch(`_CLONE',"castellanza")
 replace `_NV' = 004048 if strmatch(`_CLONE',"castellar")
 replace `_NV' = 006046 if strmatch(`_CLONE',"castellar guidobono")
@@ -1817,7 +1878,8 @@ replace `_NV' = 033014 if strmatch(`_CLONE',"castelvetro piacentino")
 replace `_NV' = 019027 if strmatch(`_CLONE',"castelvisconti")
 replace `_NV' = 037021 if strmatch(`_CLONE',"castenaso")
 replace `_NV' = 017043 if strmatch(`_CLONE',"castenedolo")
-replace `_NV' = 092106 if strmatch(`_CLONE',"castiadas")
+replace `_NV' = 092106 if strmatch(`_CLONE',"castiadas") & `TIME'<=2016
+replace `_NV' = 111011 if strmatch(`_CLONE',"castiadas") & `TIME'>2016
 replace `_NV' = 051011 if strmatch(`_CLONE',"castiglion fibocchi")
 replace `_NV' = 051012 if strmatch(`_CLONE',"castiglion fiorentino")
 replace `_NV' = 068009 if strmatch(`_CLONE',"castiglione a casauria")
@@ -1903,7 +1965,8 @@ replace `_NV' = 058026 if strmatch(`_CLONE',"cave")
 replace `_NV' = 022052 if strmatch(`_CLONE',"cavedago")
 replace `_NV' = 022053 if strmatch(`_CLONE',"cavedine")
 replace `_NV' = 098017 if strmatch(`_CLONE',"cavenago *adda")
-replace `_NV' = 108017 if strmatch(`_CLONE',"cavenago di brianza")
+replace `_NV' = 108017 if strmatch(`_CLONE',"cavenago di brianza") & `TIME'>=2010
+replace `_NV' = 015068 if strmatch(`_CLONE',"cavenago di brianza") & `TIME'<2010
 replace `_NV' = 016066 if strmatch(`_CLONE',"cavernago")
 replace `_NV' = 036009 if strmatch(`_CLONE',"cavezzo")
 replace `_NV' = 022054 if strmatch(`_CLONE',"cavizzana")
@@ -1994,7 +2057,8 @@ replace `_NV' = 018044 if strmatch(`_CLONE',"ceretto lomellina")
 replace `_NV' = 018045 if strmatch(`_CLONE',"cergnago")
 replace `_NV' = 009024 if strmatch(`_CLONE',"ceriale")
 replace `_NV' = 008016 if strmatch(`_CLONE',"ceriana")
-replace `_NV' = 108018 if strmatch(`_CLONE',"ceriano laghetto")
+replace `_NV' = 108018 if strmatch(`_CLONE',"ceriano laghetto") & `TIME'>=2010
+replace `_NV' = 015069 if strmatch(`_CLONE',"ceriano laghetto") & `TIME'<2010
 replace `_NV' = 033015 if strmatch(`_CLONE',"cerignale")
 replace `_NV' = 071020 if strmatch(`_CLONE',"cerignola")
 replace `_NV' = 078037 if strmatch(`_CLONE',"cerisano")
@@ -2045,7 +2109,8 @@ replace `_NV' = 061029 if strmatch(`_CLONE',"cesa")
 replace `_NV' = 097021 if strmatch(`_CLONE',"cesana brianza")
 replace `_NV' = 001074 if strmatch(`_CLONE',"cesana torinese")
 replace `_NV' = 015074 if strmatch(`_CLONE',"cesano boscone")
-replace `_NV' = 108019 if strmatch(`_CLONE',"cesano maderno")
+replace `_NV' = 108019 if strmatch(`_CLONE',"cesano maderno") & `TIME'>=2010
+replace `_NV' = 015075 if strmatch(`_CLONE',"cesano maderno") & `TIME'<2010
 replace `_NV' = 103022 if strmatch(`_CLONE',"cesara")
 replace `_NV' = 083017 if strmatch(`_CLONE',"cesaro'") | strmatch(`_CLONE',"cesaro") | strmatch(`_CLONE',"cesarò")
 if `c(stata_version)'>=14 replace `_NV' = 083017 if strmatch(`sec_check_var',"cesar%X*")
@@ -2245,7 +2310,8 @@ replace `_NV' = 098019 if strmatch(`_CLONE',"codogno")
 replace `_NV' = 030027 if strmatch(`_CLONE',"codroipo")
 replace `_NV' = 090026 if strmatch(`_CLONE',"codrongianos")
 replace `_NV' = 096019 if strmatch(`_CLONE',"coggiola")
-replace `_NV' = 108020 if strmatch(`_CLONE',"cogliate")
+replace `_NV' = 108020 if strmatch(`_CLONE',"cogliate") & `TIME'>=2010
+replace `_NV' = 015080 if strmatch(`_CLONE',"cogliate") & `TIME'<2010
 replace `_NV' = 007021 if strmatch(`_CLONE',"cogne")
 replace `_NV' = 010017 if strmatch(`_CLONE',"cogoleto")
 replace `_NV' = 024032 if strmatch(`_CLONE',"cogollo del cengio")
@@ -2289,7 +2355,9 @@ replace `_NV' = 082032 if strmatch(`_CLONE',"collesano")
 replace `_NV' = 070021 if strmatch(`_CLONE',"colletorto")
 replace `_NV' = 057021 if strmatch(`_CLONE',"collevecchio")
 replace `_NV' = 065043 if strmatch(`_CLONE',"colliano")
-replace `_NV' = 106003 if strmatch(`_CLONE',"collinas")
+replace `_NV' = 106003 if strmatch(`_CLONE',"collinas") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092014 if strmatch(`_CLONE',"collinas") & `TIME'<2006
+replace `_NV' = 111012 if strmatch(`_CLONE',"collinas") & `TIME'>2016
 replace `_NV' = 017058 if strmatch(`_CLONE',"collio")
 replace `_NV' = 094017 if strmatch(`_CLONE',"colli a volturno")
 replace `_NV' = 041069 if strmatch(`_CLONE',"colli al metauro")
@@ -2344,7 +2412,8 @@ replace `_NV' = 017061 if strmatch(`_CLONE',"concesio")
 replace `_NV' = 024033 if strmatch(`_CLONE',"conco")
 replace `_NV' = 027011 if strmatch(`_CLONE',"concordia sagittaria")
 replace `_NV' = 036010 if strmatch(`_CLONE',"concordia sulla secchia")
-replace `_NV' = 108021 if strmatch(`_CLONE',"concorezzo")
+replace `_NV' = 108021 if strmatch(`_CLONE',"concorezzo") & `TIME'>=2010
+replace `_NV' = 015084 if strmatch(`_CLONE',"concorezzo") & `TIME'<2010
 replace `_NV' = 022066 if strmatch(`_CLONE',"condino")
 replace `_NV' = 080029 if strmatch(`_CLONE',"condofuri")
 replace `_NV' = 001093 if strmatch(`_CLONE',"condove")
@@ -2403,7 +2472,8 @@ replace `_NV' = 016249 if strmatch(`_CLONE',"cornalba")
 replace `_NV' = 018055 if strmatch(`_CLONE',"cornale")
 replace `_NV' = 018191 if strmatch(`_CLONE',"cornale*bastida")
 replace `_NV' = 015087 if strmatch(`_CLONE',"cornaredo")
-replace `_NV' = 108053 if strmatch(`_CLONE',"cornate *adda")
+replace `_NV' = 108053 if strmatch(`_CLONE',"cornate *adda") & `TIME'>=2010
+replace `_NV' = 015088 if strmatch(`_CLONE',"cornate *adda") & `TIME'<2010
 replace `_NV' = 021023 if strmatch(`_CLONE',"cornedo*isarco*") | strmatch(`_CLONE',"karneid")
 replace `_NV' = 024034 if strmatch(`_CLONE',"cornedo vicentino")
 replace `_NV' = 098021 if strmatch(`_CLONE',"cornegliano laudense")
@@ -2414,7 +2484,8 @@ replace `_NV' = 098022 if strmatch(`_CLONE',"corno giovine")
 replace `_NV' = 098023 if strmatch(`_CLONE',"cornovecchio")
 replace `_NV' = 026023 if strmatch(`_CLONE',"cornuda")
 replace `_NV' = 035020 if strmatch(`_CLONE',"correggio")
-replace `_NV' = 108022 if strmatch(`_CLONE',"correzzana")
+replace `_NV' = 108022 if strmatch(`_CLONE',"correzzana") & `TIME'>=2010
+replace `_NV' = 015092 if strmatch(`_CLONE',"correzzana") & `TIME'<2010
 replace `_NV' = 028035 if strmatch(`_CLONE',"correzzola")
 replace `_NV' = 013077 if strmatch(`_CLONE',"corrido")
 replace `_NV' = 043015 if strmatch(`_CLONE',"corridonia")
@@ -2587,7 +2658,8 @@ replace `_NV' = 012064 if strmatch(`_CLONE',"daverio")
 replace `_NV' = 079042 if strmatch(`_CLONE',"davoli")
 replace `_NV' = 014025 if strmatch(`_CLONE',"dazio")
 replace `_NV' = 092015 if strmatch(`_CLONE',"decimomannu")
-replace `_NV' = 092016 if strmatch(`_CLONE',"decimoputzu")
+replace `_NV' = 092016 if strmatch(`_CLONE',"decimoputzu") & `TIME'<=2016
+replace `_NV' = 111013 if strmatch(`_CLONE',"decimoputzu") & `TIME'>2016
 replace `_NV' = 079043 if strmatch(`_CLONE',"decollatura")
 replace `_NV' = 009027 if strmatch(`_CLONE',"dego")
 replace `_NV' = 011012 if strmatch(`_CLONE',"deiva marina")
@@ -2605,7 +2677,8 @@ replace `_NV' = 054017 if strmatch(`_CLONE',"deruta")
 replace `_NV' = 097030 if strmatch(`_CLONE',"dervio")
 replace `_NV' = 002054 if strmatch(`_CLONE',"desana")
 replace `_NV' = 017067 if strmatch(`_CLONE',"desenzano del garda")
-replace `_NV' = 108023 if strmatch(`_CLONE',"desio")
+replace `_NV' = 108023 if strmatch(`_CLONE',"desio") & `TIME'>=2010
+replace `_NV' = 015100 if strmatch(`_CLONE',"desio") & `TIME'<2010
 replace `_NV' = 091016 if strmatch(`_CLONE',"desulo")
 replace `_NV' = 078048 if strmatch(`_CLONE',"diamante")
 replace `_NV' = 008025 if strmatch(`_CLONE',"diano arentino")
@@ -2623,7 +2696,7 @@ replace `_NV' = 075027 if strmatch(`_CLONE',"diso")
 replace `_NV' = 003060 if strmatch(`_CLONE',"divignano")
 replace `_NV' = 013087 if strmatch(`_CLONE',"dizzasco")
 replace `_NV' = 021028 if strmatch(`_CLONE',"dobbiaco*") | strmatch(`_CLONE',"toblach")
-replace `_NV' = 031003 if strmatch(`_CLONE',"doberd*del lago")
+replace `_NV' = 031003 if strmatch(`_CLONE',"doberd*del lago") | strmatch(`_CLONE',"doberdob")
 replace `_NV' = 004081 if strmatch(`_CLONE',"dogliani")
 replace `_NV' = 069029 if strmatch(`_CLONE',"dogliola")
 replace `_NV' = 030033 if strmatch(`_CLONE',"dogna")
@@ -2631,7 +2704,8 @@ replace `_NV' = 023031 if strmatch(`_CLONE',"dolc?") | strmatch(`_CLONE',"dolc??
 replace `_NV' = 008029 if strmatch(`_CLONE',"dolceacqua")
 replace `_NV' = 008030 if strmatch(`_CLONE',"dolcedo")
 replace `_NV' = 031004 if strmatch(`_CLONE',"dolegna del collio")
-replace `_NV' = 092017 if strmatch(`_CLONE',"dolianova")
+replace `_NV' = 092017 if strmatch(`_CLONE',"dolianova") & `TIME'<=2016
+replace `_NV' = 111014 if strmatch(`_CLONE',"dolianova") & `TIME'>2016
 replace `_NV' = 027012 if strmatch(`_CLONE',"dolo")
 replace `_NV' = 097031 if strmatch(`_CLONE',"dolzago")
 replace `_NV' = 078050 if strmatch(`_CLONE',"domanico")
@@ -2639,13 +2713,17 @@ replace `_NV' = 013089 if strmatch(`_CLONE',"domaso")
 replace `_NV' = 025018 if strmatch(`_CLONE',"domegge di cadore")
 replace `_NV' = 064031 if strmatch(`_CLONE',"domicella")
 replace `_NV' = 103028 if strmatch(`_CLONE',"domodossola")
-replace `_NV' = 092018 if strmatch(`_CLONE',"domus de maria")
-replace `_NV' = 107005 if strmatch(`_CLONE',"domusnovas")
+replace `_NV' = 092018 if strmatch(`_CLONE',"domus de maria") & `TIME'<=2016
+replace `_NV' = 111015 if strmatch(`_CLONE',"domus de maria") & `TIME'>2016
+replace `_NV' = 107005 if strmatch(`_CLONE',"domusnovas") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092019 if strmatch(`_CLONE',"domusnovas") & `TIME'<2006
+replace `_NV' = 111016 if strmatch(`_CLONE',"domusnovas") & `TIME'>2016
 replace `_NV' = 022076 if strmatch(`_CLONE',"don")
 replace `_NV' = 096024 if strmatch(`_CLONE',"donato")
 replace `_NV' = 013090 if strmatch(`_CLONE',"dongo")
 replace `_NV' = 007023 if strmatch(`_CLONE',"donnas")
-replace `_NV' = 092020 if strmatch(`_CLONE',"donori")
+replace `_NV' = 092020 if strmatch(`_CLONE',"donori") & `TIME'<=2016
+replace `_NV' = 111017 if strmatch(`_CLONE',"donori") & `TIME'>2016
 replace `_NV' = 091017 if strmatch(`_CLONE',"dorgali")
 replace `_NV' = 097032 if strmatch(`_CLONE',"dorio")
 replace `_NV' = 003062 if strmatch(`_CLONE',"dormelletto")
@@ -2675,7 +2753,7 @@ replace `_NV' = 014027 if strmatch(`_CLONE',"dubino")
 replace `_NV' = 028106 if strmatch(`_CLONE',"due carrare")
 replace `_NV' = 024038 if strmatch(`_CLONE',"dueville")
 replace `_NV' = 062027 if strmatch(`_CLONE',"dugenta")
-replace `_NV' = 032001 if strmatch(`_CLONE',"duino*aurisina")
+replace `_NV' = 032001 if strmatch(`_CLONE',"*duino*aurisina*") | strmatch(`_CLONE',"*devin*nabre*")
 replace `_NV' = 012065 if strmatch(`_CLONE',"dumenza")
 replace `_NV' = 012066 if strmatch(`_CLONE',"duno")
 replace `_NV' = 062028 if strmatch(`_CLONE',"durazzano")
@@ -2685,7 +2763,8 @@ replace `_NV' = 065050 if strmatch(`_CLONE',"eboli")
 replace `_NV' = 017068 if strmatch(`_CLONE',"edolo")
 replace `_NV' = 021029 if strmatch(`_CLONE',"egna*") | strmatch(`_CLONE',"neumarkt")
 replace `_NV' = 068018 if strmatch(`_CLONE',"elice")
-replace `_NV' = 105005 if strmatch(`_CLONE',"elini")
+replace `_NV' = 105005 if strmatch(`_CLONE',"elini") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091019 if strmatch(`_CLONE',"elini") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 097033 if strmatch(`_CLONE',"ello")
 replace `_NV' = 092108 if strmatch(`_CLONE',"elmas")
 replace `_NV' = 004083 if strmatch(`_CLONE',"elva")
@@ -2713,14 +2792,20 @@ replace `_NV' = 093019 if strmatch(`_CLONE',"erto e casso")
 replace `_NV' = 090088 if strmatch(`_CLONE',"erula")
 replace `_NV' = 097034 if strmatch(`_CLONE',"erve")
 replace `_NV' = 043016 if strmatch(`_CLONE',"esanatoglia")
-replace `_NV' = 092110 if strmatch(`_CLONE',"escalaplano")
-replace `_NV' = 092111 if strmatch(`_CLONE',"escolca")
+replace `_NV' = 092110 if strmatch(`_CLONE',"escalaplano") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091020 if strmatch(`_CLONE',"escalaplano") & `TIME'<2006
+replace `_NV' = 111018 if strmatch(`_CLONE',"escalaplano") & `TIME'>2016
+replace `_NV' = 092111 if strmatch(`_CLONE',"escolca") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091021 if strmatch(`_CLONE',"escolca") & `TIME'<2006
+replace `_NV' = 111019 if strmatch(`_CLONE',"escolca") & `TIME'>2016
 replace `_NV' = 017070 if strmatch(`_CLONE',"esine")
 replace `_NV' = 097035 if strmatch(`_CLONE',"esino lario")
 replace `_NV' = 060031 if strmatch(`_CLONE',"esperia")
 replace `_NV' = 090028 if strmatch(`_CLONE',"esporlatu")
 replace `_NV' = 028037 if strmatch(`_CLONE',"este")
-replace `_NV' = 092112 if strmatch(`_CLONE',"esterzili")
+replace `_NV' = 092112 if strmatch(`_CLONE',"esterzili") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091022 if strmatch(`_CLONE',"esterzili") & `TIME'<2006
+replace `_NV' = 111020 if strmatch(`_CLONE',"esterzili") & `TIME'>2016
 replace `_NV' = 007026 if strmatch(`_CLONE',"etroubles")
 replace `_NV' = 013097 if strmatch(`_CLONE',"eupilio")
 replace `_NV' = 001100 if strmatch(`_CLONE',"exilles")
@@ -2752,7 +2837,8 @@ replace `_NV' = 042018 if strmatch(`_CLONE',"falconara marittima")
 replace `_NV' = 083019 if strmatch(`_CLONE',"falcone")
 replace `_NV' = 056025 if strmatch(`_CLONE',"faleria")
 replace `_NV' = 079047 if strmatch(`_CLONE',"falerna")
-replace `_NV' = 109005 if strmatch(`_CLONE',"falerone")
+replace `_NV' = 109005 if strmatch(`_CLONE',"falerone") & `TIME'>=2010
+replace `_NV' = 044018 if strmatch(`_CLONE',"falerone") & `TIME'<2010
 replace `_NV' = 069104 if strmatch(`_CLONE',"fallo")
 replace `_NV' = 103030 if strmatch(`_CLONE',"falmenta")
 replace `_NV' = 013099 if strmatch(`_CLONE',"faloppio")
@@ -2800,7 +2886,8 @@ replace `_NV' = 055012 if strmatch(`_CLONE',"ferentillo")
 replace `_NV' = 060033 if strmatch(`_CLONE',"ferentino")
 replace `_NV' = 089008 if strmatch(`_CLONE',"ferla")
 replace `_NV' = 041014 if strmatch(`_CLONE',"fermignano")
-replace `_NV' = 109006 if strmatch(`_CLONE',"fermo")
+replace `_NV' = 109006 if strmatch(`_CLONE',"fermo") & `TIME'>=2010
+replace `_NV' = 044019 if strmatch(`_CLONE',"fermo") & `TIME'<2010
 replace `_NV' = 012068 if strmatch(`_CLONE',"ferno")
 replace `_NV' = 079048 if strmatch(`_CLONE',"feroleto antico")
 replace `_NV' = 080032 if strmatch(`_CLONE',"feroleto della chiesa")
@@ -2879,8 +2966,11 @@ replace `_NV' = 083022 if strmatch(`_CLONE',"floresta")
 replace `_NV' = 089009 if strmatch(`_CLONE',"floridia")
 replace `_NV' = 090029 if strmatch(`_CLONE',"florinas")
 replace `_NV' = 064032 if strmatch(`_CLONE',"flumeri")
-replace `_NV' = 107006 if strmatch(`_CLONE',"fluminimaggiore")
-replace `_NV' = 095080 if strmatch(`_CLONE',"flussio")
+replace `_NV' = 107006 if strmatch(`_CLONE',"fluminimaggiore") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092021 if strmatch(`_CLONE',"fluminimaggiore") & `TIME'<2006
+replace `_NV' = 111021 if strmatch(`_CLONE',"fluminimaggiore") & `TIME'>2016
+replace `_NV' = 095080 if strmatch(`_CLONE',"flussio") & `TIME'>=2006
+replace `_NV' = 091023 if strmatch(`_CLONE',"flussio") & `TIME'<2006
 replace `_NV' = 002057 if strmatch(`_CLONE',"fobello")
 replace `_NV' = 071024 if strmatch(`_CLONE',"foggia")
 replace `_NV' = 062030 if strmatch(`_CLONE',"foglianise")
@@ -2980,7 +3070,8 @@ replace `_NV' = 011014 if strmatch(`_CLONE',"framura")
 replace `_NV' = 069035 if strmatch(`_CLONE',"francavilla al mare")
 replace `_NV' = 102014 if strmatch(`_CLONE',"francavilla angitola")
 replace `_NV' = 006070 if strmatch(`_CLONE',"francavilla bisio")
-replace `_NV' = 109007 if strmatch(`_CLONE',"francavilla *ete")
+replace `_NV' = 109007 if strmatch(`_CLONE',"francavilla *ete") & `TIME'>=2010
+replace `_NV' = 044022 if strmatch(`_CLONE',"francavilla *ete") & `TIME'<2010
 replace `_NV' = 083025 if strmatch(`_CLONE',"francavilla di sicilia")
 replace `_NV' = 074008 if strmatch(`_CLONE',"francavilla fontana")
 replace `_NV' = 076034 if strmatch(`_CLONE',"francavilla in sinni")
@@ -3032,7 +3123,9 @@ replace `_NV' = 069038 if strmatch(`_CLONE',"furci")
 replace `_NV' = 083027 if strmatch(`_CLONE',"furci siculo")
 replace `_NV' = 083028 if strmatch(`_CLONE',"furnari")
 replace `_NV' = 065053 if strmatch(`_CLONE',"furore")
-replace `_NV' = 106004 if strmatch(`_CLONE',"furtei")
+replace `_NV' = 106004 if strmatch(`_CLONE',"furtei") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092022 if strmatch(`_CLONE',"furtei") & `TIME'<2006
+replace `_NV' = 111022 if strmatch(`_CLONE',"furtei") & `TIME'>2016
 replace `_NV' = 078058 if strmatch(`_CLONE',"fuscaldo")
 replace `_NV' = 039011 if strmatch(`_CLONE',"fusignano")
 replace `_NV' = 014030 if strmatch(`_CLONE',"fusine")
@@ -3057,7 +3150,8 @@ replace `_NV' = 026031 if strmatch(`_CLONE',"gaiarine")
 replace `_NV' = 029025 if strmatch(`_CLONE',"gaiba")
 replace `_NV' = 004093 if strmatch(`_CLONE',"gaiola")
 replace `_NV' = 052013 if strmatch(`_CLONE',"gaiole in chianti")
-replace `_NV' = 105006 if strmatch(`_CLONE',"gairo")
+replace `_NV' = 105006 if strmatch(`_CLONE',"gairo") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091026 if strmatch(`_CLONE',"gairo") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 021034 if strmatch(`_CLONE',"gais*")
 replace `_NV' = 083030 if strmatch(`_CLONE',"galati mamertino")
 replace `_NV' = 075029 if strmatch(`_CLONE',"galatina")
@@ -3148,9 +3242,13 @@ replace `_NV' = 058042 if strmatch(`_CLONE',"genazzano")
 replace `_NV' = 042020 if strmatch(`_CLONE',"genga")
 replace `_NV' = 019047 if strmatch(`_CLONE',"genivolta")
 replace `_NV' = 004096 if strmatch(`_CLONE',"genola")
-replace `_NV' = 095081 if strmatch(`_CLONE',"genoni")
+replace `_NV' = 095081 if strmatch(`_CLONE',"genoni") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091029 if strmatch(`_CLONE',"genoni") & `TIME'<2006
+replace `_NV' = 111023 if strmatch(`_CLONE',"genoni") & `TIME'>2016
 replace `_NV' = 010025 if strmatch(`_CLONE',"genova")
-replace `_NV' = 106005 if strmatch(`_CLONE',"genuri")
+replace `_NV' = 106005 if strmatch(`_CLONE',"genuri") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092023 if strmatch(`_CLONE',"genuri") & `TIME'<2006
+replace `_NV' = 111024 if strmatch(`_CLONE',"genuri") & `TIME'>2016
 replace `_NV' = 076036 if strmatch(`_CLONE',"genzano di lucania")
 replace `_NV' = 058043 if strmatch(`_CLONE',"genzano di roma")
 replace `_NV' = 018070 if strmatch(`_CLONE',"genzone")
@@ -3160,7 +3258,9 @@ replace `_NV' = 082037 if strmatch(`_CLONE',"geraci siculo")
 replace `_NV' = 058044 if strmatch(`_CLONE',"gerano")
 replace `_NV' = 018071 if strmatch(`_CLONE',"gerenzago")
 replace `_NV' = 012075 if strmatch(`_CLONE',"gerenzano")
-replace `_NV' = 092113 if strmatch(`_CLONE',"gergei")
+replace `_NV' = 092113 if strmatch(`_CLONE',"gergei") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091030 if strmatch(`_CLONE',"gergei") & `TIME'<2006
+replace `_NV' = 111025 if strmatch(`_CLONE',"gergei") & `TIME'>2016
 replace `_NV' = 001113 if strmatch(`_CLONE',"germagnano")
 replace `_NV' = 103032 if strmatch(`_CLONE',"germagno")
 replace `_NV' = 013108 if strmatch(`_CLONE',"germasino")
@@ -3169,10 +3269,13 @@ replace `_NV' = 102016 if strmatch(`_CLONE',"gerocarne")
 replace `_NV' = 014031 if strmatch(`_CLONE',"gerola alta")
 replace `_NV' = 016112 if strmatch(`_CLONE',"gerosa")
 replace `_NV' = 019048 if strmatch(`_CLONE',"gerre d*caprioli")
-replace `_NV' = 092024 if strmatch(`_CLONE',"gesico")
+replace `_NV' = 092024 if strmatch(`_CLONE',"gesico") & `TIME'<=2016
+replace `_NV' = 111026 if strmatch(`_CLONE',"gesico") & `TIME'>2016
 replace `_NV' = 015106 if strmatch(`_CLONE',"gessate")
 replace `_NV' = 069040 if strmatch(`_CLONE',"gessopalena")
-replace `_NV' = 106006 if strmatch(`_CLONE',"gesturi")
+replace `_NV' = 106006 if strmatch(`_CLONE',"gesturi") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092025 if strmatch(`_CLONE',"gesturi") & `TIME'<2006
+replace `_NV' = 111027 if strmatch(`_CLONE',"gesturi") & `TIME'>2016
 replace `_NV' = 064036 if strmatch(`_CLONE',"gesualdo")
 replace `_NV' = 017078 if strmatch(`_CLONE',"ghedi")
 replace `_NV' = 003073 if strmatch(`_CLONE',"ghemme")
@@ -3193,7 +3296,9 @@ replace `_NV' = 087017 if strmatch(`_CLONE',"giarre")
 replace `_NV' = 090030 if strmatch(`_CLONE',"giave")
 replace `_NV' = 001115 if strmatch(`_CLONE',"giaveno")
 replace `_NV' = 026032 if strmatch(`_CLONE',"giavera del montello")
-replace `_NV' = 107007 if strmatch(`_CLONE',"giba")
+replace `_NV' = 107007 if strmatch(`_CLONE',"giba") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092026 if strmatch(`_CLONE',"giba") & `TIME'<2006
+replace `_NV' = 111028 if strmatch(`_CLONE',"giba") & `TIME'>2016
 replace `_NV' = 081010 if strmatch(`_CLONE',"gibellina")
 replace `_NV' = 096027 if strmatch(`_CLONE',"gifflenga")
 replace `_NV' = 080037 if strmatch(`_CLONE',"giffone")
@@ -3216,7 +3321,8 @@ replace `_NV' = 083033 if strmatch(`_CLONE',"gioiosa marea")
 replace `_NV' = 055014 if strmatch(`_CLONE',"giove")
 replace `_NV' = 072022 if strmatch(`_CLONE',"giovinazzo")
 replace `_NV' = 022092 if strmatch(`_CLONE',"giovo")
-replace `_NV' = 105007 if strmatch(`_CLONE',"girasole")
+replace `_NV' = 105007 if strmatch(`_CLONE',"girasole") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091031 if strmatch(`_CLONE',"girasole") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 079059 if strmatch(`_CLONE',"girifalco")
 replace `_NV' = 013109 if strmatch(`_CLONE',"gironico")
 replace `_NV' = 069041 if strmatch(`_CLONE',"gissi")
@@ -3230,7 +3336,8 @@ replace `_NV' = 046016 if strmatch(`_CLONE',"giuncugnano")
 replace `_NV' = 065058 if strmatch(`_CLONE',"giungano")
 replace `_NV' = 075033 if strmatch(`_CLONE',"giurdignano")
 replace `_NV' = 018072 if strmatch(`_CLONE',"giussago")
-replace `_NV' = 108024 if strmatch(`_CLONE',"giussano")
+replace `_NV' = 108024 if strmatch(`_CLONE',"giussano") & `TIME'>=2010
+replace `_NV' = 015107 if strmatch(`_CLONE',"giussano") & `TIME'<2010
 replace `_NV' = 009031 if strmatch(`_CLONE',"giustenice")
 replace `_NV' = 022093 if strmatch(`_CLONE',"giustino")
 replace `_NV' = 009032 if strmatch(`_CLONE',"giusvalla")
@@ -3243,13 +3350,19 @@ replace `_NV' = 082040 if strmatch(`_CLONE',"godrano")
 replace `_NV' = 020026 if strmatch(`_CLONE',"goito")
 replace `_NV' = 012077 if strmatch(`_CLONE',"golasecca")
 replace `_NV' = 018074 if strmatch(`_CLONE',"golferenzo")
-replace `_NV' = 104011 if strmatch(`_CLONE',"golfo aranci")
+replace `_NV' = 104011 if strmatch(`_CLONE',"golfo aranci") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090083 if strmatch(`_CLONE',"golfo aranci") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 019049 if strmatch(`_CLONE',"gombito")
 replace `_NV' = 030044 if strmatch(`_CLONE',"gonars")
-replace `_NV' = 092027 if strmatch(`_CLONE',"goni")
-replace `_NV' = 107008 if strmatch(`_CLONE',"gonnesa")
+replace `_NV' = 092027 if strmatch(`_CLONE',"goni") & `TIME'<=2016
+replace `_NV' = 111029 if strmatch(`_CLONE',"goni") & `TIME'>2016
+replace `_NV' = 107008 if strmatch(`_CLONE',"gonnesa") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092028 if strmatch(`_CLONE',"gonnesa") & `TIME'<2006
+replace `_NV' = 111030 if strmatch(`_CLONE',"gonnesa") & `TIME'>2016
 replace `_NV' = 095022 if strmatch(`_CLONE',"gonnoscodina")
-replace `_NV' = 106007 if strmatch(`_CLONE',"gonnosfanadiga")
+replace `_NV' = 106007 if strmatch(`_CLONE',"gonnosfanadiga") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092029 if strmatch(`_CLONE',"gonnosfanadiga") & `TIME'<2006
+replace `_NV' = 111031 if strmatch(`_CLONE',"gonnosfanadiga") & `TIME'>2016
 replace `_NV' = 095023 if strmatch(`_CLONE',"gonnosn*")
 replace `_NV' = 095024 if strmatch(`_CLONE',"gonnostramatza")
 replace `_NV' = 020027 if strmatch(`_CLONE',"gonzaga")
@@ -3345,7 +3458,8 @@ replace `_NV' = 058046 if strmatch(`_CLONE',"grottaferrata")
 replace `_NV' = 073008 if strmatch(`_CLONE',"grottaglie")
 replace `_NV' = 064038 if strmatch(`_CLONE',"grottaminarda")
 replace `_NV' = 044023 if strmatch(`_CLONE',"grottammare")
-replace `_NV' = 109008 if strmatch(`_CLONE',"grottazzolina")
+replace `_NV' = 109008 if strmatch(`_CLONE',"grottazzolina") & `TIME'>=2010
+replace `_NV' = 044024 if strmatch(`_CLONE',"grottazzolina") & `TIME'<2010
 replace `_NV' = 084018 if strmatch(`_CLONE',"grotte")
 replace `_NV' = 056030 if strmatch(`_CLONE',"grotte di castro")
 replace `_NV' = 080040 if strmatch(`_CLONE',"grotteria")
@@ -3366,7 +3480,8 @@ replace `_NV' = 054022 if strmatch(`_CLONE',"gualdo cattaneo")
 replace `_NV' = 054023 if strmatch(`_CLONE',"gualdo tadino")
 replace `_NV' = 035023 if strmatch(`_CLONE',"gualtieri")
 replace `_NV' = 083035 if strmatch(`_CLONE',"gualtieri sicamin*")
-replace `_NV' = 092030 if strmatch(`_CLONE',"guamaggiore")
+replace `_NV' = 092030 if strmatch(`_CLONE',"guamaggiore") & `TIME'<=2016
+replace `_NV' = 111032 if strmatch(`_CLONE',"guamaggiore") & `TIME'>2016
 replace `_NV' = 013114 if strmatch(`_CLONE',"guanzate")
 replace `_NV' = 060042 if strmatch(`_CLONE',"guarcino")
 replace `_NV' = 029028 if strmatch(`_CLONE',"guarda veneta")
@@ -3383,7 +3498,8 @@ replace `_NV' = 070027 if strmatch(`_CLONE',"guardialfiera")
 replace `_NV' = 070028 if strmatch(`_CLONE',"guardiaregia")
 replace `_NV' = 050015 if strmatch(`_CLONE',"guardistallo")
 replace `_NV' = 004101 if strmatch(`_CLONE',"guarene")
-replace `_NV' = 092031 if strmatch(`_CLONE',"guasila")
+replace `_NV' = 092031 if strmatch(`_CLONE',"guasila") & `TIME'<=2016
+replace `_NV' = 111033 if strmatch(`_CLONE',"guasila") & `TIME'>2016
 replace `_NV' = 035024 if strmatch(`_CLONE',"guastalla")
 replace `_NV' = 006086 if strmatch(`_CLONE',"guazzora")
 replace `_NV' = 054024 if strmatch(`_CLONE',"gubbio")
@@ -3394,14 +3510,19 @@ replace `_NV' = 058047 if strmatch(`_CLONE',"guidonia montecelio")
 replace `_NV' = 036017 if strmatch(`_CLONE',"guiglia")
 replace `_NV' = 069044 if strmatch(`_CLONE',"guilmi")
 replace `_NV' = 103036 if strmatch(`_CLONE',"gurro")
-replace `_NV' = 106008 if strmatch(`_CLONE',"guspini")
+replace `_NV' = 106008 if strmatch(`_CLONE',"guspini") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092032 if strmatch(`_CLONE',"guspini") & `TIME'<2006
+replace `_NV' = 111034 if strmatch(`_CLONE',"guspini") & `TIME'>2016
 replace `_NV' = 017081 if strmatch(`_CLONE',"gussago")
 replace `_NV' = 019052 if strmatch(`_CLONE',"gussola")
 replace `_NV' = 007034 if strmatch(`_CLONE',"h?ne")
 replace `_NV' = 017082 if strmatch(`_CLONE',"idro")
-replace `_NV' = 107009 if strmatch(`_CLONE',"iglesias")
+replace `_NV' = 107009 if strmatch(`_CLONE',"iglesias") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092033 if strmatch(`_CLONE',"iglesias") & `TIME'<2006
+replace `_NV' = 111035 if strmatch(`_CLONE',"iglesias") & `TIME'>2016
 replace `_NV' = 004102 if strmatch(`_CLONE',"igliano")
-replace `_NV' = 105008 if strmatch(`_CLONE',"ilbono")
+replace `_NV' = 105008 if strmatch(`_CLONE',"ilbono") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091032 if strmatch(`_CLONE',"ilbono") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 023039 if strmatch(`_CLONE',"illasi")
 replace `_NV' = 090031 if strmatch(`_CLONE',"illorai")
 replace `_NV' = 097039 if strmatch(`_CLONE',"imbersago")
@@ -3438,7 +3559,9 @@ replace `_NV' = 071025 if strmatch(`_CLONE',"ischitella")
 replace `_NV' = 017085 if strmatch(`_CLONE',"iseo")
 replace `_NV' = 022098 if strmatch(`_CLONE',"isera")
 replace `_NV' = 094023 if strmatch(`_CLONE',"isernia")
-replace `_NV' = 092114 if strmatch(`_CLONE',"isili")
+replace `_NV' = 092114 if strmatch(`_CLONE',"isili") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091034 if strmatch(`_CLONE',"isili") & `TIME'<2006
+replace `_NV' = 111036 if strmatch(`_CLONE',"isili") & `TIME'>2016
 replace `_NV' = 082042 if strmatch(`_CLONE',"isnello")
 replace `_NV' = 005059 if strmatch(`_CLONE',"isola *asti")
 replace `_NV' = 010027 if strmatch(`_CLONE',"isola del cantone")
@@ -3477,7 +3600,8 @@ replace `_NV' = 079065 if strmatch(`_CLONE',"jacurso")
 replace `_NV' = 070030 if strmatch(`_CLONE',"jelsi")
 replace `_NV' = 058048 if strmatch(`_CLONE',"jenne")
 replace `_NV' = 012085 if strmatch(`_CLONE',"jerago con orago")
-replace `_NV' = 105009 if strmatch(`_CLONE',"jerzu")
+replace `_NV' = 105009 if strmatch(`_CLONE',"jerzu") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091035 if strmatch(`_CLONE',"jerzu") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 042021 if strmatch(`_CLONE',"jesi")
 replace `_NV' = 027019 if strmatch(`_CLONE',"?esolo")
 replace `_NV' = 038010 if strmatch(`_CLONE',"?olanda di savoia")
@@ -3487,7 +3611,8 @@ replace `_NV' = 007038 if strmatch(`_CLONE',"?oven?an")
 replace `_NV' = 066049 if strmatch(`_CLONE',"l*aquila")
 replace `_NV' = 001126 if strmatch(`_CLONE',"la cassa")
 replace `_NV' = 001127 if strmatch(`_CLONE',"la loggia")
-replace `_NV' = 104012 if strmatch(`_CLONE',"la maddalena")
+replace `_NV' = 104012 if strmatch(`_CLONE',"la maddalena") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090035 if strmatch(`_CLONE',"la maddalena") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 007039 if strmatch(`_CLONE',"la magdeleine")
 replace `_NV' = 004105 if strmatch(`_CLONE',"la morra")
 replace `_NV' = 007040 if strmatch(`_CLONE',"la salle")
@@ -3502,7 +3627,8 @@ replace `_NV' = 015115 if strmatch(`_CLONE',"lacchiarella")
 replace `_NV' = 063038 if strmatch(`_CLONE',"lacco ameno")
 replace `_NV' = 064041 if strmatch(`_CLONE',"lacedonia")
 replace `_NV' = 021037 if strmatch(`_CLONE',"laces*") | strmatch(`_CLONE',"latsch")
-replace `_NV' = 095082 if strmatch(`_CLONE',"laconi")
+replace `_NV' = 095082 if strmatch(`_CLONE',"laconi") & `TIME'>=2006
+replace `_NV' = 091036 if strmatch(`_CLONE',"laconi") & `TIME'<2006
 replace `_NV' = 058116 if strmatch(`_CLONE',"ladispoli")
 replace `_NV' = 090034 if strmatch(`_CLONE',"laerru")
 replace `_NV' = 080041 if strmatch(`_CLONE',"laganadi")
@@ -3536,12 +3662,14 @@ replace `_NV' = 003083 if strmatch(`_CLONE',"landiona")
 replace `_NV' = 018078 if strmatch(`_CLONE',"landriano")
 replace `_NV' = 034018 if strmatch(`_CLONE',"langhirano")
 replace `_NV' = 018079 if strmatch(`_CLONE',"langosco")
-replace `_NV' = 105010 if strmatch(`_CLONE',"lanusei")
+replace `_NV' = 105010 if strmatch(`_CLONE',"lanusei") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091037 if strmatch(`_CLONE',"lanusei") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 058050 if strmatch(`_CLONE',"lanuvio")
 replace `_NV' = 014036 if strmatch(`_CLONE',"lanzada")
 replace `_NV' = 013122 if strmatch(`_CLONE',"lanzo *intelvi")
 replace `_NV' = 001128 if strmatch(`_CLONE',"lanzo torinese")
-replace `_NV' = 109009 if strmatch(`_CLONE',"lapedona")
+replace `_NV' = 109009 if strmatch(`_CLONE',"lapedona") & `TIME'>=2010
+replace `_NV' = 044025 if strmatch(`_CLONE',"lapedona") & `TIME'<2010
 replace `_NV' = 064042 if strmatch(`_CLONE',"lapio")
 replace `_NV' = 078065 if strmatch(`_CLONE',"lappano")
 replace `_NV' = 047006 if strmatch(`_CLONE',"larciano")
@@ -3550,7 +3678,9 @@ replace `_NV' = 018080 if strmatch(`_CLONE',"lardirago")
 replace `_NV' = 050017 if strmatch(`_CLONE',"lari")
 replace `_NV' = 058115 if strmatch(`_CLONE',"lariano")
 replace `_NV' = 070031 if strmatch(`_CLONE',"larino")
-replace `_NV' = 106009 if strmatch(`_CLONE',"las plassas")
+replace `_NV' = 106009 if strmatch(`_CLONE',"las plassas") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092034 if strmatch(`_CLONE',"las plassas") & `TIME'<2006
+replace `_NV' = 111037 if strmatch(`_CLONE',"las plassas") & `TIME'>2016
 replace `_NV' = 021042 if strmatch(`_CLONE',"lasa*") | strmatch(`_CLONE',"laas")
 replace `_NV' = 082044 if strmatch(`_CLONE',"lascari")
 replace `_NV' = 022101 if strmatch(`_CLONE',"lasino")
@@ -3580,13 +3710,14 @@ replace `_NV' = 010028 if strmatch(`_CLONE',"lavagna")
 replace `_NV' = 023042 if strmatch(`_CLONE',"lavagno")
 replace `_NV' = 022102 if strmatch(`_CLONE',"lavarone")
 replace `_NV' = 076043 if strmatch(`_CLONE',"lavello")
-replace `_NV' = 012086 if strmatch(`_CLONE',"lavena ponte tresa")
+replace `_NV' = 012086 if strmatch(`_CLONE',"lavena*ponte tresa")
 replace `_NV' = 012087 if strmatch(`_CLONE',"laveno*mombello")
 replace `_NV' = 017087 if strmatch(`_CLONE',"lavenone")
 replace `_NV' = 065063 if strmatch(`_CLONE',"laviano")
 replace `_NV' = 022103 if strmatch(`_CLONE',"lavis")
 replace `_NV' = 023043 if strmatch(`_CLONE',"lazise")
-replace `_NV' = 108025 if strmatch(`_CLONE',"lazzate")
+replace `_NV' = 108025 if strmatch(`_CLONE',"lazzate") & `TIME'>=2010
+replace `_NV' = 015117 if strmatch(`_CLONE',"lazzate") & `TIME'<2010
 replace `_NV' = 075035 if strmatch(`_CLONE',"lecce")
 replace `_NV' = 066050 if strmatch(`_CLONE',"lecce nei marsi")
 replace `_NV' = 097042 if strmatch(`_CLONE',"lecco")
@@ -3607,7 +3738,8 @@ replace `_NV' = 013125 if strmatch(`_CLONE',"lenno")
 replace `_NV' = 017088 if strmatch(`_CLONE',"leno")
 replace `_NV' = 059012 if strmatch(`_CLONE',"lenola")
 replace `_NV' = 002068 if strmatch(`_CLONE',"lent?") | strmatch(`_CLONE',"lent??")
-replace `_NV' = 108054 if strmatch(`_CLONE',"lentate sul seveso")
+replace `_NV' = 108054 if strmatch(`_CLONE',"lentate sul seveso") & `TIME'>=2010
+replace `_NV' = 015119 if strmatch(`_CLONE',"lentate sul seveso") & `TIME'<2010
 replace `_NV' = 069047 if strmatch(`_CLONE',"lentella")
 replace `_NV' = 025028 if strmatch(`_CLONE',"lentiai")
 replace `_NV' = 089011 if strmatch(`_CLONE',"lentini")
@@ -3624,7 +3756,8 @@ replace `_NV' = 003084 if strmatch(`_CLONE',"lesa")
 replace `_NV' = 004108 if strmatch(`_CLONE',"lesegno")
 replace `_NV' = 034019 if strmatch(`_CLONE',"lesignano d*bagni")
 replace `_NV' = 071027 if strmatch(`_CLONE',"lesina")
-replace `_NV' = 108026 if strmatch(`_CLONE',"lesmo")
+replace `_NV' = 108026 if strmatch(`_CLONE',"lesmo") & `TIME'>=2010
+replace `_NV' = 015120 if strmatch(`_CLONE',"lesmo") & `TIME'<2010
 replace `_NV' = 001132 if strmatch(`_CLONE',"lessolo")
 replace `_NV' = 096029 if strmatch(`_CLONE',"lessona") & `TIME'<2016
 replace `_NV' = 096085 if strmatch(`_CLONE',"lessona") & `TIME'>=2016
@@ -3656,7 +3789,8 @@ replace `_NV' = 007042 if strmatch(`_CLONE',"lillianes")
 replace `_NV' = 025029 if strmatch(`_CLONE',"limana")
 replace `_NV' = 062038 if strmatch(`_CLONE',"limatola")
 replace `_NV' = 102019 if strmatch(`_CLONE',"limbadi")
-replace `_NV' = 108027 if strmatch(`_CLONE',"limbiate")
+replace `_NV' = 108027 if strmatch(`_CLONE',"limbiate") & `TIME'>=2010
+replace `_NV' = 015121 if strmatch(`_CLONE',"limbiate") & `TIME'<2010
 replace `_NV' = 028045 if strmatch(`_CLONE',"limena")
 replace `_NV' = 013128 if strmatch(`_CLONE',"limido comasco")
 replace `_NV' = 083040 if strmatch(`_CLONE',"limina")
@@ -3674,7 +3808,8 @@ replace `_NV' = 069049 if strmatch(`_CLONE',"liscia")
 replace `_NV' = 054025 if strmatch(`_CLONE',"lisciano niccone")
 replace `_NV' = 022105 if strmatch(`_CLONE',"lisignago")
 replace `_NV' = 004111 if strmatch(`_CLONE',"lisio")
-replace `_NV' = 108028 if strmatch(`_CLONE',"lissone")
+replace `_NV' = 108028 if strmatch(`_CLONE',"lissone") & `TIME'>=2010
+replace `_NV' = 015123 if strmatch(`_CLONE',"lissone") & `TIME'<2010
 replace `_NV' = 063040 if strmatch(`_CLONE',"liveri")
 replace `_NV' = 014037 if strmatch(`_CLONE',"livigno")
 replace `_NV' = 025030 if strmatch(`_CLONE',"livinallongo del col di lana")
@@ -3692,7 +3827,8 @@ replace `_NV' = 001134 if strmatch(`_CLONE',"locana")
 replace `_NV' = 015125 if strmatch(`_CLONE',"locate di triulzi")
 replace `_NV' = 013131 if strmatch(`_CLONE',"locate varesino")
 replace `_NV' = 016127 if strmatch(`_CLONE',"locatello")
-replace `_NV' = 105011 if strmatch(`_CLONE',"loceri")
+replace `_NV' = 105011 if strmatch(`_CLONE',"loceri") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091039 if strmatch(`_CLONE',"loceri") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 072025 if strmatch(`_CLONE',"locorotondo")
 replace `_NV' = 080043 if strmatch(`_CLONE',"locri")
 replace `_NV' = 091040 if strmatch(`_CLONE',"loculi")
@@ -3704,7 +3840,8 @@ replace `_NV' = 091104 if strmatch(`_CLONE',"lodine")
 replace `_NV' = 017090 if strmatch(`_CLONE',"lodrino")
 replace `_NV' = 017091 if strmatch(`_CLONE',"lograto")
 replace `_NV' = 037034 if strmatch(`_CLONE',"loiano")
-replace `_NV' = 104013 if strmatch(`_CLONE',"loiri porto san paolo")
+replace `_NV' = 104013 if strmatch(`_CLONE',"loiri porto san paolo") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090084 if strmatch(`_CLONE',"loiri porto san paolo") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 097044 if strmatch(`_CLONE',"lomagna")
 replace `_NV' = 022107 if strmatch(`_CLONE',"lomaso")
 replace `_NV' = 013133 if strmatch(`_CLONE',"lomazzo")
@@ -3741,7 +3878,8 @@ replace `_NV' = 051020 if strmatch(`_CLONE',"loro ciuffenna")
 replace `_NV' = 043022 if strmatch(`_CLONE',"loro piceno")
 replace `_NV' = 010030 if strmatch(`_CLONE',"lorsica")
 replace `_NV' = 017094 if strmatch(`_CLONE',"losine")
-replace `_NV' = 105012 if strmatch(`_CLONE',"lotzorai")
+replace `_NV' = 105012 if strmatch(`_CLONE',"lotzorai") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091042 if strmatch(`_CLONE',"lotzorai") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 016128 if strmatch(`_CLONE',"lovere")
 replace `_NV' = 014038 if strmatch(`_CLONE',"lovero")
 replace `_NV' = 017095 if strmatch(`_CLONE',"lozio")
@@ -3770,17 +3908,21 @@ replace `_NV' = 013135 if strmatch(`_CLONE',"luisago")
 replace `_NV' = 091043 if strmatch(`_CLONE',"lula")
 replace `_NV' = 010031 if strmatch(`_CLONE',"lumarzo")
 replace `_NV' = 017096 if strmatch(`_CLONE',"lumezzane")
-replace `_NV' = 106010 if strmatch(`_CLONE',"lunamatrona")
+replace `_NV' = 106010 if strmatch(`_CLONE',"lunamatrona") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092035 if strmatch(`_CLONE',"lunamatrona") & `TIME'<2006
+replace `_NV' = 111038 if strmatch(`_CLONE',"lunamatrona") & `TIME'>2016
 replace `_NV' = 041022 if strmatch(`_CLONE',"lunano")
 replace `_NV' = 018084 if strmatch(`_CLONE',"lungavilla")
 replace `_NV' = 078069 if strmatch(`_CLONE',"lungro")
 replace `_NV' = 064045 if strmatch(`_CLONE',"luogosano")
-replace `_NV' = 104014 if strmatch(`_CLONE',"luogosanto")
+replace `_NV' = 104014 if strmatch(`_CLONE',"luogosanto") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090036 if strmatch(`_CLONE',"luogosanto") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 070034 if strmatch(`_CLONE',"lupara")
 replace `_NV' = 013136 if strmatch(`_CLONE',"lurago *erba")
 replace `_NV' = 013137 if strmatch(`_CLONE',"lurago marinone")
 replace `_NV' = 016129 if strmatch(`_CLONE',"lurano")
-replace `_NV' = 104015 if strmatch(`_CLONE',"luras")
+replace `_NV' = 104015 if strmatch(`_CLONE',"luras") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090037 if strmatch(`_CLONE',"luras") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 013138 if strmatch(`_CLONE',"lurate caccivio")
 replace `_NV' = 061046 if strmatch(`_CLONE',"lusciano")
 replace `_NV' = 022109 if strmatch(`_CLONE',"luserna")
@@ -3807,7 +3949,8 @@ replace `_NV' = 001142 if strmatch(`_CLONE',"macello")
 replace `_NV' = 043023 if strmatch(`_CLONE',"macerata")
 replace `_NV' = 061047 if strmatch(`_CLONE',"macerata campania")
 replace `_NV' = 041023 if strmatch(`_CLONE',"macerata feltria")
-replace `_NV' = 108029 if strmatch(`_CLONE',"macherio")
+replace `_NV' = 108029 if strmatch(`_CLONE',"macherio") & `TIME'>=2010
+replace `_NV' = 015129 if strmatch(`_CLONE',"macherio") & `TIME'<2010
 replace `_NV' = 017097 if strmatch(`_CLONE',"maclodio")
 replace `_NV' = 091044 if strmatch(`_CLONE',"macomer")
 replace `_NV' = 004112 if strmatch(`_CLONE',"macra")
@@ -3828,7 +3971,8 @@ replace `_NV' = 079068 if strmatch(`_CLONE',"magisano")
 replace `_NV' = 004113 if strmatch(`_CLONE',"magliano alfieri")
 replace `_NV' = 004114 if strmatch(`_CLONE',"magliano alpi")
 replace `_NV' = 066053 if strmatch(`_CLONE',"magliano d*marsi")
-replace `_NV' = 109010 if strmatch(`_CLONE',"magliano di tenna")
+replace `_NV' = 109010 if strmatch(`_CLONE',"magliano di tenna") & `TIME'>=2010
+replace `_NV' = 044026 if strmatch(`_CLONE',"magliano di tenna") & `TIME'<2010
 replace `_NV' = 053013 if strmatch(`_CLONE',"magliano in toscana")
 replace `_NV' = 058052 if strmatch(`_CLONE',"magliano romano")
 replace `_NV' = 057035 if strmatch(`_CLONE',"magliano sabina")
@@ -3840,14 +3984,16 @@ replace `_NV' = 020029 if strmatch(`_CLONE',"magnacavallo")
 replace `_NV' = 015131 if strmatch(`_CLONE',"magnago")
 replace `_NV' = 096030 if strmatch(`_CLONE',"magnano")
 replace `_NV' = 030052 if strmatch(`_CLONE',"magnano in riviera")
-replace `_NV' = 095083 if strmatch(`_CLONE',"magomadas")
+replace `_NV' = 095083 if strmatch(`_CLONE',"magomadas") & `TIME'>=2006
+replace `_NV' = 091045 if strmatch(`_CLONE',"magomadas") & `TIME'<2006
 replace `_NV' = 021045 if strmatch(`_CLONE',"magr*sulla*strada*") | strmatch(`_CLONE',"margreid an der weinstr*")
 replace `_NV' = 013139 if strmatch(`_CLONE',"magreglio")
 replace `_NV' = 079069 if strmatch(`_CLONE',"maida")
 replace `_NV' = 078071 if strmatch(`_CLONE',"maier?") | strmatch(`_CLONE',"maier??")
 replace `_NV' = 102020 if strmatch(`_CLONE',"maierato")
 replace `_NV' = 042023 if strmatch(`_CLONE',"maiolati spontini")
-replace `_NV' = 099022 if strmatch(`_CLONE',"maiolo")
+replace `_NV' = 099022 if strmatch(`_CLONE',"maiolo") & `TIME'>=2010
+replace `_NV' = 041024 if strmatch(`_CLONE',"maiolo") & `TIME'<2010
 replace `_NV' = 065066 if strmatch(`_CLONE',"maiori")
 replace `_NV' = 098034 if strmatch(`_CLONE',"mairago")
 replace `_NV' = 017099 if strmatch(`_CLONE',"mairano")
@@ -3881,7 +4027,8 @@ replace `_NV' = 080044 if strmatch(`_CLONE',"mammola")
 replace `_NV' = 091046 if strmatch(`_CLONE',"mamoiada")
 replace `_NV' = 053014 if strmatch(`_CLONE',"manciano")
 replace `_NV' = 083045 if strmatch(`_CLONE',"mandanici")
-replace `_NV' = 092036 if strmatch(`_CLONE',"mandas")
+replace `_NV' = 092036 if strmatch(`_CLONE',"mandas") & `TIME'<=2016
+replace `_NV' = 111039 if strmatch(`_CLONE',"mandas") & `TIME'>2016
 replace `_NV' = 078074 if strmatch(`_CLONE',"mandatoriccio")
 replace `_NV' = 058053 if strmatch(`_CLONE',"mandela")
 replace `_NV' = 097046 if strmatch(`_CLONE',"mandello del lario")
@@ -3940,7 +4087,8 @@ replace `_NV' = 026038 if strmatch(`_CLONE',"mareno di piave")
 replace `_NV' = 001144 if strmatch(`_CLONE',"marentino")
 replace `_NV' = 005062 if strmatch(`_CLONE',"maretto")
 replace `_NV' = 004118 if strmatch(`_CLONE',"margarita")
-replace `_NV' = 110005 if strmatch(`_CLONE',"margherita di savoia")
+replace `_NV' = 110005 if strmatch(`_CLONE',"margherita di savoia") & `TIME'>=2010
+replace `_NV' = 071030 if strmatch(`_CLONE',"margherita di savoia") & `TIME'<2010
 replace `_NV' = 097047 if strmatch(`_CLONE',"margno")
 replace `_NV' = 020032 if strmatch(`_CLONE',"mariana mantovana")
 replace `_NV' = 013143 if strmatch(`_CLONE',"mariano comense")
@@ -3990,7 +4138,9 @@ replace `_NV' = 061050 if strmatch(`_CLONE',"marzano appio")
 replace `_NV' = 064047 if strmatch(`_CLONE',"marzano di nola")
 replace `_NV' = 078078 if strmatch(`_CLONE',"marzi")
 replace `_NV' = 012099 if strmatch(`_CLONE',"marzio")
-replace `_NV' = 107010 if strmatch(`_CLONE',"masainas")
+replace `_NV' = 107010 if strmatch(`_CLONE',"masainas") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092103 if strmatch(`_CLONE',"masainas") & `TIME'<2006
+replace `_NV' = 111040 if strmatch(`_CLONE',"masainas") & `TIME'>2016
 replace `_NV' = 015136 if strmatch(`_CLONE',"masate")
 replace `_NV' = 087023 if strmatch(`_CLONE',"mascali")
 replace `_NV' = 087024 if strmatch(`_CLONE',"mascalucia")
@@ -4010,7 +4160,8 @@ replace `_NV' = 045010 if strmatch(`_CLONE',"massa")
 replace `_NV' = 066054 if strmatch(`_CLONE',"massa *albe")
 replace `_NV' = 063092 if strmatch(`_CLONE',"massa di somma")
 replace `_NV' = 047008 if strmatch(`_CLONE',"massa e cozzile")
-replace `_NV' = 109011 if strmatch(`_CLONE',"massa fermana")
+replace `_NV' = 109011 if strmatch(`_CLONE',"massa fermana") & `TIME'>=2010
+replace `_NV' = 044028 if strmatch(`_CLONE',"massa fermana") & `TIME'<2010
 replace `_NV' = 038013 if strmatch(`_CLONE',"massa*fiscaglia")
 replace `_NV' = 038027 if strmatch(`_CLONE',"fiscaglia")
 replace `_NV' = 039013 if strmatch(`_CLONE',"massa lombarda")
@@ -4049,7 +4200,8 @@ replace `_NV' = 022113 if strmatch(`_CLONE',"mazzin")
 replace `_NV' = 014040 if strmatch(`_CLONE',"mazzo di valtellina")
 replace `_NV' = 001149 if strmatch(`_CLONE',"meana di susa")
 replace `_NV' = 091047 if strmatch(`_CLONE',"meana sardo")
-replace `_NV' = 108030 if strmatch(`_CLONE',"meda")
+replace `_NV' = 108030 if strmatch(`_CLONE',"meda") & `TIME'>=2010
+replace `_NV' = 015138 if strmatch(`_CLONE',"meda") & `TIME'<2010
 replace `_NV' = 018088 if strmatch(`_CLONE',"mede")
 replace `_NV' = 031011 if strmatch(`_CLONE',"medea")
 replace `_NV' = 034020 if strmatch(`_CLONE',"medesano")
@@ -4123,7 +4275,8 @@ replace `_NV' = 083048 if strmatch(`_CLONE',"messina")
 replace `_NV' = 028054 if strmatch(`_CLONE',"mestrino")
 replace `_NV' = 063046 if strmatch(`_CLONE',"meta")
 replace `_NV' = 001151 if strmatch(`_CLONE',"meugliano")
-replace `_NV' = 108031 if strmatch(`_CLONE',"mezzago")
+replace `_NV' = 108031 if strmatch(`_CLONE',"mezzago") & `TIME'>=2010
+replace `_NV' = 015145 if strmatch(`_CLONE',"mezzago") & `TIME'<2010
 replace `_NV' = 022114 if strmatch(`_CLONE',"mezzana")
 replace `_NV' = 018090 if strmatch(`_CLONE',"mezzana bigli")
 replace `_NV' = 096033 if strmatch(`_CLONE',"mezzana mortigliengo")
@@ -4167,7 +4320,8 @@ replace `_NV' = 087027 if strmatch(`_CLONE',"mineo")
 replace `_NV' = 023048 if strmatch(`_CLONE',"minerbe")
 replace `_NV' = 037038 if strmatch(`_CLONE',"minerbio")
 replace `_NV' = 075047 if strmatch(`_CLONE',"minervino di lecce")
-replace `_NV' = 110006 if strmatch(`_CLONE',"minervino murge")
+replace `_NV' = 110006 if strmatch(`_CLONE',"minervino murge") & `TIME'>=2010
+replace `_NV' = 072026 if strmatch(`_CLONE',"minervino murge") & `TIME'<2010
 replace `_NV' = 065068 if strmatch(`_CLONE',"minori")
 replace `_NV' = 059014 if strmatch(`_CLONE',"minturno")
 replace `_NV' = 046019 if strmatch(`_CLONE',"minucciano")
@@ -4186,7 +4340,8 @@ replace `_NV' = 083051 if strmatch(`_CLONE',"mirto")
 replace `_NV' = 099005 if strmatch(`_CLONE',"misano adriatico")
 replace `_NV' = 016135 if strmatch(`_CLONE',"misano di gera *adda")
 replace `_NV' = 082048 if strmatch(`_CLONE',"misilmeri")
-replace `_NV' = 108032 if strmatch(`_CLONE',"misinto")
+replace `_NV' = 108032 if strmatch(`_CLONE',"misinto") & `TIME'>=2010
+replace `_NV' = 015147 if strmatch(`_CLONE',"misinto") & `TIME'<2010
 replace `_NV' = 097049 if strmatch(`_CLONE',"missaglia")
 replace `_NV' = 076049 if strmatch(`_CLONE',"missanello")
 replace `_NV' = 087029 if strmatch(`_CLONE',"misterbianco")
@@ -4196,7 +4351,8 @@ replace `_NV' = 010036 if strmatch(`_CLONE',"moconesi")
 replace `_NV' = 036023 if strmatch(`_CLONE',"modena")
 replace `_NV' = 088006 if strmatch(`_CLONE',"modica")
 replace `_NV' = 040022 if strmatch(`_CLONE',"modigliana")
-replace `_NV' = 095084 if strmatch(`_CLONE',"modolo")
+replace `_NV' = 095084 if strmatch(`_CLONE',"modolo") & `TIME'>=2006
+replace `_NV' = 091048 if strmatch(`_CLONE',"modolo") & `TIME'<2006
 replace `_NV' = 072027 if strmatch(`_CLONE',"modugno")
 replace `_NV' = 022118 if strmatch(`_CLONE',"moena")
 replace `_NV' = 097050 if strmatch(`_CLONE',"moggio")
@@ -4252,7 +4408,8 @@ replace `_NV' = 004127 if strmatch(`_CLONE',"monasterolo casotto")
 replace `_NV' = 016137 if strmatch(`_CLONE',"monasterolo del castello")
 replace `_NV' = 004128 if strmatch(`_CLONE',"monasterolo di savigliano")
 replace `_NV' = 026044 if strmatch(`_CLONE',"monastier*")
-replace `_NV' = 092038 if strmatch(`_CLONE',"monastir")
+replace `_NV' = 092038 if strmatch(`_CLONE',"monastir") & `TIME'<=2016
+replace `_NV' = 111041 if strmatch(`_CLONE',"monastir") & `TIME'>2016
 replace `_NV' = 001156 if strmatch(`_CLONE',"moncalieri")
 replace `_NV' = 005069 if strmatch(`_CLONE',"moncalvo")
 replace `_NV' = 001157 if strmatch(`_CLONE',"moncenisio")
@@ -4287,8 +4444,9 @@ replace `_NV' = 006101 if strmatch(`_CLONE',"monleale")
 replace `_NV' = 017110 if strmatch(`_CLONE',"monno")
 replace `_NV' = 072030 if strmatch(`_CLONE',"monopoli")
 replace `_NV' = 082049 if strmatch(`_CLONE',"monreale")
-replace `_NV' = 032002 if strmatch(`_CLONE',"monrupino")
-replace `_NV' = 109012 if strmatch(`_CLONE',"monsampietro morico")
+replace `_NV' = 032002 if strmatch(`_CLONE',"*monrupino*") | strmatch(`_CLONE',"*repentabor*")
+replace `_NV' = 109012 if strmatch(`_CLONE',"monsampietro morico") & `TIME'>=2010
+replace `_NV' = 044030 if strmatch(`_CLONE',"monsampietro morico") & `TIME'<2010
 replace `_NV' = 044031 if strmatch(`_CLONE',"monsampolo del tronto")
 replace `_NV' = 042025 if strmatch(`_CLONE',"monsano")
 replace `_NV' = 028055 if strmatch(`_CLONE',"monselice")
@@ -4332,7 +4490,8 @@ replace `_NV' = 098040 if strmatch(`_CLONE',"montanaso lombardo")
 replace `_NV' = 004136 if strmatch(`_CLONE',"montanera")
 replace `_NV' = 065070 if strmatch(`_CLONE',"montano antilia")
 replace `_NV' = 013154 if strmatch(`_CLONE',"montano lucino")
-replace `_NV' = 109013 if strmatch(`_CLONE',"montappone")
+replace `_NV' = 109013 if strmatch(`_CLONE',"montappone") & `TIME'>=2010
+replace `_NV' = 044033 if strmatch(`_CLONE',"montappone") & `TIME'<2010
 replace `_NV' = 094028 if strmatch(`_CLONE',"montaquila")
 replace `_NV' = 057039 if strmatch(`_CLONE',"montasola")
 replace `_NV' = 079080 if strmatch(`_CLONE',"montauro")
@@ -4346,13 +4505,15 @@ replace `_NV' = 058060 if strmatch(`_CLONE',"monte*compatri")
 replace `_NV' = 019058 if strmatch(`_CLONE',"monte cremasco")
 replace `_NV' = 024063 if strmatch(`_CLONE',"monte di malo")
 replace `_NV' = 063047 if strmatch(`_CLONE',"monte di procida")
-replace `_NV' = 109016 if strmatch(`_CLONE',"monte giberto")
+replace `_NV' = 109016 if strmatch(`_CLONE',"monte giberto") & `TIME'>=2010
+replace `_NV' = 044039 if strmatch(`_CLONE',"monte giberto") & `TIME'<2010
 replace `_NV' = 041035 if strmatch(`_CLONE',"monte grimano terme")
 replace `_NV' = 017111 if strmatch(`_CLONE',"monte isola")
 replace `_NV' = 097052 if strmatch(`_CLONE',"monte marenzo")
 replace `_NV' = 041038 if strmatch(`_CLONE',"monte porzio")
 replace `_NV' = 058064 if strmatch(`_CLONE',"monte porzio catone")
-replace `_NV' = 109021 if strmatch(`_CLONE',"monte rinaldo")
+replace `_NV' = 109021 if strmatch(`_CLONE',"monte rinaldo") & `TIME'>=2010
+replace `_NV' = 044046 if strmatch(`_CLONE',"monte rinaldo") & `TIME'<2010
 replace `_NV' = 042029 if strmatch(`_CLONE',"monte roberto")
 replace `_NV' = 056037 if strmatch(`_CLONE',"monte romano")
 replace `_NV' = 059015 if strmatch(`_CLONE',"monte san biagio")
@@ -4361,15 +4522,19 @@ replace `_NV' = 060044 if strmatch(`_CLONE',"monte san giovanni campano")
 replace `_NV' = 057043 if strmatch(`_CLONE',"monte san giovanni in sabina")
 replace `_NV' = 043031 if strmatch(`_CLONE',"monte san giusto")
 replace `_NV' = 043032 if strmatch(`_CLONE',"monte san martino")
-replace `_NV' = 109023 if strmatch(`_CLONE',"monte san pietrangeli")
+replace `_NV' = 109023 if strmatch(`_CLONE',"monte san pietrangeli") & `TIME'>=2010
+replace `_NV' = 044048 if strmatch(`_CLONE',"monte san pietrangeli") & `TIME'<2010
 replace `_NV' = 037042 if strmatch(`_CLONE',"monte san pietro")
 replace `_NV' = 051025 if strmatch(`_CLONE',"monte san savino")
 replace `_NV' = 042030 if strmatch(`_CLONE',"monte san vito")
 replace `_NV' = 071033 if strmatch(`_CLONE',"monte s*angelo")
 replace `_NV' = 054032 if strmatch(`_CLONE',"monte santa maria tiberina")
-replace `_NV' = 109024 if strmatch(`_CLONE',"monte urano")
-replace `_NV' = 109025 if strmatch(`_CLONE',"monte vidon combatte")
-replace `_NV' = 109026 if strmatch(`_CLONE',"monte vidon corrado")
+replace `_NV' = 109024 if strmatch(`_CLONE',"monte urano") & `TIME'>=2010
+replace `_NV' = 044049 if strmatch(`_CLONE',"monte urano") & `TIME'<2010
+replace `_NV' = 109025 if strmatch(`_CLONE',"monte vidon combatte") & `TIME'>=2010
+replace `_NV' = 044050 if strmatch(`_CLONE',"monte vidon combatte") & `TIME'<2010
+replace `_NV' = 109026 if strmatch(`_CLONE',"monte vidon corrado") & `TIME'>=2010
+replace `_NV' = 044051 if strmatch(`_CLONE',"monte vidon corrado") & `TIME'<2010
 replace `_NV' = 018095 if strmatch(`_CLONE',"montebello della battaglia")
 replace `_NV' = 068023 if strmatch(`_CLONE',"montebello di bertona")
 replace `_NV' = 080053 if strmatch(`_CLONE',"montebello ?onico")
@@ -4409,7 +4574,8 @@ replace `_NV' = 044034 if strmatch(`_CLONE',"montedinove")
 replace `_NV' = 085011 if strmatch(`_CLONE',"montedoro")
 replace `_NV' = 064053 if strmatch(`_CLONE',"montefalcione")
 replace `_NV' = 054030 if strmatch(`_CLONE',"montefalco")
-replace `_NV' = 109014 if strmatch(`_CLONE',"montefalcone appennino")
+replace `_NV' = 109014 if strmatch(`_CLONE',"montefalcone appennino") & `TIME'>=2010
+replace `_NV' = 044035 if strmatch(`_CLONE',"montefalcone appennino") & `TIME'<2010
 replace `_NV' = 062042 if strmatch(`_CLONE',"montefalcone di val fortore")
 replace `_NV' = 070043 if strmatch(`_CLONE',"montefalcone nel sannio")
 replace `_NV' = 043029 if strmatch(`_CLONE',"montefano")
@@ -4424,7 +4590,8 @@ replace `_NV' = 058061 if strmatch(`_CLONE',"monteflavio")
 replace `_NV' = 065074 if strmatch(`_CLONE',"monteforte cilento")
 replace `_NV' = 023050 if strmatch(`_CLONE',"monteforte*alpone")
 replace `_NV' = 064054 if strmatch(`_CLONE',"monteforte irpino")
-replace `_NV' = 109015 if strmatch(`_CLONE',"montefortino")
+replace `_NV' = 109015 if strmatch(`_CLONE',"montefortino") & `TIME'>=2010
+replace `_NV' = 044037 if strmatch(`_CLONE',"montefortino") & `TIME'<2010
 replace `_NV' = 055019 if strmatch(`_CLONE',"montefranco")
 replace `_NV' = 064055 if strmatch(`_CLONE',"montefredane")
 replace `_NV' = 064056 if strmatch(`_CLONE',"montefusco")
@@ -4434,8 +4601,10 @@ replace `_NV' = 024065 if strmatch(`_CLONE',"montegaldella")
 replace `_NV' = 044038 if strmatch(`_CLONE',"montegallo")
 replace `_NV' = 006107 if strmatch(`_CLONE',"montegioco")
 replace `_NV' = 078082 if strmatch(`_CLONE',"montegiordano")
-replace `_NV' = 109017 if strmatch(`_CLONE',"montegiorgio")
-replace `_NV' = 109018 if strmatch(`_CLONE',"montegranaro")
+replace `_NV' = 109017 if strmatch(`_CLONE',"montegiorgio") & `TIME'>=2010
+replace `_NV' = 044040 if strmatch(`_CLONE',"montegiorgio") & `TIME'<2010
+replace `_NV' = 109018 if strmatch(`_CLONE',"montegranaro") & `TIME'>=2010
+replace `_NV' = 044041 if strmatch(`_CLONE',"montegranaro") & `TIME'<2010
 replace `_NV' = 099009 if strmatch(`_CLONE',"montegridolfo")
 replace `_NV' = 012103 if strmatch(`_CLONE',"montegrino valtravaglia")
 replace `_NV' = 005076 if strmatch(`_CLONE',"montegrosso *asti")
@@ -4446,7 +4615,8 @@ replace `_NV' = 041036 if strmatch(`_CLONE',"montelabbate")
 replace `_NV' = 058062 if strmatch(`_CLONE',"montelanico")
 replace `_NV' = 069053 if strmatch(`_CLONE',"montelapiano")
 replace `_NV' = 055021 if strmatch(`_CLONE',"monteleone *orvieto")
-replace `_NV' = 109019 if strmatch(`_CLONE',"monteleone di fermo")
+replace `_NV' = 109019 if strmatch(`_CLONE',"monteleone di fermo") & `TIME'>=2010
+replace `_NV' = 044042 if strmatch(`_CLONE',"monteleone di fermo") & `TIME'<2010
 replace `_NV' = 071032 if strmatch(`_CLONE',"monteleone di puglia")
 replace `_NV' = 054031 if strmatch(`_CLONE',"monteleone di spoleto")
 replace `_NV' = 090040 if strmatch(`_CLONE',"monteleone rocca doria")
@@ -4456,7 +4626,8 @@ replace `_NV' = 058063 if strmatch(`_CLONE',"montelibretti")
 replace `_NV' = 064057 if strmatch(`_CLONE',"montella")
 replace `_NV' = 016139 if strmatch(`_CLONE',"montello")
 replace `_NV' = 070044 if strmatch(`_CLONE',"montelongo")
-replace `_NV' = 109020 if strmatch(`_CLONE',"montelparo")
+replace `_NV' = 109020 if strmatch(`_CLONE',"montelparo") & `TIME'>=2010
+replace `_NV' = 044043 if strmatch(`_CLONE',"montelparo") & `TIME'<2010
 replace `_NV' = 004137 if strmatch(`_CLONE',"montelupo albese")
 replace `_NV' = 048028 if strmatch(`_CLONE',"montelupo fiorentino")
 replace `_NV' = 043030 if strmatch(`_CLONE',"montelupone")
@@ -4502,7 +4673,8 @@ replace `_NV' = 102023 if strmatch(`_CLONE',"monterosso calabro")
 replace `_NV' = 004139 if strmatch(`_CLONE',"monterosso grana")
 replace `_NV' = 058065 if strmatch(`_CLONE',"monterotondo")
 replace `_NV' = 053027 if strmatch(`_CLONE',"monterotondo marittimo")
-replace `_NV' = 109022 if strmatch(`_CLONE',"monterubbiano")
+replace `_NV' = 109022 if strmatch(`_CLONE',"monterubbiano") & `TIME'>=2010
+replace `_NV' = 044047 if strmatch(`_CLONE',"monterubbiano") & `TIME'<2010
 replace `_NV' = 075049 if strmatch(`_CLONE',"montesano salentino")
 replace `_NV' = 065076 if strmatch(`_CLONE',"montesano sulla marcellana")
 replace `_NV' = 062043 if strmatch(`_CLONE',"montesarchio")
@@ -4526,7 +4698,8 @@ replace `_NV' = 064060 if strmatch(`_CLONE',"monteverde")
 replace `_NV' = 050021 if strmatch(`_CLONE',"monteverdi marittimo")
 replace `_NV' = 024066 if strmatch(`_CLONE',"monteviale")
 replace `_NV' = 004141 if strmatch(`_CLONE',"montezemolo")
-replace `_NV' = 104016 if strmatch(`_CLONE',"monti")
+replace `_NV' = 104016 if strmatch(`_CLONE',"monti") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090041 if strmatch(`_CLONE',"monti") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 040028 if strmatch(`_CLONE',"montiano")
 replace `_NV' = 017112 if strmatch(`_CLONE',"monticelli brusati")
 replace `_NV' = 033027 if strmatch(`_CLONE',"monticelli *ongina")
@@ -4553,11 +4726,14 @@ replace `_NV' = 058066 if strmatch(`_CLONE',"montorio romano")
 replace `_NV' = 064061 if strmatch(`_CLONE',"montoro inferiore")
 replace `_NV' = 064062 if strmatch(`_CLONE',"montoro superiore")
 replace `_NV' = 024068 if strmatch(`_CLONE',"montorso vicentino")
-replace `_NV' = 109027 if strmatch(`_CLONE',"montottone")
-replace `_NV' = 095085 if strmatch(`_CLONE',"montresta")
+replace `_NV' = 109027 if strmatch(`_CLONE',"montottone") & `TIME'>=2010
+replace `_NV' = 044052 if strmatch(`_CLONE',"montottone") & `TIME'<2010
+replace `_NV' = 095085 if strmatch(`_CLONE',"montresta") & `TIME'>=2006
+replace `_NV' = 091049 if strmatch(`_CLONE',"montresta") & `TIME'<2006
 replace `_NV' = 018100 if strmatch(`_CLONE',"mont*beccaria")
 replace `_NV' = 012104 if strmatch(`_CLONE',"monvalle")
-replace `_NV' = 108033 if strmatch(`_CLONE',"monza")
+replace `_NV' = 108033 if strmatch(`_CLONE',"monza") & `TIME'>=2010
+replace `_NV' = 015149 if strmatch(`_CLONE',"monza") & `TIME'<2010
 replace `_NV' = 020036 if strmatch(`_CLONE',"monzambano")
 replace `_NV' = 037044 if strmatch(`_CLONE',"monzuno")
 replace `_NV' = 078083 if strmatch(`_CLONE',"morano calabro")
@@ -4573,7 +4749,8 @@ replace `_NV' = 062044 if strmatch(`_CLONE',"morcone")
 replace `_NV' = 037045 if strmatch(`_CLONE',"mordano")
 replace `_NV' = 016140 if strmatch(`_CLONE',"morengo")
 replace `_NV' = 090042 if strmatch(`_CLONE',"mores")
-replace `_NV' = 109028 if strmatch(`_CLONE',"moresco")
+replace `_NV' = 109028 if strmatch(`_CLONE',"moresco") & `TIME'>=2010
+replace `_NV' = 044053 if strmatch(`_CLONE',"moresco") & `TIME'<2010
 replace `_NV' = 004143 if strmatch(`_CLONE',"moretta")
 replace `_NV' = 033028 if strmatch(`_CLONE',"morfasso")
 replace `_NV' = 026047 if strmatch(`_CLONE',"morgano")
@@ -4635,14 +4812,17 @@ replace `_NV' = 023051 if strmatch(`_CLONE',"mozzecane")
 replace `_NV' = 016143 if strmatch(`_CLONE',"mozzo")
 replace `_NV' = 043034 if strmatch(`_CLONE',"muccia")
 replace `_NV' = 032003 if strmatch(`_CLONE',"muggia")
-replace `_NV' = 108034 if strmatch(`_CLONE',"muggio'") | strmatch(`_CLONE',"muggio") | strmatch(`_CLONE',"muggiò")
-if `c(stata_version)'>=14 replace `_NV' = 108034 if strmatch(`sec_check_var',"muggi%X*")
+replace `_NV' = 108034 if (strmatch(`_CLONE',"muggio'") | strmatch(`_CLONE',"muggio") | strmatch(`_CLONE',"muggiò")) & `TIME'>=2010
+if `c(stata_version)'>=14 replace `_NV' = 108034 if strmatch(`sec_check_var',"muggi%X*") & `TIME'>=2010
+replace `_NV' = 015152 if (strmatch(`_CLONE',"muggio'") | strmatch(`_CLONE',"muggio") | strmatch(`_CLONE',"muggiò")) & `TIME'<2010
+if `c(stata_version)'>=14 replace `_NV' = 015152 if strmatch(`sec_check_var',"muggi%X*") & `TIME'<2010
 replace `_NV' = 064065 if strmatch(`_CLONE',"mugnano del cardinale")
 replace `_NV' = 063048 if strmatch(`_CLONE',"mugnano di napoli")
 replace `_NV' = 098041 if strmatch(`_CLONE',"mulazzano")
 replace `_NV' = 045012 if strmatch(`_CLONE',"mulazzo")
 replace `_NV' = 017115 if strmatch(`_CLONE',"mura")
-replace `_NV' = 092039 if strmatch(`_CLONE',"muravera")
+replace `_NV' = 092039 if strmatch(`_CLONE',"muravera") & `TIME'<=2016
+replace `_NV' = 111042 if strmatch(`_CLONE',"muravera") & `TIME'>2016
 replace `_NV' = 004145 if strmatch(`_CLONE',"murazzano")
 replace `_NV' = 004146 if strmatch(`_CLONE',"murello")
 replace `_NV' = 009040 if strmatch(`_CLONE',"murialdo")
@@ -4652,7 +4832,9 @@ replace `_NV' = 075051 if strmatch(`_CLONE',"muro leccese")
 replace `_NV' = 076053 if strmatch(`_CLONE',"muro lucano")
 replace `_NV' = 090043 if strmatch(`_CLONE',"muros")
 replace `_NV' = 017116 if strmatch(`_CLONE',"muscoline")
-replace `_NV' = 107011 if strmatch(`_CLONE',"musei")
+replace `_NV' = 107011 if strmatch(`_CLONE',"musei") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092040 if strmatch(`_CLONE',"musei") & `TIME'<2006
+replace `_NV' = 111043 if strmatch(`_CLONE',"musei") & `TIME'>2016
 replace `_NV' = 027025 if strmatch(`_CLONE',"musile di piave")
 replace `_NV' = 013160 if strmatch(`_CLONE',"musso")
 replace `_NV' = 024070 if strmatch(`_CLONE',"mussolente")
@@ -4665,7 +4847,9 @@ replace `_NV' = 022125 if strmatch(`_CLONE',"nanno")
 replace `_NV' = 024071 if strmatch(`_CLONE',"nanto")
 replace `_NV' = 063049 if strmatch(`_CLONE',"napoli")
 replace `_NV' = 095031 if strmatch(`_CLONE',"narbolia")
-replace `_NV' = 107012 if strmatch(`_CLONE',"narcao")
+replace `_NV' = 107012 if strmatch(`_CLONE',"narcao") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092041 if strmatch(`_CLONE',"narcao") & `TIME'<2006
+replace `_NV' = 111044 if strmatch(`_CLONE',"narcao") & `TIME'>2016
 replace `_NV' = 075052 if strmatch(`_CLONE',"nardo'") | strmatch(`_CLONE',"nardo") | strmatch(`_CLONE',"nardò")
 if `c(stata_version)'>=14 replace `_NV' = 075052 if strmatch(`sec_check_var',"nard%X*")
 replace `_NV' = 102024 if strmatch(`_CLONE',"nardodipace")
@@ -4682,7 +4866,7 @@ replace `_NV' = 021057 if strmatch(`_CLONE',"naz*sciaves*") | strmatch(`_CLONE',
 replace `_NV' = 058069 if strmatch(`_CLONE',"nazzano")
 replace `_NV' = 010040 if strmatch(`_CLONE',"ne")
 replace `_NV' = 003103 if strmatch(`_CLONE',"nebbiuno")
-replace `_NV' = 023052 if strmatch(`_CLONE',"negrar")
+replace `_NV' = 023052 if strmatch(`_CLONE',"negrar") | strmatch(`_CLONE',"negrar*valpol*")
 replace `_NV' = 010041 if strmatch(`_CLONE',"neirone")
 replace `_NV' = 004148 if strmatch(`_CLONE',"neive")
 replace `_NV' = 016144 if strmatch(`_CLONE',"nembro")
@@ -4750,10 +4934,13 @@ replace `_NV' = 015155 if strmatch(`_CLONE',"nosate")
 replace `_NV' = 067032 if strmatch(`_CLONE',"notaresco")
 replace `_NV' = 089013 if strmatch(`_CLONE',"noto")
 replace `_NV' = 021058 if strmatch(`_CLONE',"nova levante*") | strmatch(`_CLONE',"welschnofen")
-replace `_NV' = 108035 if strmatch(`_CLONE',"nova milanese")
+replace `_NV' = 108035 if strmatch(`_CLONE',"nova milanese") & `TIME'>=2010
+replace `_NV' = 015156 if strmatch(`_CLONE',"nova milanese") & `TIME'<2010
 replace `_NV' = 021059 if strmatch(`_CLONE',"nova ponente*") | strmatch(`_CLONE',"deutschnofen")
 replace `_NV' = 077018 if strmatch(`_CLONE',"nova siri")
-replace `_NV' = 099023 if strmatch(`_CLONE',"novafeltria")
+replace `_NV' = 099023 if strmatch(`_CLONE',"novafeltria") & `TIME'>=2010
+replace `_NV' = 041039 if strmatch(`_CLONE',"novafeltria") & `TIME'<2010
+
 replace `_NV' = 022129 if strmatch(`_CLONE',"novaledo")
 replace `_NV' = 001169 if strmatch(`_CLONE',"novalesa")
 replace `_NV' = 003106 if strmatch(`_CLONE',"novara")
@@ -4780,16 +4967,25 @@ replace `_NV' = 090046 if strmatch(`_CLONE',"nulvi")
 replace `_NV' = 042032 if strmatch(`_CLONE',"numana")
 replace `_NV' = 091051 if strmatch(`_CLONE',"nuoro")
 replace `_NV' = 095035 if strmatch(`_CLONE',"nurachi")
-replace `_NV' = 092115 if strmatch(`_CLONE',"nuragus")
-replace `_NV' = 092116 if strmatch(`_CLONE',"nurallao")
-replace `_NV' = 092042 if strmatch(`_CLONE',"nuraminis")
+replace `_NV' = 092115 if strmatch(`_CLONE',"nuragus") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091052 if strmatch(`_CLONE',"nuragus") & `TIME'<2006
+replace `_NV' = 111045 if strmatch(`_CLONE',"nuragus") & `TIME'>2016
+replace `_NV' = 092116 if strmatch(`_CLONE',"nurallao") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091053 if strmatch(`_CLONE',"nurallao") & `TIME'<2006
+replace `_NV' = 111046 if strmatch(`_CLONE',"nurallao") & `TIME'>2016
+replace `_NV' = 092042 if strmatch(`_CLONE',"nuraminis") & `TIME'<=2016
+replace `_NV' = 111047 if strmatch(`_CLONE',"nuraminis") & `TIME'>2016
 replace `_NV' = 095036 if strmatch(`_CLONE',"nureci")
-replace `_NV' = 092117 if strmatch(`_CLONE',"nurri")
+replace `_NV' = 092117 if strmatch(`_CLONE',"nurri") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091054 if strmatch(`_CLONE',"nurri") & `TIME'<2006
+replace `_NV' = 111048 if strmatch(`_CLONE',"nurri") & `TIME'>2016
 replace `_NV' = 007045 if strmatch(`_CLONE',"nus")
 replace `_NV' = 064066 if strmatch(`_CLONE',"nusco")
 replace `_NV' = 017119 if strmatch(`_CLONE',"nuvolento")
 replace `_NV' = 017120 if strmatch(`_CLONE',"nuvolera")
-replace `_NV' = 107013 if strmatch(`_CLONE',"nuxis")
+replace `_NV' = 107013 if strmatch(`_CLONE',"nuxis") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092043 if strmatch(`_CLONE',"nuxis") & `TIME'<2006
+replace `_NV' = 111049 if strmatch(`_CLONE',"nuxis") & `TIME'>2016
 replace `_NV' = 096040 if strmatch(`_CLONE',"occhieppo inferiore")
 replace `_NV' = 096041 if strmatch(`_CLONE',"occhieppo superiore")
 replace `_NV' = 029033 if strmatch(`_CLONE',"occhiobello")
@@ -4809,7 +5005,8 @@ replace `_NV' = 012107 if strmatch(`_CLONE',"oggiona con santo stefano")
 replace `_NV' = 097057 if strmatch(`_CLONE',"oggiono")
 replace `_NV' = 001170 if strmatch(`_CLONE',"oglianico")
 replace `_NV' = 065081 if strmatch(`_CLONE',"ogliastro cilento")
-replace `_NV' = 104017 if strmatch(`_CLONE',"olbia")
+replace `_NV' = 104017 if strmatch(`_CLONE',"olbia") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090047 if strmatch(`_CLONE',"olbia") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 002088 if strmatch(`_CLONE',"olcenengo")
 replace `_NV' = 002089 if strmatch(`_CLONE',"oldenico")
 replace `_NV' = 003108 if strmatch(`_CLONE',"oleggio")
@@ -4882,13 +5079,16 @@ replace `_NV' = 056041 if strmatch(`_CLONE',"oriolo romano")
 replace `_NV' = 095038 if strmatch(`_CLONE',"oristano")
 replace `_NV' = 004155 if strmatch(`_CLONE',"ormea")
 replace `_NV' = 026052 if strmatch(`_CLONE',"ormelle")
-replace `_NV' = 108036 if strmatch(`_CLONE',"ornago")
+replace `_NV' = 108036 if strmatch(`_CLONE',"ornago") & `TIME'>=2010
+replace `_NV' = 015161 if strmatch(`_CLONE',"ornago") & `TIME'<2010
 replace `_NV' = 103051 if strmatch(`_CLONE',"ornavasso")
 replace `_NV' = 016151 if strmatch(`_CLONE',"ornica")
 replace `_NV' = 091063 if strmatch(`_CLONE',"orosei")
 replace `_NV' = 091064 if strmatch(`_CLONE',"orotelli")
 replace `_NV' = 065085 if strmatch(`_CLONE',"orria")
-replace `_NV' = 092118 if strmatch(`_CLONE',"orroli")
+replace `_NV' = 092118 if strmatch(`_CLONE',"orroli") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091065 if strmatch(`_CLONE',"orroli") & `TIME'<2006
+replace `_NV' = 111050 if strmatch(`_CLONE',"orroli") & `TIME'>2016
 replace `_NV' = 026053 if strmatch(`_CLONE',"orsago")
 replace `_NV' = 006119 if strmatch(`_CLONE',"orsara bormida")
 replace `_NV' = 071035 if strmatch(`_CLONE',"orsara di puglia")
@@ -4898,10 +5098,13 @@ replace `_NV' = 078088 if strmatch(`_CLONE',"orsomarso")
 replace `_NV' = 061053 if strmatch(`_CLONE',"orta di atella")
 replace `_NV' = 071036 if strmatch(`_CLONE',"orta nova")
 replace `_NV' = 003112 if strmatch(`_CLONE',"orta san giulio")
-replace `_NV' = 092044 if strmatch(`_CLONE',"ortacesus")
+replace `_NV' = 092044 if strmatch(`_CLONE',"ortacesus") & `TIME'<=2016
+replace `_NV' = 111051 if strmatch(`_CLONE',"ortacesus") & `TIME'>2016
+
 replace `_NV' = 056042 if strmatch(`_CLONE',"orte")
 replace `_NV' = 075056 if strmatch(`_CLONE',"ortelle")
-replace `_NV' = 109029 if strmatch(`_CLONE',"ortezzano")
+replace `_NV' = 109029 if strmatch(`_CLONE',"ortezzano") & `TIME'>=2010
+replace `_NV' = 044055 if strmatch(`_CLONE',"ortezzano") & `TIME'<2010
 replace `_NV' = 051027 if strmatch(`_CLONE',"ortignano raggiolo")
 replace `_NV' = 021061 if strmatch(`_CLONE',"ortisei*") | strmatch(`_CLONE',"st*ulrich")
 replace `_NV' = 069058 if strmatch(`_CLONE',"ortona")
@@ -4917,12 +5120,14 @@ replace `_NV' = 017125 if strmatch(`_CLONE',"orzinuovi")
 replace `_NV' = 017126 if strmatch(`_CLONE',"orzivecchi")
 replace `_NV' = 001173 if strmatch(`_CLONE',"osasco")
 replace `_NV' = 001174 if strmatch(`_CLONE',"osasio")
-replace `_NV' = 104018 if strmatch(`_CLONE',"oschiri")
+replace `_NV' = 104018 if strmatch(`_CLONE',"oschiri") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090049 if strmatch(`_CLONE',"oschiri") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 091068 if strmatch(`_CLONE',"osidda")
 replace `_NV' = 009046 if strmatch(`_CLONE',"osiglia")
 replace `_NV' = 090050 if strmatch(`_CLONE',"osilo")
 replace `_NV' = 042034 if strmatch(`_CLONE',"osimo")
-replace `_NV' = 105013 if strmatch(`_CLONE',"osini")
+replace `_NV' = 105013 if strmatch(`_CLONE',"osini") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091069 if strmatch(`_CLONE',"osini") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 016152 if strmatch(`_CLONE',"osio sopra")
 replace `_NV' = 016153 if strmatch(`_CLONE',"osio sotto")
 replace `_NV' = 012111 if strmatch(`_CLONE',"osmate")
@@ -4968,7 +5173,9 @@ replace `_NV' = 090052 if strmatch(`_CLONE',"ozieri")
 replace `_NV' = 037046 if strmatch(`_CLONE',"ozzano *emilia")
 replace `_NV' = 006123 if strmatch(`_CLONE',"ozzano monferrato")
 replace `_NV' = 015165 if strmatch(`_CLONE',"ozzero")
-replace `_NV' = 106011 if strmatch(`_CLONE',"pabillonis")
+replace `_NV' = 106011 if strmatch(`_CLONE',"pabillonis") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092045 if strmatch(`_CLONE',"pabillonis") & `TIME'<2006
+replace `_NV' = 111052 if strmatch(`_CLONE',"pabillonis") & `TIME'>2016
 replace `_NV' = 083064 if strmatch(`_CLONE',"pace del mela")
 replace `_NV' = 081013 if strmatch(`_CLONE',"paceco")
 replace `_NV' = 066066 if strmatch(`_CLONE',"pacentro")
@@ -4984,7 +5191,8 @@ replace `_NV' = 017130 if strmatch(`_CLONE',"paderno franciacorta")
 replace `_NV' = 019065 if strmatch(`_CLONE',"paderno ponchielli")
 replace `_NV' = 028060 if strmatch(`_CLONE',"padova")
 replace `_NV' = 090053 if strmatch(`_CLONE',"padria")
-replace `_NV' = 104019 if strmatch(`_CLONE',"padru")
+replace `_NV' = 104019 if strmatch(`_CLONE',"padru") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090090 if strmatch(`_CLONE',"padru") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 065087 if strmatch(`_CLONE',"padula")
 replace `_NV' = 062045 if strmatch(`_CLONE',"paduli")
 replace `_NV' = 004157 if strmatch(`_CLONE',"paesana")
@@ -5009,7 +5217,8 @@ replace `_NV' = 087032 if strmatch(`_CLONE',"palagonia")
 replace `_NV' = 050024 if strmatch(`_CLONE',"palaia")
 replace `_NV' = 034026 if strmatch(`_CLONE',"palanzano")
 replace `_NV' = 070050 if strmatch(`_CLONE',"palata")
-replace `_NV' = 104020 if strmatch(`_CLONE',"palau")
+replace `_NV' = 104020 if strmatch(`_CLONE',"palau") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090054 if strmatch(`_CLONE',"palau") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 016156 if strmatch(`_CLONE',"palazzago")
 replace `_NV' = 082052 if strmatch(`_CLONE',"palazzo adriano")
 replace `_NV' = 001177 if strmatch(`_CLONE',"palazzo canavese")
@@ -5108,7 +5317,9 @@ replace `_NV' = 075060 if strmatch(`_CLONE',"patu'") | strmatch(`_CLONE',"patu")
 if `c(stata_version)'>=14 replace `_NV' = 075060 if strmatch(`sec_check_var',"pat%X*")
 replace `_NV' = 095040 if strmatch(`_CLONE',"pau")
 replace `_NV' = 030073 if strmatch(`_CLONE',"paularo")
-replace `_NV' = 106012 if strmatch(`_CLONE',"pauli arbarei")
+replace `_NV' = 106012 if strmatch(`_CLONE',"pauli arbarei") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092046 if strmatch(`_CLONE',"pauli arbarei") & `TIME'<2006
+replace `_NV' = 111053 if strmatch(`_CLONE',"pauli arbarei") & `TIME'>2016
 replace `_NV' = 095041 if strmatch(`_CLONE',"paulilatino")
 replace `_NV' = 015169 if strmatch(`_CLONE',"paullo")
 replace `_NV' = 062049 if strmatch(`_CLONE',"paupisi")
@@ -5126,7 +5337,8 @@ replace `_NV' = 001183 if strmatch(`_CLONE',"pecetto torinese")
 replace `_NV' = 033031 if strmatch(`_CLONE',"pecorara")
 replace `_NV' = 078095 if strmatch(`_CLONE',"pedace")
 replace `_NV' = 087034 if strmatch(`_CLONE',"pedara")
-replace `_NV' = 109030 if strmatch(`_CLONE',"pedaso")
+replace `_NV' = 109030 if strmatch(`_CLONE',"pedaso") & `TIME'>=2010
+replace `_NV' = 044057 if strmatch(`_CLONE',"pedaso") & `TIME'<2010
 replace `_NV' = 025036 if strmatch(`_CLONE',"pedavena")
 replace `_NV' = 024076 if strmatch(`_CLONE',"pedemonte")
 replace `_NV' = 026056 if strmatch(`_CLONE',"pederobba")
@@ -5149,7 +5361,8 @@ replace `_NV' = 005083 if strmatch(`_CLONE',"penango")
 replace `_NV' = 055026 if strmatch(`_CLONE',"penna in teverina")
 replace `_NV' = 043035 if strmatch(`_CLONE',"penna san giovanni")
 replace `_NV' = 067033 if strmatch(`_CLONE',"penna s*andrea")
-replace `_NV' = 099024 if strmatch(`_CLONE',"pennabilli")
+replace `_NV' = 099024 if strmatch(`_CLONE',"pennabilli") & `TIME'>=2010
+replace `_NV' = 041042 if strmatch(`_CLONE',"pennabilli") & `TIME'<2010
 replace `_NV' = 069063 if strmatch(`_CLONE',"pennadomo")
 replace `_NV' = 069064 if strmatch(`_CLONE',"pennapiedimonte")
 replace `_NV' = 068027 if strmatch(`_CLONE',"penne")
@@ -5158,8 +5371,11 @@ replace `_NV' = 069065 if strmatch(`_CLONE',"perano")
 replace `_NV' = 025037 if strmatch(`_CLONE',"perarolo di cadore")
 replace `_NV' = 021063 if strmatch(`_CLONE',"perca*") | strmatch(`_CLONE',"percha")
 replace `_NV' = 058076 if strmatch(`_CLONE',"percile")
-replace `_NV' = 105014 if strmatch(`_CLONE',"perdasdefogu")
-replace `_NV' = 107014 if strmatch(`_CLONE',"perdaxius")
+replace `_NV' = 105014 if strmatch(`_CLONE',"perdasdefogu") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091072 if strmatch(`_CLONE',"perdasdefogu") & (`TIME'<2006 | `TIME'>2016)
+replace `_NV' = 107014 if strmatch(`_CLONE',"perdaxius") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092047 if strmatch(`_CLONE',"perdaxius") & `TIME'<2006
+replace `_NV' = 111054 if strmatch(`_CLONE',"perdaxius") & `TIME'>2016
 replace `_NV' = 065091 if strmatch(`_CLONE',"perdifumo")
 replace `_NV' = 097066 if strmatch(`_CLONE',"perego")
 replace `_NV' = 066067 if strmatch(`_CLONE',"pereto")
@@ -5218,7 +5434,8 @@ replace `_NV' = 057050 if strmatch(`_CLONE',"petrella salto")
 replace `_NV' = 070052 if strmatch(`_CLONE',"petrella tifernina")
 replace `_NV' = 041045 if strmatch(`_CLONE',"petriano")
 replace `_NV' = 043036 if strmatch(`_CLONE',"petriolo")
-replace `_NV' = 109031 if strmatch(`_CLONE',"petritoli")
+replace `_NV' = 109031 if strmatch(`_CLONE',"petritoli") & `TIME'>=2010
+replace `_NV' = 044058 if strmatch(`_CLONE',"petritoli") & `TIME'<2010
 replace `_NV' = 079094 if strmatch(`_CLONE',"petrizzi")
 replace `_NV' = 079095 if strmatch(`_CLONE',"petron*")
 replace `_NV' = 081024 if strmatch(`_CLONE',"petrosino")
@@ -5345,7 +5562,8 @@ replace `_NV' = 076062 if strmatch(`_CLONE',"pignola")
 replace `_NV' = 011021 if strmatch(`_CLONE',"pignone")
 replace `_NV' = 013184 if strmatch(`_CLONE',"pigra")
 replace `_NV' = 002096 if strmatch(`_CLONE',"pila")
-replace `_NV' = 092048 if strmatch(`_CLONE',"pimentel")
+replace `_NV' = 092048 if strmatch(`_CLONE',"pimentel") & `TIME'<=2016
+replace `_NV' = 111055 if strmatch(`_CLONE',"pimentel") & `TIME'>2016
 replace `_NV' = 063054 if strmatch(`_CLONE',"pimonte")
 replace `_NV' = 018115 if strmatch(`_CLONE',"pinarolo po")
 replace `_NV' = 001190 if strmatch(`_CLONE',"pinasca")
@@ -5376,7 +5594,9 @@ replace `_NV' = 083068 if strmatch(`_CLONE',"piraino")
 replace `_NV' = 050026 if strmatch(`_CLONE',"pisa")
 replace `_NV' = 003119 if strmatch(`_CLONE',"pisano")
 replace `_NV' = 001195 if strmatch(`_CLONE',"piscina")
-replace `_NV' = 107015 if strmatch(`_CLONE',"piscinas")
+replace `_NV' = 107015 if strmatch(`_CLONE',"piscinas") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092107 if strmatch(`_CLONE',"piscinas") & `TIME'<2006
+replace `_NV' = 111056 if strmatch(`_CLONE',"piscinas") & `TIME'>2016
 replace `_NV' = 065096 if strmatch(`_CLONE',"pisciotta")
 replace `_NV' = 017143 if strmatch(`_CLONE',"pisogne")
 replace `_NV' = 058077 if strmatch(`_CLONE',"pisoniano")
@@ -5522,7 +5742,8 @@ replace `_NV' = 016172 if strmatch(`_CLONE',"pontirolo nuovo")
 replace `_NV' = 017150 if strmatch(`_CLONE',"pontoglio")
 replace `_NV' = 045014 if strmatch(`_CLONE',"pontremoli")
 replace `_NV' = 059018 if strmatch(`_CLONE',"ponza")
-replace `_NV' = 109032 if strmatch(`_CLONE',"ponzano di fermo")
+replace `_NV' = 109032 if strmatch(`_CLONE',"ponzano di fermo") & `TIME'>=2010
+replace `_NV' = 044059 if strmatch(`_CLONE',"ponzano di fermo") & `TIME'<2010
 replace `_NV' = 006135 if strmatch(`_CLONE',"ponzano monferrato")
 replace `_NV' = 058080 if strmatch(`_CLONE',"ponzano romano")
 replace `_NV' = 026059 if strmatch(`_CLONE',"ponzano veneto")
@@ -5551,8 +5772,10 @@ replace `_NV' = 075097 if strmatch(`_CLONE',"porto cesareo")
 replace `_NV' = 084028 if strmatch(`_CLONE',"porto empedocle")
 replace `_NV' = 020045 if strmatch(`_CLONE',"porto mantovano")
 replace `_NV' = 043042 if strmatch(`_CLONE',"porto recanati")
-replace `_NV' = 109033 if strmatch(`_CLONE',"porto san giorgio")
-replace `_NV' = 109034 if strmatch(`_CLONE',"porto s*elpidio")
+replace `_NV' = 109033 if strmatch(`_CLONE',"porto san giorgio") & `TIME'>=2010
+replace `_NV' = 044060 if strmatch(`_CLONE',"porto san giorgio") & `TIME'<2010
+replace `_NV' = 109034 if strmatch(`_CLONE',"porto s*elpidio") & `TIME'>=2010
+replace `_NV' = 044061 if strmatch(`_CLONE',"porto s*elpidio") & `TIME'<2010
 replace `_NV' = 029039 if strmatch(`_CLONE',"porto tolle")
 replace `_NV' = 090058 if strmatch(`_CLONE',"porto torres")
 replace `_NV' = 012114 if strmatch(`_CLONE',"porto valtravaglia")
@@ -5564,7 +5787,9 @@ replace `_NV' = 010044 if strmatch(`_CLONE',"portofino")
 replace `_NV' = 027029 if strmatch(`_CLONE',"portogruaro")
 replace `_NV' = 038019 if strmatch(`_CLONE',"portomaggiore")
 replace `_NV' = 089020 if strmatch(`_CLONE',"portopalo di capo passero")
-replace `_NV' = 107016 if strmatch(`_CLONE',"portoscuso")
+replace `_NV' = 107016 if strmatch(`_CLONE',"portoscuso") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092049 if strmatch(`_CLONE',"portoscuso") & `TIME'<2006
+replace `_NV' = 111057 if strmatch(`_CLONE',"portoscuso") & `TIME'>2016
 replace `_NV' = 011022 if strmatch(`_CLONE',"portovenere")
 replace `_NV' = 096048 if strmatch(`_CLONE',"portula")
 replace `_NV' = 091073 if strmatch(`_CLONE',"posada")
@@ -5755,7 +5980,8 @@ replace `_NV' = 087038 if strmatch(`_CLONE',"randazzo")
 replace `_NV' = 016178 if strmatch(`_CLONE',"ranica")
 replace `_NV' = 016179 if strmatch(`_CLONE',"ranzanico")
 replace `_NV' = 008048 if strmatch(`_CLONE',"ranzo")
-replace `_NV' = 109035 if strmatch(`_CLONE',"rapagnano")
+replace `_NV' = 109035 if strmatch(`_CLONE',"rapagnano") & `TIME'>=2010
+replace `_NV' = 044062 if strmatch(`_CLONE',"rapagnano") & `TIME'<2010
 replace `_NV' = 010046 if strmatch(`_CLONE',"rapallo")
 replace `_NV' = 069071 if strmatch(`_CLONE',"rapino")
 replace `_NV' = 052026 if strmatch(`_CLONE',"rapolano terme")
@@ -5794,7 +6020,8 @@ replace `_NV' = 062056 if strmatch(`_CLONE',"reino")
 replace `_NV' = 083070 if strmatch(`_CLONE',"reitano")
 replace `_NV' = 030091 if strmatch(`_CLONE',"remanzacco")
 replace `_NV' = 017160 if strmatch(`_CLONE',"remedello")
-replace `_NV' = 108037 if strmatch(`_CLONE',"renate")
+replace `_NV' = 108037 if strmatch(`_CLONE',"renate") & `TIME'>=2010
+replace `_NV' = 015180 if strmatch(`_CLONE',"renate") & `TIME'<2010
 replace `_NV' = 078102 if strmatch(`_CLONE',"rende")
 replace `_NV' = 021072 if strmatch(`_CLONE',"renon*") | strmatch(`_CLONE',"ritten")
 replace `_NV' = 026066 if strmatch(`_CLONE',"resana")
@@ -6038,14 +6265,16 @@ replace `_NV' = 026069 if strmatch(`_CLONE',"roncade")
 replace `_NV' = 017165 if strmatch(`_CLONE',"roncadelle")
 replace `_NV' = 018129 if strmatch(`_CLONE',"roncaro")
 replace `_NV' = 022156 if strmatch(`_CLONE',"roncegno*")
-replace `_NV' = 108055 if strmatch(`_CLONE',"roncello")
+replace `_NV' = 108055 if strmatch(`_CLONE',"roncello") & `TIME'>=2010
+replace `_NV' = 015186 if strmatch(`_CLONE',"roncello") & `TIME'<2010
 replace `_NV' = 031016 if strmatch(`_CLONE',"ronchi dei legionari")
 replace `_NV' = 022157 if strmatch(`_CLONE',"ronchi valsugana")
 replace `_NV' = 030097 if strmatch(`_CLONE',"ronchis")
 replace `_NV' = 056045 if strmatch(`_CLONE',"ronciglione")
 replace `_NV' = 023064 if strmatch(`_CLONE',"ronco *adige")
 replace `_NV' = 096053 if strmatch(`_CLONE',"ronco biellese")
-replace `_NV' = 108038 if strmatch(`_CLONE',"ronco briantino")
+replace `_NV' = 108038 if strmatch(`_CLONE',"ronco briantino") & `TIME'>=2010
+replace `_NV' = 015187 if strmatch(`_CLONE',"ronco briantino") & `TIME'<2010
 replace `_NV' = 001224 if strmatch(`_CLONE',"ronco canavese")
 replace `_NV' = 010049 if strmatch(`_CLONE',"ronco scrivia")
 replace `_NV' = 016184 if strmatch(`_CLONE',"roncobello")
@@ -6143,8 +6372,11 @@ replace `_NV' = 065113 if strmatch(`_CLONE',"sacco")
 replace `_NV' = 028073 if strmatch(`_CLONE',"saccolongo")
 replace `_NV' = 093037 if strmatch(`_CLONE',"sacile")
 replace `_NV' = 058093 if strmatch(`_CLONE',"sacrofano")
-replace `_NV' = 092119 if strmatch(`_CLONE',"sadali")
-replace `_NV' = 095086 if strmatch(`_CLONE',"sagama")
+replace `_NV' = 092119 if strmatch(`_CLONE',"sadali") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091074 if strmatch(`_CLONE',"sadali") & `TIME'<2006
+replace `_NV' = 111058 if strmatch(`_CLONE',"sadali") & `TIME'>2016
+replace `_NV' = 095086 if strmatch(`_CLONE',"sagama") & `TIME'>=2006
+replace `_NV' = 091075 if strmatch(`_CLONE',"sagama") & `TIME'<2006
 replace `_NV' = 096056 if strmatch(`_CLONE',"sagliano micca")
 replace `_NV' = 031017 if strmatch(`_CLONE',"sagrado")
 replace `_NV' = 022164 if strmatch(`_CLONE',"sagron mis")
@@ -6205,8 +6437,11 @@ replace `_NV' = 001234 if strmatch(`_CLONE',"salza di pinerolo")
 replace `_NV' = 064081 if strmatch(`_CLONE',"salza irpina")
 replace `_NV' = 027032 if strmatch(`_CLONE',"salzano")
 replace `_NV' = 012118 if strmatch(`_CLONE',"samarate")
-replace `_NV' = 106013 if strmatch(`_CLONE',"samassi")
-replace `_NV' = 092053 if strmatch(`_CLONE',"samatzai")
+replace `_NV' = 106013 if strmatch(`_CLONE',"samassi") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092052 if strmatch(`_CLONE',"samassi") & `TIME'<2006
+replace `_NV' = 111059 if strmatch(`_CLONE',"samassi") & `TIME'>2016
+replace `_NV' = 092053 if strmatch(`_CLONE',"samatzai") & `TIME'<=2016
+replace `_NV' = 111060 if strmatch(`_CLONE',"samatzai") & `TIME'>2016
 replace `_NV' = 084034 if strmatch(`_CLONE',"sambuca di sicilia")
 replace `_NV' = 047018 if strmatch(`_CLONE',"sambuca pistoiese")
 replace `_NV' = 058094 if strmatch(`_CLONE',"sambuci")
@@ -6222,7 +6457,8 @@ replace `_NV' = 008052 if strmatch(`_CLONE',"san bartolomeo al mare")
 replace `_NV' = 062057 if strmatch(`_CLONE',"san bartolomeo in galdo")
 replace `_NV' = 013204 if strmatch(`_CLONE',"san bartolomeo val cavargna")
 replace `_NV' = 078111 if strmatch(`_CLONE',"san basile")
-replace `_NV' = 092054 if strmatch(`_CLONE',"san basilio")
+replace `_NV' = 092054 if strmatch(`_CLONE',"san basilio") & `TIME'<=2016
+replace `_NV' = 111061 if strmatch(`_CLONE',"san basilio") & `TIME'>2016
 replace `_NV' = 019088 if strmatch(`_CLONE',"san bassano")
 replace `_NV' = 029043 if strmatch(`_CLONE',"san bellino")
 replace `_NV' = 004206 if strmatch(`_CLONE',"san benedetto belbo")
@@ -6282,7 +6518,7 @@ replace `_NV' = 075069 if strmatch(`_CLONE',"san donato di lecce")
 replace `_NV' = 078115 if strmatch(`_CLONE',"san donato di ninea")
 replace `_NV' = 015192 if strmatch(`_CLONE',"san donato milanese")
 replace `_NV' = 060062 if strmatch(`_CLONE',"san donato val di comino")
-replace `_NV' = 032004 if strmatch(`_CLONE',"san dorligo*")
+replace `_NV' = 032004 if strmatch(`_CLONE',"san dorligo*") | strmatch(`_CLONE',"dolina")
 replace `_NV' = 013205 if strmatch(`_CLONE',"san fedele intelvi")
 replace `_NV' = 076076 if strmatch(`_CLONE',"san fele")
 replace `_NV' = 061075 if strmatch(`_CLONE',"san felice a cancello")
@@ -6291,17 +6527,20 @@ replace `_NV' = 017171 if strmatch(`_CLONE',"san felice del benaco")
 replace `_NV' = 070064 if strmatch(`_CLONE',"san felice del molise")
 replace `_NV' = 036037 if strmatch(`_CLONE',"san felice sul panaro")
 replace `_NV' = 080097 if strmatch(`_CLONE',"san ferdinando")
-replace `_NV' = 110007 if strmatch(`_CLONE',"san ferdinando di puglia")
+replace `_NV' = 110007 if strmatch(`_CLONE',"san ferdinando di puglia") & `TIME'>=2010
+replace `_NV' = 071045 if strmatch(`_CLONE',"san ferdinando di puglia") & `TIME'<2010
 replace `_NV' = 013206 if strmatch(`_CLONE',"san fermo della battaglia")
 replace `_NV' = 078116 if strmatch(`_CLONE',"san fili")
 replace `_NV' = 083077 if strmatch(`_CLONE',"san filippo del mela")
 replace `_NV' = 026072 if strmatch(`_CLONE',"san fior")
 replace `_NV' = 098047 if strmatch(`_CLONE',"san fiorano")
-replace `_NV' = 031019 if strmatch(`_CLONE',"san floriano del collio")
+replace `_NV' = 031019 if strmatch(`_CLONE',"san floriano del collio") | strmatch(`_CLONE',"*teverjan")
 replace `_NV' = 079108 if strmatch(`_CLONE',"san floro")
 replace `_NV' = 001240 if strmatch(`_CLONE',"san francesco al campo")
 replace `_NV' = 083078 if strmatch(`_CLONE',"san fratello")
-replace `_NV' = 106014 if strmatch(`_CLONE',"san gavino monreale")
+replace `_NV' = 106014 if strmatch(`_CLONE',"san gavino monreale") & `TIME'>=2006 & `TIME'<=2016  
+replace `_NV' = 092055 if strmatch(`_CLONE',"san gavino monreale") & `TIME'<2006  
+replace `_NV' = 111062 if strmatch(`_CLONE',"san gavino monreale") & `TIME'>2016 
 replace `_NV' = 055029 if strmatch(`_CLONE',"san gemini")
 replace `_NV' = 021079 if strmatch(`_CLONE',"san genesio atesino*") | strmatch(`_CLONE',"jenesien")
 replace `_NV' = 018135 if strmatch(`_CLONE',"san genesio ed uniti")
@@ -6344,6 +6583,7 @@ replace `_NV' = 030101 if strmatch(`_CLONE',"san giovanni al natisone")
 replace `_NV' = 016188 if strmatch(`_CLONE',"san giovanni bianco")
 replace `_NV' = 052029 if strmatch(`_CLONE',"san giovanni *asso")
 replace `_NV' = 020058 if strmatch(`_CLONE',"san giovanni del dosso")
+replace `_NV' = 022250 if strmatch(`_CLONE',"san giovanni di fassa") | strmatch(`_CLONE',"s*n jan*")
 replace `_NV' = 080072 if strmatch(`_CLONE',"san giovanni di gerace")
 replace `_NV' = 084036 if strmatch(`_CLONE',"san giovanni gemini")
 replace `_NV' = 023070 if strmatch(`_CLONE',"san giovanni ilarione")
@@ -6357,7 +6597,9 @@ replace `_NV' = 087041 if strmatch(`_CLONE',"san giovanni la punta")
 replace `_NV' = 069080 if strmatch(`_CLONE',"san giovanni lipioni")
 replace `_NV' = 023071 if strmatch(`_CLONE',"san giovanni lupatoto")
 replace `_NV' = 071046 if strmatch(`_CLONE',"san giovanni rotondo")
-replace `_NV' = 107017 if strmatch(`_CLONE',"san giovanni suergiu")
+replace `_NV' = 107017 if strmatch(`_CLONE',"san giovanni suergiu") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092056 if strmatch(`_CLONE',"san giovanni suergiu") & `TIME'<2006
+replace `_NV' = 111063 if strmatch(`_CLONE',"san giovanni suergiu") & `TIME'>2016
 replace `_NV' = 069081 if strmatch(`_CLONE',"san giovanni teatino")
 replace `_NV' = 051033 if strmatch(`_CLONE',"san giovanni valdarno")
 replace `_NV' = 070067 if strmatch(`_CLONE',"san giuliano del sannio")
@@ -6376,7 +6618,8 @@ replace `_NV' = 065120 if strmatch(`_CLONE',"san gregorio magno")
 replace `_NV' = 061076 if strmatch(`_CLONE',"san gregorio matese")
 replace `_NV' = 025045 if strmatch(`_CLONE',"san gregorio nelle alpi")
 replace `_NV' = 037054 if strmatch(`_CLONE',"san lazzaro di savena")
-replace `_NV' = 099025 if strmatch(`_CLONE',"san leo")
+replace `_NV' = 099025 if strmatch(`_CLONE',"san leo") & `TIME'>=2010
+replace `_NV' = 041053 if strmatch(`_CLONE',"san leo") & `TIME'<2010
 replace `_NV' = 030102 if strmatch(`_CLONE',"san leonardo")
 replace `_NV' = 021080 if strmatch(`_CLONE',"san leonardo*passiria*") | strmatch(`_CLONE',"st. leonhard in passeier")
 replace `_NV' = 062060 if strmatch(`_CLONE',"san leucio del sannio")
@@ -6461,7 +6704,8 @@ replace `_NV' = 061078 if strmatch(`_CLONE',"san nicola la strada")
 replace `_NV' = 062067 if strmatch(`_CLONE',"san nicola manfredi")
 replace `_NV' = 095046 if strmatch(`_CLONE',"san nicol*arcidano")
 replace `_NV' = 025046 if strmatch(`_CLONE',"san nicol* di comelico")
-replace `_NV' = 092058 if strmatch(`_CLONE',"san nicol* gerrei")
+replace `_NV' = 092058 if strmatch(`_CLONE',"san nicol* gerrei") & `TIME'<=2016
+replace `_NV' = 111064 if strmatch(`_CLONE',"san nicol* gerrei") & `TIME'>2016
 replace `_NV' = 021084 if strmatch(`_CLONE',"san pancrazio*pankraz*") | strmatch(`_CLONE',"san pancrazio") | strmatch(`_CLONE',"st. pankraz")
 replace `_NV' = 074015 if strmatch(`_CLONE',"san pancrazio salentino")
 replace `_NV' = 017138 if strmatch(`_CLONE',"san paolo")
@@ -6535,11 +6779,17 @@ replace `_NV' = 013248 if strmatch(`_CLONE',"san siro")
 replace `_NV' = 064087 if strmatch(`_CLONE',"san sossio baronia")
 replace `_NV' = 079116 if strmatch(`_CLONE',"san sostene")
 replace `_NV' = 078128 if strmatch(`_CLONE',"san sosti")
-replace `_NV' = 092059 if strmatch(`_CLONE',"san sperate")
+replace `_NV' = 092059 if strmatch(`_CLONE',"san sperate") & `TIME'<=2016
+replace `_NV' = 111065 if strmatch(`_CLONE',"san sperate") & `TIME'>2016
 replace `_NV' = 027036 if strmatch(`_CLONE',"san*stino*livenza")
 replace `_NV' = 061085 if strmatch(`_CLONE',"san tammaro")
-replace `_NV' = 083090 if strmatch(`_CLONE',"san teodoro")
-**replace `_NV' = 104023 if strmatch(`_CLONE',"san teodoro")
+if "`mkc'" != "" {
+  replace `_NV' = 083090 if strmatch(`_CLONE',"san teodoro") & `mkc'==83
+  replace `_NV' = 104023 if strmatch(`_CLONE',"san teodoro") & `TIME'>=2006 & `TIME'<=2016  & `mkc'==104
+  replace `_NV' = 091076 if strmatch(`_CLONE',"san teodoro") & `TIME'<2006  & `mkc'==91
+  replace `_NV' = 090092 if strmatch(`_CLONE',"san teodoro") & `TIME'>2016  & `mkc'==90
+}
+else replace `_NV' = 083090 if strmatch(`_CLONE',"san teodoro")
 replace `_NV' = 025049 if strmatch(`_CLONE',"san tomaso agordino")
 replace `_NV' = 068038 if strmatch(`_CLONE',"san valentino in abruzzo citeriore")
 replace `_NV' = 065132 if strmatch(`_CLONE',"san valentino torio")
@@ -6550,7 +6800,8 @@ replace `_NV' = 049018 if strmatch(`_CLONE',"san vincenzo")
 replace `_NV' = 078135 if strmatch(`_CLONE',"san vincenzo la costa")
 replace `_NV' = 066092 if strmatch(`_CLONE',"san vincenzo valle roveto")
 replace `_NV' = 063075 if strmatch(`_CLONE',"san vitaliano")
-replace `_NV' = 092064 if strmatch(`_CLONE',"san vito")
+replace `_NV' = 092064 if strmatch(`_CLONE',"san vito") & `TIME'<=2016
+replace `_NV' = 111066 if strmatch(`_CLONE',"san vito") & `TIME'>2016
 replace `_NV' = 093041 if strmatch(`_CLONE',"san vito al tagliamento")
 replace `_NV' = 030105 if strmatch(`_CLONE',"san vito al torre")
 replace `_NV' = 069086 if strmatch(`_CLONE',"san vito chietino")
@@ -6578,7 +6829,9 @@ replace `_NV' = 001241 if strmatch(`_CLONE',"sangano")
 replace `_NV' = 012141 if strmatch(`_CLONE',"sangiano")
 replace `_NV' = 078117 if strmatch(`_CLONE',"sangineto")
 replace `_NV' = 023072 if strmatch(`_CLONE',"sanguinetto")
-replace `_NV' = 106015 if strmatch(`_CLONE',"sanluri")
+replace `_NV' = 106015 if strmatch(`_CLONE',"sanluri") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092057 if strmatch(`_CLONE',"sanluri") & `TIME'<2006
+replace `_NV' = 111067 if strmatch(`_CLONE',"sanluri") & `TIME'>2016
 replace `_NV' = 018138 if strmatch(`_CLONE',"s*nazzaro*burgondi")
 replace `_NV' = 072040 if strmatch(`_CLONE',"s*nicandro di bari")
 replace `_NV' = 075070 if strmatch(`_CLONE',"sannicola")
@@ -6591,7 +6844,8 @@ replace `_NV' = 080079 if strmatch(`_CLONE',"sant*agata del bianco")
 replace `_NV' = 078131 if strmatch(`_CLONE',"sant*agata di esaro")
 replace `_NV' = 083084 if strmatch(`_CLONE',"sant*agata di militello")
 replace `_NV' = 071052 if strmatch(`_CLONE',"sant*agata di puglia")
-replace `_NV' = 099026 if strmatch(`_CLONE',"sant*agata feltria")
+replace `_NV' = 099026 if strmatch(`_CLONE',"sant*agata feltria") & `TIME'>=2010
+replace `_NV' = 041055 if strmatch(`_CLONE',"sant*agata feltria") & `TIME'<2010
 replace `_NV' = 006156 if strmatch(`_CLONE',"sant*agata fossili")
 replace `_NV' = 087045 if strmatch(`_CLONE',"sant*agata li battiati")
 replace `_NV' = 039017 if strmatch(`_CLONE',"sant*agata sul santerno")
@@ -6610,7 +6864,8 @@ replace `_NV' = 054045 if strmatch(`_CLONE',"sant*anatolia di narco")
 replace `_NV' = 079118 if strmatch(`_CLONE',"sant*andrea apostolo dello ?onio")
 replace `_NV' = 060066 if strmatch(`_CLONE',"sant*andrea del garigliano")
 replace `_NV' = 064089 if strmatch(`_CLONE',"sant*andrea di conza")
-replace `_NV' = 092061 if strmatch(`_CLONE',"sant*andrea frius")
+replace `_NV' = 092061 if strmatch(`_CLONE',"sant*andrea frius") & `TIME'<=2016
+replace `_NV' = 111069 if strmatch(`_CLONE',"sant*andrea frius") & `TIME'>2016
 replace `_NV' = 062071 if strmatch(`_CLONE',"sant*angelo a cupolo")
 replace `_NV' = 065128 if strmatch(`_CLONE',"sant*angelo a fasanella")
 replace `_NV' = 064091 if strmatch(`_CLONE',"sant*angelo a scala")
@@ -6629,13 +6884,18 @@ replace `_NV' = 098050 if strmatch(`_CLONE',"sant*angelo lodigiano")
 replace `_NV' = 018144 if strmatch(`_CLONE',"sant*angelo lomellina")
 replace `_NV' = 084039 if strmatch(`_CLONE',"sant*angelo muxaro")
 replace `_NV' = 058098 if strmatch(`_CLONE',"sant*angelo romano")
-replace `_NV' = 107019 if strmatch(`_CLONE',"sant*anna arresi")
+replace `_NV' = 107019 if strmatch(`_CLONE',"sant*anna arresi") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092062 if strmatch(`_CLONE',"sant*anna arresi") & `TIME'<2006
+replace `_NV' = 111070 if strmatch(`_CLONE',"sant*anna arresi") & `TIME'>2016
 replace `_NV' = 023078 if strmatch(`_CLONE',"sant*anna*alfaedo")
 replace `_NV' = 063073 if strmatch(`_CLONE',"sant*antimo")
-replace `_NV' = 107020 if strmatch(`_CLONE',"sant*antioco")
+replace `_NV' = 107020 if strmatch(`_CLONE',"sant*antioco") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092063 if strmatch(`_CLONE',"sant*antioco") & `TIME'<2006
+replace `_NV' = 111071 if strmatch(`_CLONE',"sant*antioco") & `TIME'>2016
 replace `_NV' = 001256 if strmatch(`_CLONE',"sant*antonino di susa")
 replace `_NV' = 063074 if strmatch(`_CLONE',"sant*antonio abate")
-replace `_NV' = 104021 if strmatch(`_CLONE',"sant*antonio di gallura")
+replace `_NV' = 104021 if strmatch(`_CLONE',"sant*antonio di gallura") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090085 if strmatch(`_CLONE',"sant*antonio di gallura") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 060067 if strmatch(`_CLONE',"sant*apollinare")
 replace `_NV' = 076080 if strmatch(`_CLONE',"sant*arcangelo")
 replace `_NV' = 062078 if strmatch(`_CLONE',"sant*arcangelo trimonte")
@@ -6647,7 +6907,8 @@ replace `_NV' = 028083 if strmatch(`_CLONE',"sant*elena")
 replace `_NV' = 094047 if strmatch(`_CLONE',"sant*elena sannita")
 replace `_NV' = 070074 if strmatch(`_CLONE',"sant*elia a pianisi")
 replace `_NV' = 060068 if strmatch(`_CLONE',"sant*elia fiumerapido")
-replace `_NV' = 109037 if strmatch(`_CLONE',"sant*elpidio a mare")
+replace `_NV' = 109037 if strmatch(`_CLONE',"sant*elpidio a mare") & `TIME'>=2010
+replace `_NV' = 044068 if strmatch(`_CLONE',"sant*elpidio a mare") & `TIME'<2010
 replace `_NV' = 068037 if strmatch(`_CLONE',"sant*eufemia a maiella")
 replace `_NV' = 080081 if strmatch(`_CLONE',"sant*eufemia *aspromonte")
 replace `_NV' = 069085 if strmatch(`_CLONE',"sant*eusanio del sangro")
@@ -6657,8 +6918,8 @@ replace `_NV' = 080082 if strmatch(`_CLONE',"sant*ilario dello ?onio")
 replace `_NV' = 041058 if strmatch(`_CLONE',"sant*ippolito")
 replace `_NV' = 010055 if strmatch(`_CLONE',"sant*olcese")
 replace `_NV' = 067039 if strmatch(`_CLONE',"sant*omero")
-replace `_NV' = 016192 if strmatch(`_CLONE',"sant*omobono terme") | strmatch(`_CLONE',"sant*omobono*") & `TIME'<2014
-replace `_NV' = 016252 if strmatch(`_CLONE',"sant*omobono terme") | strmatch(`_CLONE',"sant*omobono*") & `TIME'>=2014
+replace `_NV' = 016192 if (strmatch(`_CLONE',"sant*omobono terme") | strmatch(`_CLONE',"sant*omobono*")) & `TIME'<2014
+replace `_NV' = 016252 if (strmatch(`_CLONE',"sant*omobono terme") | strmatch(`_CLONE',"sant*omobono*")) & `TIME'>=2014
 replace `_NV' = 102036 if strmatch(`_CLONE',"sant*onofrio")
 replace `_NV' = 058099 if strmatch(`_CLONE',"sant*oreste")
 replace `_NV' = 022168 if strmatch(`_CLONE',"sant*orsola terme")
@@ -6718,11 +6979,15 @@ replace `_NV' = 101022 if strmatch(`_CLONE',"santa severina")
 replace `_NV' = 040043 if strmatch(`_CLONE',"santa sofia")
 replace `_NV' = 078133 if strmatch(`_CLONE',"santa sofia *epiro")
 replace `_NV' = 083089 if strmatch(`_CLONE',"santa teresa di riva")
-replace `_NV' = 104022 if strmatch(`_CLONE',"santa teresa*gallura")
+replace `_NV' = 104022 if strmatch(`_CLONE',"santa teresa*gallura") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090063 if strmatch(`_CLONE',"santa teresa*gallura") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 087048 if strmatch(`_CLONE',"santa venerina")
 replace `_NV' = 004212 if strmatch(`_CLONE',"santa vittoria *alba")
-replace `_NV' = 109036 if strmatch(`_CLONE',"santa vittoria in matenano")
-replace `_NV' = 107018 if strmatch(`_CLONE',"santadi")
+replace `_NV' = 109036 if strmatch(`_CLONE',"santa vittoria in matenano") & `TIME'>=2010
+replace `_NV' = 044067 if strmatch(`_CLONE',"santa vittoria in matenano") & `TIME'<2010
+replace `_NV' = 107018 if strmatch(`_CLONE',"santadi") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092060 if strmatch(`_CLONE',"santadi") & `TIME'<2006
+replace `_NV' = 111068 if strmatch(`_CLONE',"santadi") & `TIME'>2016
 replace `_NV' = 099018 if strmatch(`_CLONE',"santarcangelo di romagna")
 replace `_NV' = 066089 if strmatch(`_CLONE',"sante marie")
 replace `_NV' = 001257 if strmatch(`_CLONE',"santena")
@@ -6751,14 +7016,16 @@ replace `_NV' = 065133 if strmatch(`_CLONE',"sanza")
 replace `_NV' = 022169 if strmatch(`_CLONE',"sanzeno")
 replace `_NV' = 028085 if strmatch(`_CLONE',"saonara")
 replace `_NV' = 083092 if strmatch(`_CLONE',"saponara")
-replace `_NV' = 025052 if strmatch(`_CLONE',"sappada") & `TIME'<=2017
-replace `_NV' = 030189 if strmatch(`_CLONE',"sappada") & `TIME'>=2018
+replace `_NV' = 025052 if strmatch(`_CLONE',"sappada") & `TIME'<2017
+replace `_NV' = 030189 if strmatch(`_CLONE',"sappada") & `TIME'>=2017
 replace `_NV' = 065134 if strmatch(`_CLONE',"sapri")
 replace `_NV' = 078136 if strmatch(`_CLONE',"saracena")
 replace `_NV' = 058101 if strmatch(`_CLONE',"saracinesco")
 replace `_NV' = 024097 if strmatch(`_CLONE',"sarcedo")
 replace `_NV' = 076081 if strmatch(`_CLONE',"sarconi")
-replace `_NV' = 106016 if strmatch(`_CLONE',"sardara")
+replace `_NV' = 106016 if strmatch(`_CLONE',"sardara") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092065 if strmatch(`_CLONE',"sardara") & `TIME'<2006
+replace `_NV' = 111072 if strmatch(`_CLONE',"sardara") & `TIME'>2016
 replace `_NV' = 006157 if strmatch(`_CLONE',"sardigliano")
 replace `_NV' = 024098 if strmatch(`_CLONE',"sarego")
 replace `_NV' = 021086 if strmatch(`_CLONE',"sarentino*") | strmatch(`_CLONE',"sarntal")
@@ -6807,7 +7074,7 @@ replace `_NV' = 010057 if strmatch(`_CLONE',"savignone")
 replace `_NV' = 017175 if strmatch(`_CLONE',"saviore dell*adamello")
 replace `_NV' = 083093 if strmatch(`_CLONE',"savoca")
 replace `_NV' = 030108 if strmatch(`_CLONE',"savogna")
-replace `_NV' = 031022 if strmatch(`_CLONE',"savogna *isonzo")
+replace `_NV' = 031022 if strmatch(`_CLONE',"savogna *isonzo") | strmatch(`_CLONE',"sovodnje ob so*") 
 replace `_NV' = 076084 if strmatch(`_CLONE',"savoia di lucania")
 replace `_NV' = 009056 if strmatch(`_CLONE',"savona")
 replace `_NV' = 068039 if strmatch(`_CLONE',"scafa")
@@ -6879,7 +7146,9 @@ replace `_NV' = 090065 if strmatch(`_CLONE',"sedini")
 replace `_NV' = 015204 if strmatch(`_CLONE',"sedriano")
 replace `_NV' = 016196 if strmatch(`_CLONE',"sedrina")
 replace `_NV' = 043050 if strmatch(`_CLONE',"sefro")
-replace `_NV' = 106017 if strmatch(`_CLONE',"segariu")
+replace `_NV' = 106017 if strmatch(`_CLONE',"segariu") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092067 if strmatch(`_CLONE',"segariu") & `TIME'<2006
+replace `_NV' = 111073 if strmatch(`_CLONE',"segariu") & `TIME'>2016
 replace `_NV' = 053025 if strmatch(`_CLONE',"seggiano")
 replace `_NV' = 058102 if strmatch(`_CLONE',"segni")
 replace `_NV' = 022172 if strmatch(`_CLONE',"segonzano")
@@ -6887,7 +7156,8 @@ replace `_NV' = 015205 if strmatch(`_CLONE',"segrate")
 replace `_NV' = 026079 if strmatch(`_CLONE',"segusino")
 replace `_NV' = 092068 if strmatch(`_CLONE',"selargius")
 replace `_NV' = 057065 if strmatch(`_CLONE',"selci")
-replace `_NV' = 092069 if strmatch(`_CLONE',"selegas")
+replace `_NV' = 092069 if strmatch(`_CLONE',"selegas") & `TIME'<=2016
+replace `_NV' = 111074 if strmatch(`_CLONE',"selegas") & `TIME'>2016
 replace `_NV' = 054048 if strmatch(`_CLONE',"sellano")
 replace `_NV' = 022246 if strmatch(`_CLONE',"sella*giudicarie")
 replace `_NV' = 017176 if strmatch(`_CLONE',"sellero")
@@ -6917,13 +7187,16 @@ replace `_NV' = 013212 if strmatch(`_CLONE',"senna comasco")
 replace `_NV' = 098053 if strmatch(`_CLONE',"senna lodigiana")
 replace `_NV' = 095055 if strmatch(`_CLONE',"sennariolo")
 replace `_NV' = 090067 if strmatch(`_CLONE',"sennori")
-replace `_NV' = 092070 if strmatch(`_CLONE',"senorb*")
+replace `_NV' = 092070 if strmatch(`_CLONE',"senorb*") & `TIME'<=2016
+replace `_NV' = 111075 if strmatch(`_CLONE',"senorb*") & `TIME'>2016
 replace `_NV' = 070075 if strmatch(`_CLONE',"sepino")
 replace `_NV' = 103063 if strmatch(`_CLONE',"seppiana")
 replace `_NV' = 093042 if strmatch(`_CLONE',"sequals")
 replace `_NV' = 046028 if strmatch(`_CLONE',"seravezza")
-replace `_NV' = 092071 if strmatch(`_CLONE',"serdiana")
-replace `_NV' = 108039 if strmatch(`_CLONE',"seregno")
+replace `_NV' = 092071 if strmatch(`_CLONE',"serdiana") & `TIME'<=2016
+replace `_NV' = 111076 if strmatch(`_CLONE',"serdiana") & `TIME'>2016
+replace `_NV' = 108039 if strmatch(`_CLONE',"seregno") & `TIME'>=2010
+replace `_NV' = 015208 if strmatch(`_CLONE',"seregno") & `TIME'<2010
 replace `_NV' = 025055 if strmatch(`_CLONE',"seren del grappa")
 replace `_NV' = 019094 if strmatch(`_CLONE',"sergnano")
 replace `_NV' = 016198 if strmatch(`_CLONE',"seriate")
@@ -6946,7 +7219,9 @@ replace `_NV' = 071053 if strmatch(`_CLONE',"serracapriola")
 replace `_NV' = 085018 if strmatch(`_CLONE',"serradifalco")
 replace `_NV' = 004218 if strmatch(`_CLONE',"serralunga *alba")
 replace `_NV' = 006159 if strmatch(`_CLONE',"serralunga di crea")
-replace `_NV' = 106018 if strmatch(`_CLONE',"serramanna")
+replace `_NV' = 106018 if strmatch(`_CLONE',"serramanna") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092072 if strmatch(`_CLONE',"serramanna") & `TIME'<2006
+replace `_NV' = 111077 if strmatch(`_CLONE',"serramanna") & `TIME'>2016
 replace `_NV' = 036042 if strmatch(`_CLONE',"serramazzoni")
 replace `_NV' = 065139 if strmatch(`_CLONE',"serramezzana")
 replace `_NV' = 068040 if strmatch(`_CLONE',"serramonacesca")
@@ -6961,12 +7236,17 @@ replace `_NV' = 047020 if strmatch(`_CLONE',"serravalle pistoiese")
 replace `_NV' = 006160 if strmatch(`_CLONE',"serravalle scrivia")
 replace `_NV' = 002137 if strmatch(`_CLONE',"serravalle sesia")
 replace `_NV' = 065140 if strmatch(`_CLONE',"serre")
-replace `_NV' = 106019 if strmatch(`_CLONE',"serrenti")
-replace `_NV' = 092120 if strmatch(`_CLONE',"serri")
+replace `_NV' = 106019 if strmatch(`_CLONE',"serrenti") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092073 if strmatch(`_CLONE',"serrenti") & `TIME'<2006
+replace `_NV' = 111078 if strmatch(`_CLONE',"serrenti") & `TIME'>2016
+replace `_NV' = 092120 if strmatch(`_CLONE',"serri") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091080 if strmatch(`_CLONE',"serri") & `TIME'<2006
+replace `_NV' = 111079 if strmatch(`_CLONE',"serri") & `TIME'>2016
 replace `_NV' = 060071 if strmatch(`_CLONE',"serrone")
 replace `_NV' = 041062 if strmatch(`_CLONE',"serrungarina")
 replace `_NV' = 079130 if strmatch(`_CLONE',"sersale")
-replace `_NV' = 109038 if strmatch(`_CLONE',"servigliano")
+replace `_NV' = 109038 if strmatch(`_CLONE',"servigliano") & `TIME'>=2010
+replace `_NV' = 044069 if strmatch(`_CLONE',"servigliano") & `TIME'<2010
 replace `_NV' = 061088 if strmatch(`_CLONE',"sessa aurunca")
 replace `_NV' = 065141 if strmatch(`_CLONE',"sessa cilento")
 replace `_NV' = 005105 if strmatch(`_CLONE',"sessame")
@@ -6993,15 +7273,21 @@ replace `_NV' = 092075 if strmatch(`_CLONE',"settimo san pietro")
 replace `_NV' = 001265 if strmatch(`_CLONE',"settimo torinese")
 replace `_NV' = 001266 if strmatch(`_CLONE',"settimo vittone")
 replace `_NV' = 079131 if strmatch(`_CLONE',"settingiano")
-replace `_NV' = 106020 if strmatch(`_CLONE',"setzu")
-replace `_NV' = 105015 if strmatch(`_CLONE',"seui")
-replace `_NV' = 092121 if strmatch(`_CLONE',"seulo")
-replace `_NV' = 108040 if strmatch(`_CLONE',"seveso")
+replace `_NV' = 106020 if strmatch(`_CLONE',"setzu") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092076 if strmatch(`_CLONE',"setzu") & `TIME'<2006
+replace `_NV' = 111080 if strmatch(`_CLONE',"setzu") & `TIME'>2016
+replace `_NV' = 105015 if strmatch(`_CLONE',"seui") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091081 if strmatch(`_CLONE',"seui") & `TIME'<2006
+replace `_NV' = 111081 if strmatch(`_CLONE',"seui") & `TIME'>2016
+replace `_NV' = 092121 if strmatch(`_CLONE',"seulo") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091082 if strmatch(`_CLONE',"seulo") & `TIME'<2006
+replace `_NV' = 111082 if strmatch(`_CLONE',"seulo") & `TIME'>2016
+replace `_NV' = 108040 if strmatch(`_CLONE',"seveso") & `TIME'>=2010
+replace `_NV' = 015212 if strmatch(`_CLONE',"seveso") & `TIME'<2010
 replace `_NV' = 006161 if strmatch(`_CLONE',"sezzadio")
 replace `_NV' = 059028 if strmatch(`_CLONE',"sezze")
-replace `_NV' = 022250 if strmatch(`_CLONE',"s*n jan*")
 replace `_NV' = 022173 if strmatch(`_CLONE',"sfruz")
-replace `_NV' = 032005 if strmatch(`_CLONE',"sgonico")
+replace `_NV' = 032005 if strmatch(`_CLONE',"*sgonico*") | strmatch(`_CLONE',"*zgonik*")
 replace `_NV' = 060073 if strmatch(`_CLONE',"sgurgola")
 replace `_NV' = 095056 if strmatch(`_CLONE',"siamaggiore")
 replace `_NV' = 095057 if strmatch(`_CLONE',"siamanna")
@@ -7009,7 +7295,9 @@ replace `_NV' = 065142 if strmatch(`_CLONE',"siano")
 replace `_NV' = 095076 if strmatch(`_CLONE',"siapiccia")
 replace `_NV' = 065143 if strmatch(`_CLONE',"sicignano degli alburni")
 replace `_NV' = 084042 if strmatch(`_CLONE',"siculiana")
-replace `_NV' = 106021 if strmatch(`_CLONE',"siddi")
+replace `_NV' = 106021 if strmatch(`_CLONE',"siddi") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092077 if strmatch(`_CLONE',"siddi") & `TIME'<2006
+replace `_NV' = 111083 if strmatch(`_CLONE',"siddi") & `TIME'>2016
 replace `_NV' = 080088 if strmatch(`_CLONE',"siderno")
 replace `_NV' = 052032 if strmatch(`_CLONE',"siena")
 replace `_NV' = 054049 if strmatch(`_CLONE',"sigillo")
@@ -7018,8 +7306,10 @@ replace `_NV' = 021093 if strmatch(`_CLONE',"silandro*") | strmatch(`_CLONE',"sc
 replace `_NV' = 091083 if strmatch(`_CLONE',"silanus")
 replace `_NV' = 026081 if strmatch(`_CLONE',"silea")
 replace `_NV' = 090068 if strmatch(`_CLONE',"siligo")
-replace `_NV' = 092078 if strmatch(`_CLONE',"siliqua")
-replace `_NV' = 092079 if strmatch(`_CLONE',"silius")
+replace `_NV' = 092078 if strmatch(`_CLONE',"siliqua") & `TIME'<=2016
+replace `_NV' = 111084 if strmatch(`_CLONE',"siliqua") & `TIME'>2016
+replace `_NV' = 092079 if strmatch(`_CLONE',"silius") & `TIME'<=2016
+replace `_NV' = 111085 if strmatch(`_CLONE',"silius") & `TIME'>2016
 replace `_NV' = 046029 if strmatch(`_CLONE',"sillano")
 replace `_NV' = 046037 if strmatch(`_CLONE',"sillano giuncugnano")
 replace `_NV' = 003138 if strmatch(`_CLONE',"sillavengo")
@@ -7048,12 +7338,14 @@ replace `_NV' = 022174 if strmatch(`_CLONE',"siror")
 replace `_NV' = 097076 if strmatch(`_CLONE',"sirtori")
 replace `_NV' = 034034 if strmatch(`_CLONE',"sissa")
 replace `_NV' = 034049 if strmatch(`_CLONE',"sissa*trecasali")
-replace `_NV' = 092081 if strmatch(`_CLONE',"siurgus donigala")
+replace `_NV' = 092081 if strmatch(`_CLONE',"siurgus donigala") & `TIME'<=2016
+replace `_NV' = 111086 if strmatch(`_CLONE',"siurgus donigala") & `TIME'>2016
 replace `_NV' = 018150 if strmatch(`_CLONE',"siziano")
 replace `_NV' = 003139 if strmatch(`_CLONE',"sizzano")
 replace `_NV' = 021094 if strmatch(`_CLONE',"sluderno*") | strmatch(`_CLONE',"schluderns")
 replace `_NV' = 022175 if strmatch(`_CLONE',"smarano")
-replace `_NV' = 109039 if strmatch(`_CLONE',"smerillo")
+replace `_NV' = 109039 if strmatch(`_CLONE',"smerillo") & `TIME'>=2010
+replace `_NV' = 044070 if strmatch(`_CLONE',"smerillo") & `TIME'<2010
 replace `_NV' = 023081 if strmatch(`_CLONE',"soave")
 replace `_NV' = 030110 if strmatch(`_CLONE',"socchieve")
 replace `_NV' = 095078 if strmatch(`_CLONE',"sodd*")
@@ -7072,7 +7364,8 @@ replace `_NV' = 012121 if strmatch(`_CLONE',"solbiate arno")
 replace `_NV' = 013255 if strmatch(`_CLONE',"solbiate*cagno")
 replace `_NV' = 012122 if strmatch(`_CLONE',"solbiate olona")
 replace `_NV' = 008058 if strmatch(`_CLONE',"soldano")
-replace `_NV' = 092082 if strmatch(`_CLONE',"soleminis")
+replace `_NV' = 092082 if strmatch(`_CLONE',"soleminis") & `TIME'<=2016
+replace `_NV' = 111087 if strmatch(`_CLONE',"soleminis") & `TIME'>2016
 replace `_NV' = 006163 if strmatch(`_CLONE',"solero")
 replace `_NV' = 028087 if strmatch(`_CLONE',"solesino")
 replace `_NV' = 075076 if strmatch(`_CLONE',"soleto")
@@ -7102,7 +7395,7 @@ replace `_NV' = 017181 if strmatch(`_CLONE',"sonico")
 replace `_NV' = 059029 if strmatch(`_CLONE',"sonnino")
 replace `_NV' = 096062 if strmatch(`_CLONE',"soprana")
 replace `_NV' = 060074 if strmatch(`_CLONE',"sora")
-replace `_NV' = 022176 if strmatch(`_CLONE',"soraga")
+replace `_NV' = 022176 if strmatch(`_CLONE',"soraga") | strmatch(`_CLONE',"soraga di fassa")
 replace `_NV' = 034036 if strmatch(`_CLONE',"soragna")
 replace `_NV' = 053026 if strmatch(`_CLONE',"sorano")
 replace `_NV' = 079134 if strmatch(`_CLONE',"sorbo san basile")
@@ -7138,7 +7431,8 @@ replace `_NV' = 079138 if strmatch(`_CLONE',"soveria mannelli")
 replace `_NV' = 079139 if strmatch(`_CLONE',"soveria simeri")
 replace `_NV' = 025057 if strmatch(`_CLONE',"soverzene")
 replace `_NV' = 052034 if strmatch(`_CLONE',"sovicille")
-replace `_NV' = 108041 if strmatch(`_CLONE',"sovico")
+replace `_NV' = 108041 if strmatch(`_CLONE',"sovico") & `TIME'>=2010
+replace `_NV' = 015216 if strmatch(`_CLONE',"sovico") & `TIME'<2010
 replace `_NV' = 024103 if strmatch(`_CLONE',"sovizzo")
 replace `_NV' = 025058 if strmatch(`_CLONE',"sovramonte")
 replace `_NV' = 003141 if strmatch(`_CLONE',"sozzago")
@@ -7163,7 +7457,8 @@ replace `_NV' = 036045 if strmatch(`_CLONE',"spilamberto")
 replace `_NV' = 093044 if strmatch(`_CLONE',"spilimbergo")
 replace `_NV' = 102042 if strmatch(`_CLONE',"spilinga")
 replace `_NV' = 019100 if strmatch(`_CLONE',"spinadesco")
-replace `_NV' = 110008 if strmatch(`_CLONE',"spinazzola")
+replace `_NV' = 110008 if strmatch(`_CLONE',"spinazzola") & `TIME'>=2010
+replace `_NV' = 072042 if strmatch(`_CLONE',"spinazzola") & `TIME'<2010
 replace `_NV' = 027038 if strmatch(`_CLONE',"spinea")
 replace `_NV' = 019101 if strmatch(`_CLONE',"spineda")
 replace `_NV' = 070076 if strmatch(`_CLONE',"spinete")
@@ -7235,15 +7530,18 @@ replace `_NV' = 051037 if strmatch(`_CLONE',"subbiano")
 replace `_NV' = 058103 if strmatch(`_CLONE',"subiaco")
 replace `_NV' = 061090 if strmatch(`_CLONE',"succivo")
 replace `_NV' = 097077 if strmatch(`_CLONE',"sueglio")
-replace `_NV' = 092083 if strmatch(`_CLONE',"suelli")
+replace `_NV' = 092083 if strmatch(`_CLONE',"suelli") & `TIME'<=2016
+replace `_NV' = 111088 if strmatch(`_CLONE',"suelli") & `TIME'>2016
 replace `_NV' = 097078 if strmatch(`_CLONE',"suello")
 replace `_NV' = 016209 if strmatch(`_CLONE',"suisio")
-replace `_NV' = 108042 if strmatch(`_CLONE',"sulbiate")
+replace `_NV' = 108042 if strmatch(`_CLONE',"sulbiate") & `TIME'>=2010
+replace `_NV' = 015217 if strmatch(`_CLONE',"sulbiate") & `TIME'<2010
 replace `_NV' = 066098 if strmatch(`_CLONE',"sulmona")
 replace `_NV' = 017182 if strmatch(`_CLONE',"sulzano")
 replace `_NV' = 012124 if strmatch(`_CLONE',"sumirago")
 replace `_NV' = 064105 if strmatch(`_CLONE',"summonte")
-replace `_NV' = 095087 if strmatch(`_CLONE',"suni")
+replace `_NV' = 095087 if strmatch(`_CLONE',"suni") & `TIME'>=2006
+replace `_NV' = 091087 if strmatch(`_CLONE',"suni") & `TIME'<2006
 replace `_NV' = 003143 if strmatch(`_CLONE',"suno")
 replace `_NV' = 075081 if strmatch(`_CLONE',"supersano")
 replace `_NV' = 060076 if strmatch(`_CLONE',"supino")
@@ -7267,9 +7565,11 @@ replace `_NV' = 025059 if strmatch(`_CLONE',"taibon agordino")
 replace `_NV' = 012125 if strmatch(`_CLONE',"taino")
 replace `_NV' = 022186 if strmatch(`_CLONE',"taio")
 replace `_NV' = 030113 if strmatch(`_CLONE',"taipana")
-replace `_NV' = 099027 if strmatch(`_CLONE',"talamello")
+replace `_NV' = 099027 if strmatch(`_CLONE',"talamello") & `TIME'>=2010
+replace `_NV' = 041063 if strmatch(`_CLONE',"talamello") & `TIME'<2010
 replace `_NV' = 014063 if strmatch(`_CLONE',"talamona")
-replace `_NV' = 105016 if strmatch(`_CLONE',"talana")
+replace `_NV' = 105016 if strmatch(`_CLONE',"talana") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091088 if strmatch(`_CLONE',"talana") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 016210 if strmatch(`_CLONE',"taleggio")
 replace `_NV' = 051038 if strmatch(`_CLONE',"talla")
 replace `_NV' = 030114 if strmatch(`_CLONE',"talmassons")
@@ -7312,10 +7612,12 @@ replace `_NV' = 014065 if strmatch(`_CLONE',"teglio")
 replace `_NV' = 027040 if strmatch(`_CLONE',"teglio veneto")
 replace `_NV' = 062074 if strmatch(`_CLONE',"telese terme")
 replace `_NV' = 016212 if strmatch(`_CLONE',"telgate")
-replace `_NV' = 104024 if strmatch(`_CLONE',"telti")
+replace `_NV' = 104024 if strmatch(`_CLONE',"telti") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090080 if strmatch(`_CLONE',"telti") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 022188 if strmatch(`_CLONE',"telve") | strmatch(`_CLONE',"telve*sotto")
 replace `_NV' = 022189 if strmatch(`_CLONE',"telve di sopra")
-replace `_NV' = 104025 if strmatch(`_CLONE',"tempio pausania")
+replace `_NV' = 104025 if strmatch(`_CLONE',"tempio pausania") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090070 if strmatch(`_CLONE',"tempio pausania") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 017184 if strmatch(`_CLONE',"temu'") | strmatch(`_CLONE',"temu") | strmatch(`_CLONE',"temù")
 if `c(stata_version)'>=14 replace `_NV' = 017184 if strmatch(`sec_check_var',"tem%X*")
 replace `_NV' = 022190 if strmatch(`_CLONE',"tenna")
@@ -7358,7 +7660,8 @@ replace `_NV' = 041070 if strmatch(`_CLONE',"terre roveresche")
 replace `_NV' = 022194 if strmatch(`_CLONE',"terres")
 replace `_NV' = 050036 if strmatch(`_CLONE',"terricciola")
 replace `_NV' = 006171 if strmatch(`_CLONE',"terruggia")
-replace `_NV' = 105017 if strmatch(`_CLONE',"tertenia")
+replace `_NV' = 105017 if strmatch(`_CLONE',"tertenia") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091089 if strmatch(`_CLONE',"tertenia") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 063082 if strmatch(`_CLONE',"terzigno")
 replace `_NV' = 006172 if strmatch(`_CLONE',"terzo")
 replace `_NV' = 030120 if strmatch(`_CLONE',"terzo*aquileia")
@@ -7369,7 +7672,8 @@ replace `_NV' = 021099 if strmatch(`_CLONE',"tesimo*") | strmatch(`_CLONE',"tise
 replace `_NV' = 056051 if strmatch(`_CLONE',"tessennano")
 replace `_NV' = 009060 if strmatch(`_CLONE',"testico")
 replace `_NV' = 091090 if strmatch(`_CLONE',"teti")
-replace `_NV' = 092084 if strmatch(`_CLONE',"teulada")
+replace `_NV' = 092084 if strmatch(`_CLONE',"teulada") & `TIME'<=2016
+replace `_NV' = 111089 if strmatch(`_CLONE',"teulada") & `TIME'>2016
 replace `_NV' = 061092 if strmatch(`_CLONE',"teverola")
 replace `_NV' = 024104 if strmatch(`_CLONE',"tezze sul brenta")
 replace `_NV' = 024105 if strmatch(`_CLONE',"thiene")
@@ -7383,7 +7687,8 @@ replace `_NV' = 075086 if strmatch(`_CLONE',"tiggiano")
 replace `_NV' = 010061 if strmatch(`_CLONE',"tiglieto")
 replace `_NV' = 005108 if strmatch(`_CLONE',"tigliole")
 replace `_NV' = 017185 if strmatch(`_CLONE',"tignale")
-replace `_NV' = 095088 if strmatch(`_CLONE',"tinnura")
+replace `_NV' = 095088 if strmatch(`_CLONE',"tinnura") & `TIME'>=2006
+replace `_NV' = 091092 if strmatch(`_CLONE',"tinnura") & `TIME'<2006
 replace `_NV' = 066100 if strmatch(`_CLONE',"tione degli abruzzi")
 replace `_NV' = 022199 if strmatch(`_CLONE',"tione di trento")
 replace `_NV' = 014066 if strmatch(`_CLONE',"tirano")
@@ -7450,7 +7755,8 @@ replace `_NV' = 060078 if strmatch(`_CLONE',"torre cajetani")
 replace `_NV' = 001274 if strmatch(`_CLONE',"torre canavese")
 replace `_NV' = 018157 if strmatch(`_CLONE',"torre *arese")
 replace `_NV' = 018159 if strmatch(`_CLONE',"torre *isola")
-replace `_NV' = 097080 if strmatch(`_CLONE',"torre de*busi")
+replace `_NV' = 097080 if strmatch(`_CLONE',"torre de*busi") & `TIME'<2018
+replace `_NV' = 016215 if strmatch(`_CLONE',"torre de*busi") & `TIME'>=2018
 replace `_NV' = 018158 if strmatch(`_CLONE',"torre de*negri")
 replace `_NV' = 068043 if strmatch(`_CLONE',"torre de*passeri")
 replace `_NV' = 019107 if strmatch(`_CLONE',"torre de*picenardi")
@@ -7465,7 +7771,8 @@ replace `_NV' = 065149 if strmatch(`_CLONE',"torre orsaia")
 replace `_NV' = 016217 if strmatch(`_CLONE',"torre pallavicina")
 replace `_NV' = 001275 if strmatch(`_CLONE',"torre pellice")
 replace `_NV' = 004228 if strmatch(`_CLONE',"torre san giorgio")
-replace `_NV' = 109040 if strmatch(`_CLONE',"torre san patrizio")
+replace `_NV' = 109040 if strmatch(`_CLONE',"torre san patrizio") & `TIME'>=2010
+replace `_NV' = 044072 if strmatch(`_CLONE',"torre san patrizio") & `TIME'<2010
 replace `_NV' = 074019 if strmatch(`_CLONE',"torre santa susanna")
 replace `_NV' = 030122 if strmatch(`_CLONE',"torreano")
 replace `_NV' = 024107 if strmatch(`_CLONE',"torrebelvicino")
@@ -7495,7 +7802,8 @@ replace `_NV' = 034041 if strmatch(`_CLONE',"torrile")
 replace `_NV' = 064111 if strmatch(`_CLONE',"torrioni")
 replace `_NV' = 052035 if strmatch(`_CLONE',"torrita di siena")
 replace `_NV' = 058106 if strmatch(`_CLONE',"torrita tiberina")
-replace `_NV' = 105018 if strmatch(`_CLONE',"tortol*")
+replace `_NV' = 105018 if strmatch(`_CLONE',"tortol*") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091095 if strmatch(`_CLONE',"tortol*") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 006174 if strmatch(`_CLONE',"tortona")
 replace `_NV' = 078149 if strmatch(`_CLONE',"tortora")
 replace `_NV' = 065150 if strmatch(`_CLONE',"tortorella")
@@ -7515,7 +7823,8 @@ replace `_NV' = 093045 if strmatch(`_CLONE',"tramonti di sopra")
 replace `_NV' = 093046 if strmatch(`_CLONE',"tramonti di sotto")
 replace `_NV' = 076091 if strmatch(`_CLONE',"tramutola")
 replace `_NV' = 001276 if strmatch(`_CLONE',"trana")
-replace `_NV' = 110009 if strmatch(`_CLONE',"trani")
+replace `_NV' = 110009 if strmatch(`_CLONE',"trani") & `TIME'>=2010
+replace `_NV' = 072045 if strmatch(`_CLONE',"trani") & `TIME'<2010
 replace `_NV' = 022204 if strmatch(`_CLONE',"transacqua")
 replace `_NV' = 014069 if strmatch(`_CLONE',"traona")
 replace `_NV' = 081021 if strmatch(`_CLONE',"trapani")
@@ -7524,7 +7833,9 @@ replace `_NV' = 103066 if strmatch(`_CLONE',"trarego viggiona")
 replace `_NV' = 066102 if strmatch(`_CLONE',"trasacco")
 replace `_NV' = 030124 if strmatch(`_CLONE',"trasaghis")
 replace `_NV' = 103067 if strmatch(`_CLONE',"trasquera")
-replace `_NV' = 107021 if strmatch(`_CLONE',"tratalias")
+replace `_NV' = 107021 if strmatch(`_CLONE',"tratalias") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092085 if strmatch(`_CLONE',"tratalias") & `TIME'<2006
+replace `_NV' = 111090 if strmatch(`_CLONE',"tratalias") & `TIME'>2016
 replace `_NV' = 001277 if strmatch(`_CLONE',"trausella")
 replace `_NV' = 018162 if strmatch(`_CLONE',"travac*siccomario")
 replace `_NV' = 017188 if strmatch(`_CLONE',"travagliato")
@@ -7596,20 +7907,24 @@ replace `_NV' = 075088 if strmatch(`_CLONE',"tricase")
 replace `_NV' = 002147 if strmatch(`_CLONE',"tricerro")
 replace `_NV' = 030127 if strmatch(`_CLONE',"tricesimo")
 replace `_NV' = 025061 if strmatch(`_CLONE',"trichiana")
-replace `_NV' = 105019 if strmatch(`_CLONE',"triei")
+replace `_NV' = 105019 if strmatch(`_CLONE',"triei") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091097 if strmatch(`_CLONE',"triei") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 032006 if strmatch(`_CLONE',"trieste")
 replace `_NV' = 072046 if strmatch(`_CLONE',"triggiano")
 replace `_NV' = 019110 if strmatch(`_CLONE',"trigolo")
 replace `_NV' = 004232 if strmatch(`_CLONE',"trinita'") | strmatch(`_CLONE',"trinita") | strmatch(`_CLONE',"trinità")
 if `c(stata_version)'>=14 replace `_NV' = 04232 if strmatch(`sec_check_var',"trinit%X*")
-replace `_NV' = 104026 if strmatch(`_CLONE',"trinit*agultu e vignola")
-replace `_NV' = 110010 if strmatch(`_CLONE',"trinitapoli")
+replace `_NV' = 104026 if strmatch(`_CLONE',"trinit*agultu e vignola") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 090074 if strmatch(`_CLONE',"trinit*agultu e vignola") & (`TIME'<2006 | `TIME'>2016)
+replace `_NV' = 110010 if strmatch(`_CLONE',"trinitapoli") & `TIME'>=2010
+replace `_NV' = 071057 if strmatch(`_CLONE',"trinitapoli") & `TIME'<2010
 replace `_NV' = 002148 if strmatch(`_CLONE',"trino") | strmatch(`_CLONE',"trino vercellese")
 replace `_NV' = 008061 if strmatch(`_CLONE',"triora")
 replace `_NV' = 083100 if strmatch(`_CLONE',"tripi")
 replace `_NV' = 006176 if strmatch(`_CLONE',"trisobbio")
 replace `_NV' = 024110 if strmatch(`_CLONE',"trissino")
-replace `_NV' = 108043 if strmatch(`_CLONE',"triuggio")
+replace `_NV' = 108043 if strmatch(`_CLONE',"triuggio") & `TIME'>=2010
+replace `_NV' = 015223 if strmatch(`_CLONE',"triuggio") & `TIME'<2010
 replace `_NV' = 070081 if strmatch(`_CLONE',"trivento")
 replace `_NV' = 096070 if strmatch(`_CLONE',"trivero")
 replace `_NV' = 060081 if strmatch(`_CLONE',"trivigliano")
@@ -7634,7 +7949,9 @@ replace `_NV' = 069097 if strmatch(`_CLONE',"tufillo")
 replace `_NV' = 063085 if strmatch(`_CLONE',"tufino")
 replace `_NV' = 064113 if strmatch(`_CLONE',"tufo")
 replace `_NV' = 075089 if strmatch(`_CLONE',"tuglie")
-replace `_NV' = 106022 if strmatch(`_CLONE',"tuili")
+replace `_NV' = 106022 if strmatch(`_CLONE',"tuili") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092086 if strmatch(`_CLONE',"tuili") & `TIME'<2006
+replace `_NV' = 111091 if strmatch(`_CLONE',"tuili") & `TIME'>2016
 replace `_NV' = 090075 if strmatch(`_CLONE',"tula")
 replace `_NV' = 054055 if strmatch(`_CLONE',"tuoro sul trasimeno")
 replace `_NV' = 057071 if strmatch(`_CLONE',"turania")
@@ -7642,7 +7959,9 @@ replace `_NV' = 098058 if strmatch(`_CLONE',"turano lodigiano")
 replace `_NV' = 013227 if strmatch(`_CLONE',"turate")
 replace `_NV' = 015226 if strmatch(`_CLONE',"turbigo")
 replace `_NV' = 072047 if strmatch(`_CLONE',"turi")
-replace `_NV' = 106023 if strmatch(`_CLONE',"turri")
+replace `_NV' = 106023 if strmatch(`_CLONE',"turri") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092087 if strmatch(`_CLONE',"turri") & `TIME'<2006
+replace `_NV' = 111092 if strmatch(`_CLONE',"turri") & `TIME'>2016
 replace `_NV' = 031024 if strmatch(`_CLONE',"turriaco")
 replace `_NV' = 068044 if strmatch(`_CLONE',"turrivalignani")
 replace `_NV' = 077029 if strmatch(`_CLONE',"tursi")
@@ -7656,7 +7975,8 @@ replace `_NV' = 075090 if strmatch(`_CLONE',"ugento")
 replace `_NV' = 075091 if strmatch(`_CLONE',"uggiano la chiesa")
 replace `_NV' = 013228 if strmatch(`_CLONE',"uggiate*trevano")
 replace `_NV' = 095068 if strmatch(`_CLONE',"ul*tirso")
-replace `_NV' = 105020 if strmatch(`_CLONE',"ulassai")
+replace `_NV' = 105020 if strmatch(`_CLONE',"ulassai") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091098 if strmatch(`_CLONE',"ulassai") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 021104 if strmatch(`_CLONE',"ultimo*") | strmatch(`_CLONE',"ulten")
 replace `_NV' = 054056 if strmatch(`_CLONE',"umbertide")
 replace `_NV' = 101026 if strmatch(`_CLONE',"umbriatico")
@@ -7670,14 +7990,20 @@ replace `_NV' = 043055 if strmatch(`_CLONE',"urbisaglia")
 replace `_NV' = 016222 if strmatch(`_CLONE',"urgnano")
 replace `_NV' = 090076 if strmatch(`_CLONE',"uri")
 replace `_NV' = 070083 if strmatch(`_CLONE',"ururi")
-replace `_NV' = 105021 if strmatch(`_CLONE',"urzulei")
+replace `_NV' = 105021 if strmatch(`_CLONE',"urzulei") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091099 if strmatch(`_CLONE',"urzulei") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 010064 if strmatch(`_CLONE',"uscio")
 replace `_NV' = 095070 if strmatch(`_CLONE',"usellus")
 replace `_NV' = 090077 if strmatch(`_CLONE',"usini")
-replace `_NV' = 108044 if strmatch(`_CLONE',"usmate velate")
-replace `_NV' = 092088 if strmatch(`_CLONE',"ussana")
-replace `_NV' = 106024 if strmatch(`_CLONE',"ussaramanna")
-replace `_NV' = 105022 if strmatch(`_CLONE',"ussassai")
+replace `_NV' = 108044 if strmatch(`_CLONE',"usmate velate") & `TIME'>=2010
+replace `_NV' = 015227 if strmatch(`_CLONE',"usmate velate") & `TIME'<2010
+replace `_NV' = 092088 if strmatch(`_CLONE',"ussana") & `TIME'<=2016
+replace `_NV' = 111093 if strmatch(`_CLONE',"ussana") & `TIME'>2016
+replace `_NV' = 106024 if strmatch(`_CLONE',"ussaramanna") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092089 if strmatch(`_CLONE',"ussaramanna") & `TIME'<2006
+replace `_NV' = 111094 if strmatch(`_CLONE',"ussaramanna") & `TIME'>2016
+replace `_NV' = 105022 if strmatch(`_CLONE',"ussassai") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091100 if strmatch(`_CLONE',"ussassai") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 001281 if strmatch(`_CLONE',"usseaux")
 replace `_NV' = 001282 if strmatch(`_CLONE',"usseglio")
 replace `_NV' = 043056 if strmatch(`_CLONE',"ussita")
@@ -7774,7 +8100,8 @@ replace `_NV' = 085021 if strmatch(`_CLONE',"vallelunga pratameno")
 replace `_NV' = 060083 if strmatch(`_CLONE',"vallemaio")
 replace `_NV' = 058108 if strmatch(`_CLONE',"vallepietra")
 replace `_NV' = 056054 if strmatch(`_CLONE',"vallerano")
-replace `_NV' = 092091 if strmatch(`_CLONE',"vallermosa")
+replace `_NV' = 092091 if strmatch(`_CLONE',"vallermosa") & `TIME'<=2016
+replace `_NV' = 111095 if strmatch(`_CLONE',"vallermosa") & `TIME'>2016
 replace `_NV' = 060084 if strmatch(`_CLONE',"vallerotonda")
 replace `_NV' = 064115 if strmatch(`_CLONE',"vallesaccarda")
 replace `_NV' = 016226 if strmatch(`_CLONE',"valleve")
@@ -7824,7 +8151,8 @@ replace `_NV' = 034045 if strmatch(`_CLONE',"varano de*melegari")
 replace `_NV' = 080095 if strmatch(`_CLONE',"varapodio")
 replace `_NV' = 009065 if strmatch(`_CLONE',"varazze")
 replace `_NV' = 057073 if strmatch(`_CLONE',"varco sabino")
-replace `_NV' = 108045 if strmatch(`_CLONE',"varedo")
+replace `_NV' = 108045 if strmatch(`_CLONE',"varedo") & `TIME'>=2010
+replace `_NV' = 015231 if strmatch(`_CLONE',"varedo") & `TIME'<2010
 replace `_NV' = 022211 if strmatch(`_CLONE',"varena")
 replace `_NV' = 097084 if strmatch(`_CLONE',"varenna")
 replace `_NV' = 012133 if strmatch(`_CLONE',"varese")
@@ -7845,12 +8173,14 @@ replace `_NV' = 001290 if strmatch(`_CLONE',"vauda canavese")
 replace `_NV' = 102046 if strmatch(`_CLONE',"vazzano")
 replace `_NV' = 026088 if strmatch(`_CLONE',"vazzola")
 replace `_NV' = 050037 if strmatch(`_CLONE',"vecchiano")
-replace `_NV' = 108046 if strmatch(`_CLONE',"vedano al lambro")
+replace `_NV' = 108046 if strmatch(`_CLONE',"vedano al lambro") & `TIME'>=2010
+replace `_NV' = 015232 if strmatch(`_CLONE',"vedano al lambro") & `TIME'<2010
 replace `_NV' = 012134 if strmatch(`_CLONE',"vedano olona")
 replace `_NV' = 012135 if strmatch(`_CLONE',"veddasca")
 replace `_NV' = 026089 if strmatch(`_CLONE',"vedelago")
 replace `_NV' = 016230 if strmatch(`_CLONE',"vedeseta")
-replace `_NV' = 108047 if strmatch(`_CLONE',"veduggio con colzano")
+replace `_NV' = 108047 if strmatch(`_CLONE',"veduggio con colzano") & `TIME'>=2010
+replace `_NV' = 015233 if strmatch(`_CLONE',"veduggio con colzano") & `TIME'<2010
 replace `_NV' = 028096 if strmatch(`_CLONE',"veggiano")
 replace `_NV' = 075092 if strmatch(`_CLONE',"veglie")
 replace `_NV' = 096075 if strmatch(`_CLONE',"veglio")
@@ -7882,7 +8212,8 @@ replace `_NV' = 082077 if strmatch(`_CLONE',"ventimiglia di sicilia")
 replace `_NV' = 059033 if strmatch(`_CLONE',"ventotene")
 replace `_NV' = 030131 if strmatch(`_CLONE',"venzone")
 replace `_NV' = 021112 if strmatch(`_CLONE',"verano*v*") | strmatch(`_CLONE',"verano") | strmatch(`_CLONE',"v*ran")
-replace `_NV' = 108048 if strmatch(`_CLONE',"verano brianza")
+replace `_NV' = 108048 if strmatch(`_CLONE',"verano brianza") & `TIME'>=2010
+replace `_NV' = 015234 if strmatch(`_CLONE',"verano brianza") & `TIME'<2010
 replace `_NV' = 103072 if strmatch(`_CLONE',"verbania")
 replace `_NV' = 078153 if strmatch(`_CLONE',"verbicaro")
 replace `_NV' = 013239 if strmatch(`_CLONE',"vercana")
@@ -8054,7 +8385,9 @@ replace `_NV' = 030134 if strmatch(`_CLONE',"villa vicentina")
 replace `_NV' = 021113 if strmatch(`_CLONE',"villabassa*") | strmatch(`_CLONE',"niederdorf")
 replace `_NV' = 082079 if strmatch(`_CLONE',"villabate")
 replace `_NV' = 017200 if strmatch(`_CLONE',"villachiara")
-replace `_NV' = 106025 if strmatch(`_CLONE',"villacidro")
+replace `_NV' = 106025 if strmatch(`_CLONE',"villacidro") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092092 if strmatch(`_CLONE',"villacidro") & `TIME'<2006
+replace `_NV' = 111096 if strmatch(`_CLONE',"villacidro") & `TIME'>2016
 replace `_NV' = 006182 if strmatch(`_CLONE',"villadeati")
 replace `_NV' = 029048 if strmatch(`_CLONE',"villadose")
 replace `_NV' = 103075 if strmatch(`_CLONE',"villadossola")
@@ -8068,16 +8401,21 @@ replace `_NV' = 084043 if strmatch(`_CLONE',"villafranca sicula")
 replace `_NV' = 083105 if strmatch(`_CLONE',"villafranca tirrena")
 replace `_NV' = 082080 if strmatch(`_CLONE',"villafrati")
 replace `_NV' = 024117 if strmatch(`_CLONE',"villaga")
-replace `_NV' = 105023 if strmatch(`_CLONE',"villagrande strisaili")
+replace `_NV' = 105023 if strmatch(`_CLONE',"villagrande strisaili") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 091101 if strmatch(`_CLONE',"villagrande strisaili") & (`TIME'<2006 | `TIME'>2016)
 replace `_NV' = 066103 if strmatch(`_CLONE',"villalago")
 replace `_NV' = 085022 if strmatch(`_CLONE',"villalba")
 replace `_NV' = 069100 if strmatch(`_CLONE',"villalfonsina")
 replace `_NV' = 006183 if strmatch(`_CLONE',"villalvernia")
 replace `_NV' = 069101 if strmatch(`_CLONE',"villamagna")
 replace `_NV' = 064117 if strmatch(`_CLONE',"villamaina")
-replace `_NV' = 106026 if strmatch(`_CLONE',"villamar")
+replace `_NV' = 106026 if strmatch(`_CLONE',"villamar") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092093 if strmatch(`_CLONE',"villamar") & `TIME'<2006
+replace `_NV' = 111097 if strmatch(`_CLONE',"villamar") & `TIME'>2016
 replace `_NV' = 029049 if strmatch(`_CLONE',"villamarzana")
-replace `_NV' = 107022 if strmatch(`_CLONE',"villamassargia")
+replace `_NV' = 107022 if strmatch(`_CLONE',"villamassargia") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092094 if strmatch(`_CLONE',"villamassargia") & `TIME'<2006
+replace `_NV' = 111098 if strmatch(`_CLONE',"villamassargia") & `TIME'>2016
 replace `_NV' = 006184 if strmatch(`_CLONE',"villamiroglio")
 replace `_NV' = 021114 if strmatch(`_CLONE',"villandro*") | strmatch(`_CLONE',"villanders")
 replace `_NV' = 096079 if strmatch(`_CLONE',"villanova biellese")
@@ -8096,14 +8434,22 @@ replace `_NV' = 090078 if strmatch(`_CLONE',"villanova monteleone")
 replace `_NV' = 004246 if strmatch(`_CLONE',"villanova solaro")
 replace `_NV' = 033046 if strmatch(`_CLONE',"villanova s*arda")
 replace `_NV' = 095071 if strmatch(`_CLONE',"villanova truschedu")
-replace `_NV' = 092122 if strmatch(`_CLONE',"villanova*tulo")
-replace `_NV' = 106027 if strmatch(`_CLONE',"villanovaforru")
-replace `_NV' = 106028 if strmatch(`_CLONE',"villanovafranca")
+replace `_NV' = 092122 if strmatch(`_CLONE',"villanova*tulo") & `TIME'<=2016
+replace `_NV' = 111099 if strmatch(`_CLONE',"villanova*tulo") & `TIME'>2016
+replace `_NV' = 106027 if strmatch(`_CLONE',"villanovaforru") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092095 if strmatch(`_CLONE',"villanovaforru") & `TIME'<2006
+replace `_NV' = 111100 if strmatch(`_CLONE',"villanovaforru") & `TIME'>2016
+replace `_NV' = 106028 if strmatch(`_CLONE',"villanovafranca") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092096 if strmatch(`_CLONE',"villanovafranca") & `TIME'<2006
+replace `_NV' = 111101 if strmatch(`_CLONE',"villanovafranca") & `TIME'>2016
 replace `_NV' = 018180 if strmatch(`_CLONE',"villanterio")
 replace `_NV' = 017201 if strmatch(`_CLONE',"villanuova sul clisi")
-replace `_NV' = 107023 if strmatch(`_CLONE',"villaperuccio")
+replace `_NV' = 107023 if strmatch(`_CLONE',"villaperuccio") & `TIME'>=2006 & `TIME'<=2016
+replace `_NV' = 092104 if strmatch(`_CLONE',"villaperuccio") & `TIME'<2006
+replace `_NV' = 111102 if strmatch(`_CLONE',"villaperuccio") & `TIME'>2016
 replace `_NV' = 078154 if strmatch(`_CLONE',"villapiana")
-replace `_NV' = 092097 if strmatch(`_CLONE',"villaputzu")
+replace `_NV' = 092097 if strmatch(`_CLONE',"villaputzu") & `TIME'<=2016
+replace `_NV' = 111103 if strmatch(`_CLONE',"villaputzu") & `TIME'>2016
 replace `_NV' = 001303 if strmatch(`_CLONE',"villar dora")
 replace `_NV' = 001305 if strmatch(`_CLONE',"villar focchiardo")
 replace `_NV' = 001306 if strmatch(`_CLONE',"villar pellice")
@@ -8115,11 +8461,16 @@ replace `_NV' = 001304 if strmatch(`_CLONE',"villareggia")
 replace `_NV' = 063087 if strmatch(`_CLONE',"villaricca")
 replace `_NV' = 006186 if strmatch(`_CLONE',"villaromagnano")
 replace `_NV' = 086020 if strmatch(`_CLONE',"villarosa")
-replace `_NV' = 092098 if strmatch(`_CLONE',"villasalto")
-replace `_NV' = 108049 if strmatch(`_CLONE',"villasanta")
-replace `_NV' = 092100 if strmatch(`_CLONE',"villasimius")
-replace `_NV' = 092101 if strmatch(`_CLONE',"villasor")
-replace `_NV' = 092102 if strmatch(`_CLONE',"villaspeciosa")
+replace `_NV' = 092098 if strmatch(`_CLONE',"villasalto") & `TIME'<=2016
+replace `_NV' = 111104 if strmatch(`_CLONE',"villasalto") & `TIME'>2016
+replace `_NV' = 108049 if strmatch(`_CLONE',"villasanta") & `TIME'>=2010
+replace `_NV' = 015239 if strmatch(`_CLONE',"villasanta") & `TIME'<2010
+replace `_NV' = 092100 if strmatch(`_CLONE',"villasimius") & `TIME'<=2016
+replace `_NV' = 111105 if strmatch(`_CLONE',"villasimius") & `TIME'>2016
+replace `_NV' = 092101 if strmatch(`_CLONE',"villasor") & `TIME'<=2016
+replace `_NV' = 111106 if strmatch(`_CLONE',"villasor") & `TIME'>2016
+replace `_NV' = 092102 if strmatch(`_CLONE',"villaspeciosa") & `TIME'<=2016
+replace `_NV' = 111107 if strmatch(`_CLONE',"villaspeciosa") & `TIME'>2016
 replace `_NV' = 001308 if strmatch(`_CLONE',"villastellone")
 replace `_NV' = 002164 if strmatch(`_CLONE',"villata")
 replace `_NV' = 095072 if strmatch(`_CLONE',"villa*urbana")
@@ -8134,7 +8485,8 @@ replace `_NV' = 020068 if strmatch(`_CLONE',"villimpenta")
 replace `_NV' = 016242 if strmatch(`_CLONE',"villongo")
 replace `_NV' = 026091 if strmatch(`_CLONE',"villorba")
 replace `_NV' = 016243 if strmatch(`_CLONE',"vilminore di scalve")
-replace `_NV' = 108050 if strmatch(`_CLONE',"vimercate")
+replace `_NV' = 108050 if strmatch(`_CLONE',"vimercate") & `TIME'>=2010
+replace `_NV' = 015241 if strmatch(`_CLONE',"vimercate") & `TIME'<2010
 replace `_NV' = 015242 if strmatch(`_CLONE',"vimodrone")
 replace `_NV' = 004248 if strmatch(`_CLONE',"vinadio")
 replace `_NV' = 070084 if strmatch(`_CLONE',"vinchiaturo")
