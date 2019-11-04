@@ -316,63 +316,115 @@ label define `nv' 1315 `"Volvera"', modify
 label define `nv' 1316 `"Mappano"', modify
 label define `nv' 1317 `"Val di Chy"', modify
 label define `nv' 1318 `"Valchiusa"', modify
+label define `nv' 2001 `"Ailoche"', modify
 label define `nv' 2002 `"Alagna Valsesia"', modify
 label define `nv' 2003 `"Albano Vercellese"', modify
 label define `nv' 2004 `"Alice Castello"', modify
+label define `nv' 2005 `"Andorno Micca"', modify
 label define `nv' 2006 `"Arborio"', modify
 label define `nv' 2007 `"Asigliano Vercellese"', modify
 label define `nv' 2008 `"Balmuccia"', modify
 label define `nv' 2009 `"Balocco"', modify
+label define `nv' 2010 `"Benna"', modify
 label define `nv' 2011 `"Bianzè"', modify
+label define `nv' 2012 `"Biella"', modify
+label define `nv' 2013 `"Bioglio"', modify
 label define `nv' 2014 `"Boccioleto"', modify
 label define `nv' 2015 `"Borgo d'Ale"', modify
 label define `nv' 2016 `"Borgosesia"', modify
 label define `nv' 2017 `"Borgo Vercelli"', modify
+label define `nv' 2018 `"Borriana"', modify
 label define `nv' 2019 `"Breia"', modify
+label define `nv' 2020 `"Brusnengo"', modify
 label define `nv' 2021 `"Buronzo"', modify
+label define `nv' 2022 `"Callabiana"', modify
+label define `nv' 2023 `"Camandona"', modify
+label define `nv' 2024 `"Camburzano"', modify
 label define `nv' 2025 `"Campertogno"', modify
+label define `nv' 2026 `"Campiglia Cervo"', modify
+label define `nv' 2027 `"Candelo"', modify
+label define `nv' 2028 `"Caprile"', modify
 label define `nv' 2029 `"Carcoforo"', modify
 label define `nv' 2030 `"Caresana"', modify
 label define `nv' 2031 `"Caresanablot"', modify
 label define `nv' 2032 `"Carisio"', modify
 label define `nv' 2033 `"Casanova Elvo"', modify
+label define `nv' 2034 `"Casapinta"', modify
 label define `nv' 2035 `"San Giacomo Vercellese"', modify
+label define `nv' 2036 `"Castelletto Cervo"', modify
+label define `nv' 2037 `"Cavaglià"', modify
 label define `nv' 2038 `"Cellio"', modify
+label define `nv' 2039 `"Cerreto Castello"', modify
+label define `nv' 2040 `"Cerrione"', modify
 label define `nv' 2041 `"Cervatto"', modify
 label define `nv' 2042 `"Cigliano"', modify
 label define `nv' 2043 `"Civiasco"', modify
+label define `nv' 2044 `"Cerrione"', modify
 label define `nv' 2045 `"Collobiano"', modify
+label define `nv' 2046 `"Cossato"', modify
 label define `nv' 2047 `"Costanzana"', modify
 label define `nv' 2048 `"Cravagliana"', modify
 label define `nv' 2049 `"Crescentino"', modify
+label define `nv' 2050 `"Crevacuore"', modify
+label define `nv' 2051 `"Crosa"', modify
 label define `nv' 2052 `"Crova"', modify
+label define `nv' 2053 `"Curino"', modify
 label define `nv' 2054 `"Desana"', modify
+label define `nv' 2055 `"Donato"', modify
+label define `nv' 2056 `"Dorzano"', modify
 label define `nv' 2057 `"Fobello"', modify
 label define `nv' 2058 `"Fontanetto Po"', modify
 label define `nv' 2059 `"Formigliana"', modify
+label define `nv' 2060 `"Gaglianico"', modify
 label define `nv' 2061 `"Gattinara"', modify
 label define `nv' 2062 `"Ghislarengo"', modify
+label define `nv' 2063 `"Gifflenga"', modify
+label define `nv' 2064 `"Graglia"', modify
 label define `nv' 2065 `"Greggio"', modify
 label define `nv' 2066 `"Guardabosone"', modify
 label define `nv' 2067 `"Lamporo"', modify
 label define `nv' 2068 `"Lenta"', modify
+label define `nv' 2069 `"Lessona"', modify
 label define `nv' 2070 `"Lignana"', modify
 label define `nv' 2071 `"Livorno Ferraris"', modify
 label define `nv' 2072 `"Lozzolo"', modify
+label define `nv' 2073 `"Magnano"', modify
+label define `nv' 2074 `"Massazza"', modify
+label define `nv' 2075 `"Masserano"', modify
+label define `nv' 2076 `"Mezzana Mortigliengo"', modify
+label define `nv' 2077 `"Miagliano"', modify
 label define `nv' 2078 `"Mollia"', modify
 label define `nv' 2079 `"Moncrivello"', modify
+label define `nv' 2080 `"Mongrando"', modify
+label define `nv' 2081 `"Mosso Santa Maria"', modify
 label define `nv' 2082 `"Motta de' Conti"', modify
+label define `nv' 2083 `"Mottalciata"', modify
+label define `nv' 2084 `"Muzzano"', modify
+label define `nv' 2085 `"Netro"', modify
+label define `nv' 2086 `"Occhieppo Inferiore"', modify
+label define `nv' 2087 `"Occhieppo Superiore"', modify
 label define `nv' 2088 `"Olcenengo"', modify
 label define `nv' 2089 `"Oldenico"', modify
 label define `nv' 2090 `"Palazzolo Vercellese"', modify
 label define `nv' 2091 `"Pertengo"', modify
+label define `nv' 2092 `"Pettinengo"', modify
 label define `nv' 2093 `"Pezzana"', modify
+label define `nv' 2094 `"Piatto"', modify
+label define `nv' 2095 `"Piedicavallo"', modify
 label define `nv' 2096 `"Pila"', modify
 label define `nv' 2097 `"Piode"', modify
+label define `nv' 2098 `"Pistolesa"', modify
+label define `nv' 2099 `"Pollone"', modify
+label define `nv' 2100 `"Ponderano"', modify
+label define `nv' 2101 `"Portula"', modify
 label define `nv' 2102 `"Postua"', modify
+label define `nv' 2103 `"Pralungo"', modify
 label define `nv' 2104 `"Prarolo"', modify
+label define `nv' 2105 `"Pray"', modify
+label define `nv' 2106 `"Quaregna"', modify
 label define `nv' 2107 `"Quarona"', modify
 label define `nv' 2108 `"Quinto Vercellese"', modify
+label define `nv' 2109 `"Quittengo"', modify
 label define `nv' 2110 `"Rassa"', modify
 label define `nv' 2111 `"Rima San Giuseppe"', modify
 label define `nv' 2112 `"Rimasco"', modify
@@ -380,38 +432,81 @@ label define `nv' 2113 `"Rimella"', modify
 label define `nv' 2114 `"Riva Valdobbia"', modify
 label define `nv' 2115 `"Rive"', modify
 label define `nv' 2116 `"Roasio"', modify
+label define `nv' 2117 `"Ronco Biellese"', modify
 label define `nv' 2118 `"Ronsecco"', modify
+label define `nv' 2119 `"Roppolo"', modify
+label define `nv' 2120 `"Rosazza"', modify
 label define `nv' 2121 `"Rossa"', modify
 label define `nv' 2122 `"Rovasenda"', modify
 label define `nv' 2123 `"Sabbia"', modify
+label define `nv' 2124 `"Sagliano Micca"', modify
+label define `nv' 2125 `"Sala Biellese"', modify
 label define `nv' 2126 `"Salasco"', modify
 label define `nv' 2127 `"Sali Vercellese"', modify
 label define `nv' 2128 `"Saluggia"', modify
+label define `nv' 2129 `"Salussola"', modify
+label define `nv' 2130 `"Sandigliano"', modify
 label define `nv' 2131 `"San Germano Vercellese"', modify
+label define `nv' 2132 `"San Paolo Cervo"', modify
 label define `nv' 2133 `"Santhià"', modify
 label define `nv' 2134 `"Scopa"', modify
 label define `nv' 2135 `"Scopello"', modify
+label define `nv' 2136 `"Selve Marcone"', modify
 label define `nv' 2137 `"Serravalle Sesia"', modify
+label define `nv' 2138 `"Soprana"', modify
+label define `nv' 2139 `"Sordevolo"', modify
+label define `nv' 2140 `"Sostegno"', modify
+label define `nv' 2141 `"Strona"', modify
 label define `nv' 2142 `"Stroppiana"', modify
+label define `nv' 2143 `"Tavigliano"', modify
+label define `nv' 2144 `"Ternengo"', modify
+label define `nv' 2145 `"Tollegno"', modify
+label define `nv' 2146 `"Torrazzo"', modify
 label define `nv' 2147 `"Tricerro"', modify
 label define `nv' 2148 `"Trino"', modify
+label define `nv' 2149 `"Trivero"', modify
 label define `nv' 2150 `"Tronzano Vercellese"', modify
+label define `nv' 2151 `"Valdengo"', modify
 label define `nv' 2152 `"Valduggia"', modify
+label define `nv' 2153 `"Vallanzengo"', modify
+label define `nv' 2154 `"Valle Mosso"', modify
+label define `nv' 2155 `"Valle San Nicolao"', modify
 label define `nv' 2156 `"Varallo"', modify
+label define `nv' 2157 `"Veglio"', modify
 label define `nv' 2158 `"Vercelli"', modify
+label define `nv' 2159 `"Verrone"', modify
+label define `nv' 2160 `"Vigliano Biellese"', modify
+label define `nv' 2161 `"Villa del Bosco"', modify
+label define `nv' 2162 `"Villanova Biellese"', modify
 label define `nv' 2163 `"Villarboit"', modify
 label define `nv' 2164 `"Villata"', modify
+label define `nv' 2165 `"Viverone"', modify
 label define `nv' 2166 `"Vocca"', modify
+label define `nv' 2167 `"Zimone"', modify
+label define `nv' 2168 `"Zubiena"', modify
+label define `nv' 2169 `"Zumaglia"', modify
 label define `nv' 2170 `"Alto Sermenza"', modify
 label define `nv' 2171 `"Cellio con Breia"', modify
 label define `nv' 3001 `"Agrate Conturbia"', modify
 label define `nv' 3002 `"Ameno"', modify
+label define `nv' 3003 `"Antrona Schieranco"', modify
+label define `nv' 3004 `"Anzola d'Ossola"', modify
+label define `nv' 3005 `"Arizzano"', modify
 label define `nv' 3006 `"Armeno"', modify
+label define `nv' 3007 `"Arola"', modify
 label define `nv' 3008 `"Arona"', modify
+label define `nv' 3009 `"Aurano"', modify
+label define `nv' 3010 `"Baceno"', modify
+label define `nv' 3011 `"Bannio Anzino"', modify
 label define `nv' 3012 `"Barengo"', modify
+label define `nv' 3013 `"Baveno"', modify
+label define `nv' 3014 `"Bee"', modify
+label define `nv' 3015 `"Belgirate"', modify
 label define `nv' 3016 `"Bellinzago Novarese"', modify
+label define `nv' 3017 `"Beura-Cardezza"', modify
 label define `nv' 3018 `"Biandrate"', modify
 label define `nv' 3019 `"Boca"', modify
+label define `nv' 3020 `"Bognanco"', modify
 label define `nv' 3021 `"Bogogno"', modify
 label define `nv' 3022 `"Bolzano Novarese"', modify
 label define `nv' 3023 `"Borgolavezzaro"', modify
@@ -419,10 +514,17 @@ label define `nv' 3024 `"Borgomanero"', modify
 label define `nv' 3025 `"Borgo Ticino"', modify
 label define `nv' 3026 `"Briga Novarese"', modify
 label define `nv' 3027 `"Briona"', modify
+label define `nv' 3028 `"Brovello-Carpugnino"', modify
+label define `nv' 3029 `"Calasca-Castiglione"', modify
 label define `nv' 3030 `"Caltignaga"', modify
+label define `nv' 3031 `"Cambiasca"', modify
 label define `nv' 3032 `"Cameri"', modify
+label define `nv' 3033 `"Cannero Riviera"', modify
+label define `nv' 3034 `"Cannobio"', modify
+label define `nv' 3035 `"Caprezzo"', modify
 label define `nv' 3036 `"Carpignano Sesia"', modify
 label define `nv' 3037 `"Casalbeltrame"', modify
+label define `nv' 3038 `"Casale Corte Cerro"', modify
 label define `nv' 3039 `"Casaleggio Novara"', modify
 label define `nv' 3040 `"Casalino"', modify
 label define `nv' 3041 `"Casalvolone"', modify
@@ -430,68 +532,126 @@ label define `nv' 3042 `"Castellazzo Novarese"', modify
 label define `nv' 3043 `"Castelletto sopra Ticino"', modify
 label define `nv' 3044 `"Cavaglietto"', modify
 label define `nv' 3045 `"Cavaglio d'Agogna"', modify
+label define `nv' 3046 `"Cavaglio-Spoccia"', modify
 label define `nv' 3047 `"Cavallirio"', modify
+label define `nv' 3048 `"Ceppo Morelli"', modify
 label define `nv' 3049 `"Cerano"', modify
+label define `nv' 3050 `"Cesara"', modify
 label define `nv' 3051 `"Colazza"', modify
 label define `nv' 3052 `"Comignago"', modify
+label define `nv' 3053 `"Cossogno"', modify
+label define `nv' 3054 `"Craveggia"', modify
 label define `nv' 3055 `"Cressa"', modify
+label define `nv' 3056 `"Crevoladossola"', modify
+label define `nv' 3057 `"Crodo"', modify
 label define `nv' 3058 `"Cureggio"', modify
+label define `nv' 3059 `"Cursolo-Orasso"', modify
 label define `nv' 3060 `"Divignano"', modify
+label define `nv' 3061 `"Domodossola"', modify
 label define `nv' 3062 `"Dormelletto"', modify
+label define `nv' 3063 `"Druogno"', modify
+label define `nv' 3064 `"Falmenta"', modify
 label define `nv' 3065 `"Fara Novarese"', modify
 label define `nv' 3066 `"Fontaneto d'Agogna"', modify
+label define `nv' 3067 `"Formazza"', modify
 label define `nv' 3068 `"Galliate"', modify
 label define `nv' 3069 `"Garbagna Novarese"', modify
 label define `nv' 3070 `"Gargallo"', modify
 label define `nv' 3071 `"Gattico"', modify
+label define `nv' 3072 `"Germagno"', modify
 label define `nv' 3073 `"Ghemme"', modify
+label define `nv' 3074 `"Ghiffa"', modify
+label define `nv' 3075 `"Gignese"', modify
 label define `nv' 3076 `"Gozzano"', modify
 label define `nv' 3077 `"Granozzo con Monticello"', modify
+label define `nv' 3078 `"Gravellona Toce"', modify
 label define `nv' 3079 `"Grignasco"', modify
+label define `nv' 3080 `"Gurro"', modify
+label define `nv' 3081 `"Intragna"', modify
 label define `nv' 3082 `"Invorio"', modify
 label define `nv' 3083 `"Landiona"', modify
 label define `nv' 3084 `"Lesa"', modify
+label define `nv' 3085 `"Loreglia"', modify
+label define `nv' 3086 `"Macugnaga"', modify
+label define `nv' 3087 `"Madonna del Sasso"', modify
 label define `nv' 3088 `"Maggiora"', modify
+label define `nv' 3089 `"Malesco"', modify
 label define `nv' 3090 `"Mandello Vitta"', modify
 label define `nv' 3091 `"Marano Ticino"', modify
+label define `nv' 3092 `"Masera"', modify
 label define `nv' 3093 `"Massino Visconti"', modify
+label define `nv' 3094 `"Massiola"', modify
 label define `nv' 3095 `"Meina"', modify
+label define `nv' 3096 `"Mergozzo"', modify
 label define `nv' 3097 `"Mezzomerico"', modify
 label define `nv' 3098 `"Miasino"', modify
+label define `nv' 3099 `"Miazzina"', modify
 label define `nv' 3100 `"Momo"', modify
+label define `nv' 3101 `"Montecrestese"', modify
+label define `nv' 3102 `"Montescheno"', modify
 label define `nv' 3103 `"Nebbiuno"', modify
 label define `nv' 3104 `"Nibbiola"', modify
+label define `nv' 3105 `"Nonio"', modify
 label define `nv' 3106 `"Novara"', modify
+label define `nv' 3107 `"Oggebbio"', modify
 label define `nv' 3108 `"Oleggio"', modify
 label define `nv' 3109 `"Oleggio Castello"', modify
+label define `nv' 3110 `"Omegna"', modify
+label define `nv' 3111 `"Ornavasso"', modify
 label define `nv' 3112 `"Orta San Giulio"', modify
+label define `nv' 3113 `"Pallanzeno"', modify
 label define `nv' 3114 `"Paruzzaro"', modify
 label define `nv' 3115 `"Pella"', modify
 label define `nv' 3116 `"Pettenasco"', modify
+label define `nv' 3117 `"Piedimulera"', modify
+label define `nv' 3118 `"Pieve Vergonte"', modify
 label define `nv' 3119 `"Pisano"', modify
 label define `nv' 3120 `"Pogno"', modify
 label define `nv' 3121 `"Pombia"', modify
 label define `nv' 3122 `"Prato Sesia"', modify
+label define `nv' 3123 `"Premeno"', modify
+label define `nv' 3124 `"Premia"', modify
+label define `nv' 3125 `"Premosello-Chiovenda"', modify
+label define `nv' 3126 `"Quarna Sopra"', modify
+label define `nv' 3127 `"Quarna Sotto"', modify
+label define `nv' 3128 `"Re"', modify
 label define `nv' 3129 `"Recetto"', modify
 label define `nv' 3130 `"Romagnano Sesia"', modify
 label define `nv' 3131 `"Romentino"', modify
+label define `nv' 3132 `"San Bernardino Verbano"', modify
 label define `nv' 3133 `"San Maurizio d'Opaglio"', modify
 label define `nv' 3134 `"San Nazzaro Sesia"', modify
 label define `nv' 3135 `"San Pietro Mosezzo"', modify
+label define `nv' 3136 `"Santa Maria Maggiore"', modify
+label define `nv' 3137 `"Seppiana"', modify
 label define `nv' 3138 `"Sillavengo"', modify
 label define `nv' 3139 `"Sizzano"', modify
 label define `nv' 3140 `"Soriso"', modify
 label define `nv' 3141 `"Sozzago"', modify
+label define `nv' 3142 `"Stresa"', modify
 label define `nv' 3143 `"Suno"', modify
 label define `nv' 3144 `"Terdobbiate"', modify
+label define `nv' 3145 `"Toceno"', modify
 label define `nv' 3146 `"Tornaco"', modify
+label define `nv' 3147 `"Trarego Viggiona"', modify
+label define `nv' 3148 `"Trasquera"', modify
 label define `nv' 3149 `"Trecate"', modify
+label define `nv' 3150 `"Trontano"', modify
+label define `nv' 3151 `"Valstrona"', modify
+label define `nv' 3152 `"Vanzone con San Carlo"', modify
 label define `nv' 3153 `"Vaprio d'Agogna"', modify
 label define `nv' 3154 `"Varallo Pombia"', modify
+label define `nv' 3155 `"Varzo"', modify
+label define `nv' 3156 `"Verbania"', modify
 label define `nv' 3157 `"Veruno"', modify
 label define `nv' 3158 `"Vespolate"', modify
 label define `nv' 3159 `"Vicolungo"', modify
+label define `nv' 3160 `"Viganella"', modify
+label define `nv' 3161 `"Vignone"', modify
+label define `nv' 3162 `"Villadossola"', modify
+label define `nv' 3163 `"Villette"', modify
 label define `nv' 3164 `"Vinzaglio"', modify
+label define `nv' 3165 `"Vogogna"', modify
 label define `nv' 3166 `"Gattico-Veruno"', modify
 label define `nv' 4001 `"Acceglio"', modify
 label define `nv' 4002 `"Aisone"', modify
@@ -785,7 +945,7 @@ label define `nv' 5039 `"Cinaglio"', modify
 label define `nv' 5040 `"Cisterna d'Asti"', modify
 label define `nv' 5041 `"Coazzolo"', modify
 label define `nv' 5042 `"Cocconato"', modify
-label define `nv' 5043   `"Colcavagno"', modify
+label define `nv' 5043 `"Colcavagno"', modify
 label define `nv' 5044 `"Corsione"', modify
 label define `nv' 5045 `"Cortandone"', modify
 label define `nv' 5046 `"Cortanze"', modify
@@ -1510,33 +1670,45 @@ label define `nv' 12140 `"Vizzola Ticino"', modify
 label define `nv' 12141 `"Sangiano"', modify
 label define `nv' 12142 `"Maccagno con Pino e Veddasca"', modify
 label define `nv' 12143 `"Cadrezzate con Osmate"', modify
+label define `nv' 13001 `"Abbadia Lariana"', modify
+label define `nv' 13002 `"Airuno"', modify
 label define `nv' 13003 `"Albavilla"', modify
 label define `nv' 13004 `"Albese con Cassano"', modify
 label define `nv' 13005 `"Albiolo"', modify
 label define `nv' 13006 `"Alserio"', modify
 label define `nv' 13007 `"Alzate Brianza"', modify
+label define `nv' 13008 `"Annone di Brianza"', modify
 label define `nv' 13009 `"Anzano del Parco"', modify
 label define `nv' 13010 `"Appiano Gentile"', modify
 label define `nv' 13011 `"Argegno"', modify
 label define `nv' 13012 `"Arosio"', modify
 label define `nv' 13013 `"Asso"', modify
+label define `nv' 13014 `"Ballabio"', modify
 label define `nv' 13015 `"Barni"', modify
+label define `nv' 13016 `"Barzago"', modify
+label define `nv' 13017 `"Barzanò"', modify
+label define `nv' 13018 `"Barzio"', modify
 label define `nv' 13019 `"Bellagio"', modify
+label define `nv' 13020 `"Bellano"', modify
 label define `nv' 13021 `"Bene Lario"', modify
 label define `nv' 13022 `"Beregazzo con Figliaro"', modify
 label define `nv' 13023 `"Binago"', modify
 label define `nv' 13024 `"Bizzarone"', modify
 label define `nv' 13025 `"Blessagno"', modify
 label define `nv' 13026 `"Blevio"', modify
+label define `nv' 13027 `"Bosisio Parini"', modify
 label define `nv' 13028 `"Bregnano"', modify
 label define `nv' 13029 `"Brenna"', modify
 label define `nv' 13030 `"Brienno"', modify
+label define `nv' 13031 `"Brivio"', modify
 label define `nv' 13032 `"Brunate"', modify
+label define `nv' 13033 `"Bulciago"', modify
 label define `nv' 13034 `"Bulgarograsso"', modify
 label define `nv' 13035 `"Cabiate"', modify
 label define `nv' 13036 `"Cadorago"', modify
 label define `nv' 13037 `"Caglio"', modify
 label define `nv' 13038 `"Cagno"', modify
+label define `nv' 13039 `"Calco"', modify
 label define `nv' 13040 `"Campione d'Italia"', modify
 label define `nv' 13041 `"Cantù"', modify
 label define `nv' 13042 `"Canzo"', modify
@@ -1546,10 +1718,15 @@ label define `nv' 13045 `"Carbonate"', modify
 label define `nv' 13046 `"Carimate"', modify
 label define `nv' 13047 `"Carlazzo"', modify
 label define `nv' 13048 `"Carugo"', modify
+label define `nv' 13049 `"Casargo"', modify
 label define `nv' 13050 `"Casasco d'Intelvi"', modify
+label define `nv' 13051 `"Casatenovo"', modify
 label define `nv' 13052 `"Caslino d'Erba"', modify
 label define `nv' 13053 `"Casnate con Bernate"', modify
+label define `nv' 13054 `"Cassago Brianza"', modify
 label define `nv' 13055 `"Cassina Rizzardi"', modify
+label define `nv' 13056 `"Cassina Valsassina"', modify
+label define `nv' 13057 `"Castello di Brianza"', modify
 label define `nv' 13058 `"Castelmarte"', modify
 label define `nv' 13059 `"Castelnuovo Bozzente"', modify
 label define `nv' 13060 `"Castiglione d'Intelvi"', modify
@@ -1558,28 +1735,46 @@ label define `nv' 13062 `"Cavargna"', modify
 label define `nv' 13063 `"Cerano d'Intelvi"', modify
 label define `nv' 13064 `"Cermenate"', modify
 label define `nv' 13065 `"Cernobbio"', modify
+label define `nv' 13066 `"Cernusco Lombardone"', modify
+label define `nv' 13067 `"Cesana Brianza"', modify
 label define `nv' 13068 `"Cirimido"', modify
+label define `nv' 13069 `"Civate"', modify
 label define `nv' 13070 `"Civenna"', modify
 label define `nv' 13071 `"Claino con Osteno"', modify
+label define `nv' 13072 `"Colico"', modify
+label define `nv' 13073 `"Colle Brianza"', modify
 label define `nv' 13074 `"Colonno"', modify
 label define `nv' 13075 `"Como"', modify
 label define `nv' 13076 `"Consiglio di Rumo"', modify
 label define `nv' 13077 `"Corrido"', modify
+label define `nv' 13078 `"Cortenova"', modify
+label define `nv' 13079 `"Costa Masnaga"', modify
+label define `nv' 13080 `"Crandola Valsassina"', modify
+label define `nv' 13081 `"Cremella"', modify
+label define `nv' 13082 `"Cremeno"', modify
 label define `nv' 13083 `"Cremia"', modify
 label define `nv' 13084 `"Cucciago"', modify
 label define `nv' 13085 `"Cusino"', modify
+label define `nv' 13086 `"Dervio"', modify
 label define `nv' 13087 `"Dizzasco"', modify
+label define `nv' 13088 `"Dolzago"', modify
 label define `nv' 13089 `"Domaso"', modify
 label define `nv' 13090 `"Dongo"', modify
+label define `nv' 13091 `"Dorio"', modify
 label define `nv' 13092 `"Dosso del Liro"', modify
 label define `nv' 13093 `"Drezzo"', modify
+label define `nv' 13094 `"Ello"', modify
 label define `nv' 13095 `"Erba"', modify
+label define `nv' 13096 `"Esino Lario"', modify
 label define `nv' 13097 `"Eupilio"', modify
 label define `nv' 13098 `"Faggeto Lario"', modify
 label define `nv' 13099 `"Faloppio"', modify
 label define `nv' 13100 `"Fenegrò"', modify
 label define `nv' 13101 `"Figino Serenza"', modify
 label define `nv' 13102 `"Fino Mornasco"', modify
+label define `nv' 13103 `"Galbiate"', modify
+label define `nv' 13104 `"Garbagnate Monastero"', modify
+label define `nv' 13105 `"Garlate"', modify
 label define `nv' 13106 `"Garzeno"', modify
 label define `nv' 13107 `"Gera Lario"', modify
 label define `nv' 13108 `"Germasino"', modify
@@ -1589,18 +1784,24 @@ label define `nv' 13111 `"Grandola ed Uniti"', modify
 label define `nv' 13112 `"Gravedona"', modify
 label define `nv' 13113 `"Griante"', modify
 label define `nv' 13114 `"Guanzate"', modify
+label define `nv' 13115 `"Imbersago"', modify
+label define `nv' 13116 `"Introbio"', modify
+label define `nv' 13117 `"Introzzo"', modify
 label define `nv' 13118 `"Inverigo"', modify
 label define `nv' 13119 `"Laglio"', modify
 label define `nv' 13120 `"Laino"', modify
 label define `nv' 13121 `"Lambrugo"', modify
 label define `nv' 13122 `"Lanzo d'Intelvi"', modify
 label define `nv' 13123 `"Lasnigo"', modify
+label define `nv' 13124 `"Lecco"', modify
 label define `nv' 13125  `"Lenno"', modify
 label define `nv' 13126 `"Lezzeno"', modify
+label define `nv' 13127 `"Lierna"', modify
 label define `nv' 13128 `"Limido Comasco"', modify
 label define `nv' 13129 `"Lipomo"', modify
 label define `nv' 13130 `"Livo"', modify
 label define `nv' 13131 `"Locate Varesino"', modify
+label define `nv' 13132 `"Lomagna"', modify
 label define `nv' 13133 `"Lomazzo"', modify
 label define `nv' 13134 `"Longone al Segrino"', modify
 label define `nv' 13135 `"Luisago"', modify
@@ -1608,27 +1809,49 @@ label define `nv' 13136 `"Lurago d'Erba"', modify
 label define `nv' 13137 `"Lurago Marinone"', modify
 label define `nv' 13138 `"Lurate Caccivio"', modify
 label define `nv' 13139 `"Magreglio"', modify
+label define `nv' 13140 `"Malgrate"', modify
+label define `nv' 13141 `"Mandello del Lario"', modify
+label define `nv' 13142 `"Margno"', modify
 label define `nv' 13143 `"Mariano Comense"', modify
 label define `nv' 13144 `"Maslianico"', modify
 label define `nv' 13145 `"Menaggio"', modify
+label define `nv' 13146 `"Merate"', modify
 label define `nv' 13147 `"Merone"', modify
 label define `nv' 13148 `"Mezzegra"', modify
+label define `nv' 13149 `"Missaglia"', modify
+label define `nv' 13150 `"Moggio"', modify
+label define `nv' 13151 `"Molteno"', modify
 label define `nv' 13152 `"Moltrasio"', modify
 label define `nv' 13153 `"Monguzzo"', modify
 label define `nv' 13154 `"Montano Lucino"', modify
 label define `nv' 13155 `"Montemezzo"', modify
+label define `nv' 13156 `"Monticello Brianza"', modify
 label define `nv' 13157 `"Montorfano"', modify
+label define `nv' 13158 `"Morterone"', modify
 label define `nv' 13159 `"Mozzate"', modify
 label define `nv' 13160 `"Musso"', modify
 label define `nv' 13161 `"Nesso"', modify
+label define `nv' 13162 `"Nibionno"', modify
 label define `nv' 13163 `"Novedrate"', modify
+label define `nv' 13164 `"Oggiono"', modify
 label define `nv' 13165 `"Olgiate Comasco"', modify
+label define `nv' 13166 `"Olgiate Molgora"', modify
+label define `nv' 13167 `"Olginate"', modify
+label define `nv' 13168 `"Oliveto Lario"', modify
 label define `nv' 13169 `"Oltrona di San Mamette"', modify
 label define `nv' 13170 `"Orsenigo"', modify
+label define `nv' 13171 `"Osnago"', modify
 label define `nv' 13172 `"Ossuccio"', modify
+label define `nv' 13173 `"Paderno d'Adda"', modify
+label define `nv' 13174 `"Pagnona"', modify
 label define `nv' 13175 `"Parè"', modify
+label define `nv' 13176 `"Parlasco"', modify
+label define `nv' 13177 `"Pasturo"', modify
 label define `nv' 13178 `"Peglio"', modify
 label define `nv' 13179 `"Pellio Intelvi"', modify
+label define `nv' 13180 `"Perego"', modify
+label define `nv' 13181 `"Perledo"', modify
+label define `nv' 13182 `"Pescate"', modify
 label define `nv' 13183 `"Pianello del Lario"', modify
 label define `nv' 13184 `"Pigra"', modify
 label define `nv' 13185 `"Plesio"', modify
@@ -1636,12 +1859,17 @@ label define `nv' 13186 `"Pognana Lario"', modify
 label define `nv' 13187 `"Ponna"', modify
 label define `nv' 13188 `"Ponte Lambro"', modify
 label define `nv' 13189 `"Porlezza"', modify
+label define `nv' 13190 `"Premana"', modify
+label define `nv' 13191 `"Primaluna"', modify
 label define `nv' 13192 `"Proserpio"', modify
 label define `nv' 13193 `"Pusiano"', modify
 label define `nv' 13194 `"Ramponio Verna"', modify
 label define `nv' 13195 `"Rezzago"', modify
+label define `nv' 13196 `"Robbiate"', modify
 label define `nv' 13197 `"Rodero"', modify
+label define `nv' 13198 `"Rogeno"', modify
 label define `nv' 13199 `"Ronago"', modify
+label define `nv' 13200 `"Rovagnate"', modify
 label define `nv' 13201 `"Rovellasca"', modify
 label define `nv' 13202 `"Rovello Porro"', modify
 label define `nv' 13203 `"Sala Comacina"', modify
@@ -1650,29 +1878,45 @@ label define `nv' 13205 `"San Fedele Intelvi"', modify
 label define `nv' 13206 `"San Fermo della Battaglia"', modify
 label define `nv' 13207 `"San Nazzaro Val Cavargna"', modify
 label define `nv' 13208 `"Sant'Abbondio"', modify
+label define `nv' 13209 `"Santa Maria Hoè"', modify
 label define `nv' 13210 `"Santa Maria Rezzonico"', modify
 label define `nv' 13211 `"Schignano"', modify
 label define `nv' 13212 `"Senna Comasco"', modify
+label define `nv' 13213 `"Sirone"', modify
+label define `nv' 13214 `"Sirtori"', modify
 label define `nv' 13215 `"Solbiate"', modify
 label define `nv' 13216 `"Sorico"', modify
 label define `nv' 13217 `"Sormano"', modify
 label define `nv' 13218 `"Stazzona"', modify
+label define `nv' 13219 `"Sueglio"', modify
+label define `nv' 13220 `"Suello"', modify
+label define `nv' 13221 `"Taceno"', modify
 label define `nv' 13222 `"Tavernerio"', modify
 label define `nv' 13223 `"Torno"', modify
+label define `nv' 13224 `"Tremenico"', modify
 label define `nv' 13225 `"Tremezzo"', modify
 label define `nv' 13226 `"Trezzone"', modify
 label define `nv' 13227 `"Turate"', modify
 label define `nv' 13228 `"Uggiate-Trevano"', modify
 label define `nv' 13229 `"Valbrona"', modify
+label define `nv' 13230 `"Valgreghentino"', modify
+label define `nv' 13231 `"Valmadrera"', modify
 label define `nv' 13232 `"Valmorea"', modify
 label define `nv' 13233 `"Val Rezzo"', modify
 label define `nv' 13234 `"Valsolda"', modify
+label define `nv' 13235 `"Varenna"', modify
 label define `nv' 13236 `"Veleso"', modify
+label define `nv' 13237 `"Vendrogno"', modify
 label define `nv' 13238 `"Veniano"', modify
 label define `nv' 13239 `"Vercana"', modify
+label define `nv' 13240 `"Verderio Inferiore"', modify
+label define `nv' 13241 `"Verderio Superiore"', modify
 label define `nv' 13242 `"Vertemate con Minoprio"', modify
+label define `nv' 13243 `"Vestreno"', modify
+label define `nv' 13244 `"Viganò"', modify
 label define `nv' 13245 `"Villa Guardia"', modify
 label define `nv' 13246 `"Zelbio"', modify
+label define `nv' 13247 `"Montevecchia"', modify
 label define `nv' 13248 `"San Siro"', modify
 label define `nv' 13249 `"Gravedona ed Uniti"', modify
 label define `nv' 13250 `"Bellagio"', modify
@@ -1759,6 +2003,7 @@ label define `nv' 14075 `"Verceia"', modify
 label define `nv' 14076 `"Vervio"', modify
 label define `nv' 14077 `"Villa di Chiavenna"', modify
 label define `nv' 14078 `"Villa di Tirano"', modify
+label define `nv' 15001 `"Abbadia Cerreto"', modify
 label define `nv' 15002 `"Abbiategrasso"', modify
 label define `nv' 15003 `"Agrate Brianza"', modify
 label define `nv' 15004 `"Aicurzio"', modify
@@ -1777,13 +2022,18 @@ label define `nv' 15016 `"Bellinzago Lombardo"', modify
 label define `nv' 15017 `"Bellusco"', modify
 label define `nv' 15018 `"Bernareggio"', modify
 label define `nv' 15019 `"Bernate Ticino"', modify
+label define `nv' 15020 `"Bertonico"', modify
 label define `nv' 15021 `"Besana in Brianza"', modify
 label define `nv' 15022 `"Besate"', modify
 label define `nv' 15023 `"Biassono"', modify
 label define `nv' 15024 `"Binasco"', modify
+label define `nv' 15025 `"Boffalora d'Adda"', modify
 label define `nv' 15026 `"Boffalora sopra Ticino"', modify
 label define `nv' 15027 `"Bollate"', modify
+label define `nv' 15028 `"Borghetto Lodigiano"', modify
+label define `nv' 15029 `"Borgo San Giovanni"', modify
 label define `nv' 15030 `"Bovisio-Masciago"', modify
+label define `nv' 15031 `"Brembio"', modify
 label define `nv' 15032 `"Bresso"', modify
 label define `nv' 15033 `"Briosco"', modify
 label define `nv' 15034 `"Brugherio"', modify
@@ -1795,6 +2045,7 @@ label define `nv' 15039 `"Busnago"', modify
 label define `nv' 15040 `"Bussero"', modify
 label define `nv' 15041 `"Busto Garolfo"', modify
 label define `nv' 15042 `"Calvignasco"', modify
+label define `nv' 15043 `"Camairago"', modify
 label define `nv' 15044 `"Cambiago"', modify
 label define `nv' 15045 `"Camparada"', modify
 label define `nv' 15046 `"Canegrate"', modify
@@ -1803,44 +2054,66 @@ label define `nv' 15048 `"Carate Brianza"', modify
 label define `nv' 15049 `"Carnate"', modify
 label define `nv' 15050 `"Carpiano"', modify
 label define `nv' 15051 `"Carugate"', modify
+label define `nv' 15052 `"Casaletto Lodigiano"', modify
+label define `nv' 15053 `"Casalmaiocco"', modify
+label define `nv' 15054 `"Casalpusterlengo"', modify
 label define `nv' 15055 `"Casarile"', modify
+label define `nv' 15056 `"Caselle Landi"', modify
+label define `nv' 15057 `"Caselle Lurani"', modify
 label define `nv' 15058 `"Casorezzo"', modify
 label define `nv' 15059 `"Cassano d'Adda"', modify
 label define `nv' 15060 `"Cassina de' Pecchi"', modify
 label define `nv' 15061 `"Cassinetta di Lugagnano"', modify
 label define `nv' 15062 `"Castano Primo"', modify
+label define `nv' 15063 `"Castelnuovo Bocca d'Adda"', modify
+label define `nv' 15064 `"Castiglione d'Adda"', modify
+label define `nv' 15065 `"Castiraga Vidardo"', modify
+label define `nv' 15066 `"Cavacurta"', modify
+label define `nv' 15067 `"Cavenago d'Adda"', modify
 label define `nv' 15068 `"Cavenago di Brianza"', modify
 label define `nv' 15069 `"Ceriano Laghetto"', modify
 label define `nv' 15070 `"Cernusco sul Naviglio"', modify
 label define `nv' 15071 `"Cerro al Lambro"', modify
 label define `nv' 15072 `"Cerro Maggiore"', modify
+label define `nv' 15073 `"Cervignano d'Adda"', modify
 label define `nv' 15074 `"Cesano Boscone"', modify
 label define `nv' 15075 `"Cesano Maderno"', modify
 label define `nv' 15076 `"Cesate"', modify
 label define `nv' 15077 `"Cinisello Balsamo"', modify
 label define `nv' 15078 `"Cisliano"', modify
+label define `nv' 15079 `"Codogno"', modify
 label define `nv' 15080 `"Cogliate"', modify
 label define `nv' 15081 `"Cologno Monzese"', modify
 label define `nv' 15082 `"Colturano"', modify
+label define `nv' 15083 `"Comazzo"', modify
 label define `nv' 15084 `"Concorezzo"', modify
 label define `nv' 15085 `"Corbetta"', modify
 label define `nv' 15086 `"Cormano"', modify
 label define `nv' 15087 `"Cornaredo"', modify
 label define `nv' 15088 `"Cornate d'Adda"', modify
+label define `nv' 15089 `"Cornegliano Laudense"', modify
+label define `nv' 15090 `"Corno Giovine"', modify
+label define `nv' 15091 `"Cornovecchio"', modify
 label define `nv' 15092 `"Correzzana"', modify
 label define `nv' 15093 `"Corsico"', modify
+label define `nv' 15094 `"Corte Palasio"', modify
+label define `nv' 15095 `"Crespiatica"', modify
 label define `nv' 15096 `"Cuggiono"', modify
 label define `nv' 15097 `"Cusago"', modify
 label define `nv' 15098 `"Cusano Milanino"', modify
 label define `nv' 15099 `"Dairago"', modify
 label define `nv' 15100 `"Desio"', modify
 label define `nv' 15101 `"Dresano"', modify
+label define `nv' 15102 `"Fombio"', modify
 label define `nv' 15103 `"Gaggiano"', modify
+label define `nv' 15104 `"Galgagnano"', modify
 label define `nv' 15105 `"Garbagnate Milanese"', modify
 label define `nv' 15106 `"Gessate"', modify
 label define `nv' 15107 `"Giussano"', modify
 label define `nv' 15108 `"Gorgonzola"', modify
+label define `nv' 15109 `"Graffignana"', modify
 label define `nv' 15110 `"Grezzago"', modify
+label define `nv' 15111 `"Guardamiglio"', modify
 label define `nv' 15112 `"Gudo Visconti"', modify
 label define `nv' 15113 `"Inveruno"', modify
 label define `nv' 15114 `"Inzago"', modify
@@ -1853,31 +2126,46 @@ label define `nv' 15120 `"Lesmo"', modify
 label define `nv' 15121 `"Limbiate"', modify
 label define `nv' 15122 `"Liscate"', modify
 label define `nv' 15123 `"Lissone"', modify
+label define `nv' 15124 `"Livraga"', modify
 label define `nv' 15125 `"Locate di Triulzi"', modify
+label define `nv' 15126 `"Lodi"', modify
+label define `nv' 15127 `"Lodi Vecchio"', modify
+label define `nv' 15128 `"Maccastorna"', modify
 label define `nv' 15129 `"Macherio"', modify
 label define `nv' 15130 `"Magenta"', modify
 label define `nv' 15131 `"Magnago"', modify
+label define `nv' 15132 `"Mairago"', modify
+label define `nv' 15133 `"Maleo"', modify
 label define `nv' 15134 `"Marcallo con Casone"', modify
+label define `nv' 15135 `"Marudo"', modify
 label define `nv' 15136 `"Masate"', modify
+label define `nv' 15137 `"Massalengo"', modify
 label define `nv' 15138 `"Meda"', modify
 label define `nv' 15139 `"Mediglia"', modify
 label define `nv' 15140 `"Melegnano"', modify
+label define `nv' 15141 `"Meleti"', modify
 label define `nv' 15142 `"Melzo"', modify
+label define `nv' 15143 `"Merlino"', modify
 label define `nv' 15144 `"Mesero"', modify
 label define `nv' 15145 `"Mezzago"', modify
 label define `nv' 15146 `"Milano"', modify
 label define `nv' 15147 `"Misinto"', modify
+label define `nv' 15148 `"Montanaso Lombardo"', modify
 label define `nv' 15149 `"Monza"', modify
 label define `nv' 15150 `"Morimondo"', modify
 label define `nv' 15151 `"Motta Visconti"', modify
 label define `nv' 15152 `"Muggiò"', modify
+label define `nv' 15153 `"Mulazzano"', modify
 label define `nv' 15154 `"Nerviano"', modify
 label define `nv' 15155 `"Nosate"', modify
 label define `nv' 15156 `"Nova Milanese"', modify
 label define `nv' 15157 `"Novate Milanese"', modify
 label define `nv' 15158 `"Noviglio"', modify
 label define `nv' 15159 `"Opera"', modify
+label define `nv' 15160 `"Orio Litta"', modify
 label define `nv' 15161 `"Ornago"', modify
+label define `nv' 15162 `"Ospedaletto Lodigiano"', modify
+label define `nv' 15163 `"Ossago Lodigiano"', modify
 label define `nv' 15164 `"Ossona"', modify
 label define `nv' 15165 `"Ozzero"', modify
 label define `nv' 15166 `"Paderno Dugnano"', modify
@@ -1888,6 +2176,7 @@ label define `nv' 15170 `"Pero"', modify
 label define `nv' 15171 `"Peschiera Borromeo"', modify
 label define `nv' 15172 `"Pessano con Bornago"', modify
 label define `nv' 15173 `"Pieve Emanuele"', modify
+label define `nv' 15174 `"Pieve Fissiraga"', modify
 label define `nv' 15175 `"Pioltello"', modify
 label define `nv' 15176 `"Pogliano Milanese"', modify
 label define `nv' 15177 `"Pozzo d'Adda"', modify
@@ -1903,32 +2192,45 @@ label define `nv' 15186 `"Roncello"', modify
 label define `nv' 15187 `"Ronco Briantino"', modify
 label define `nv' 15188 `"Rosate"', modify
 label define `nv' 15189 `"Rozzano"', modify
+label define `nv' 15190 `"Salerano sul Lambro"', modify
 label define `nv' 15191 `"San Colombano al Lambro"', modify
 label define `nv' 15192 `"San Donato Milanese"', modify
+label define `nv' 15193 `"San Fiorano"', modify
 label define `nv' 15194 `"San Giorgio su Legnano"', modify
 label define `nv' 15195 `"San Giuliano Milanese"', modify
+label define `nv' 15196 `"San Martino in Strada"', modify
+label define `nv' 15197 `"San Rocco al Porto"', modify
+label define `nv' 15198 `"Sant'Angelo Lodigiano"', modify
+label define `nv' 15199 `"Santo Stefano Lodigiano"', modify
 label define `nv' 15200 `"Santo Stefano Ticino"', modify
 label define `nv' 15201 `"San Vittore Olona"', modify
 label define `nv' 15202 `"San Zenone al Lambro"', modify
+label define `nv' 15203 `"Secugnago"', modify
 label define `nv' 15204 `"Sedriano"', modify
 label define `nv' 15205 `"Segrate"', modify
 label define `nv' 15206 `"Senago"', modify
+label define `nv' 15207 `"Senna Lodigiana"', modify
 label define `nv' 15208 `"Seregno"', modify
 label define `nv' 15209 `"Sesto San Giovanni"', modify
 label define `nv' 15210 `"Settala"', modify
 label define `nv' 15211 `"Settimo Milanese"', modify
 label define `nv' 15212 `"Seveso"', modify
 label define `nv' 15213 `"Solaro"', modify
+label define `nv' 15214 `"Somaglia"', modify
+label define `nv' 15215 `"Sordio"', modify
 label define `nv' 15216 `"Sovico"', modify
 label define `nv' 15217 `"Sulbiate"', modify
+label define `nv' 15218 `"Terranova dei Passerini"', modify
 label define `nv' 15219 `"Trezzano Rosa"', modify
 label define `nv' 15220 `"Trezzano sul Naviglio"', modify
 label define `nv' 15221 `"Trezzo sull'Adda"', modify
 label define `nv' 15222 `"Tribiano"', modify
 label define `nv' 15223 `"Triuggio"', modify
 label define `nv' 15224 `"Truccazzano"', modify
+label define `nv' 15225 `"Turano Lodigiano"', modify
 label define `nv' 15226 `"Turbigo"', modify
 label define `nv' 15227 `"Usmate Velate"', modify
+label define `nv' 15228 `"Valera Fratta"', modify
 label define `nv' 15229 `"Vanzago"', modify
 label define `nv' 15230 `"Vaprio d'Adda"', modify
 label define `nv' 15231 `"Varedo"', modify
@@ -1938,11 +2240,14 @@ label define `nv' 15234 `"Verano Brianza"', modify
 label define `nv' 15235 `"Vermezzo"', modify
 label define `nv' 15236 `"Vernate"', modify
 label define `nv' 15237 `"Vignate"', modify
+label define `nv' 15238 `"Villanova del Sillaro"', modify
 label define `nv' 15239 `"Villasanta"', modify
+label define `nv' 15240 `"Tavazzano con Villavesco"', modify
 label define `nv' 15241 `"Vimercate"', modify
 label define `nv' 15242 `"Vimodrone"', modify
 label define `nv' 15243 `"Vittuone"', modify
 label define `nv' 15244 `"Vizzolo Predabissi"', modify
+label define `nv' 15245 `"Zelo Buon Persico"', modify
 label define `nv' 15246 `"Zelo Surrigone"', modify
 label define `nv' 15247 `"Zibido San Giacomo"', modify
 label define `nv' 15248 `"Villa Cortese"', modify
@@ -1993,6 +2298,7 @@ label define `nv' 16041 `"Brumano"', modify
 label define `nv' 16042 `"Brusaporto"', modify
 label define `nv' 16043 `"Calcinate"', modify
 label define `nv' 16044 `"Calcio"', modify
+label define `nv' 16045 `"Calolziocorte"', modify
 label define `nv' 16046 `"Calusco d'Adda"', modify
 label define `nv' 16047 `"Calvenzano"', modify
 label define `nv' 16048 `"Camerata Cornello"', modify
@@ -2001,6 +2307,7 @@ label define `nv' 16050 `"Capizzone"', modify
 label define `nv' 16051 `"Capriate San Gervasio"', modify
 label define `nv' 16052 `"Caprino Bergamasco"', modify
 label define `nv' 16053 `"Caravaggio"', modify
+label define `nv' 16054 `"Carenno"', modify
 label define `nv' 16055 `"Carobbio degli Angeli"', modify
 label define `nv' 16056 `"Carona"', modify
 label define `nv' 16057 `"Carvico"', modify
@@ -2041,6 +2348,7 @@ label define `nv' 16091 `"Dalmine"', modify
 label define `nv' 16092 `"Dossena"', modify
 label define `nv' 16093 `"Endine Gaiano"', modify
 label define `nv' 16094 `"Entratico"', modify
+label define `nv' 16095 `"Erve"', modify
 label define `nv' 16096 `"Fara Gera d'Adda"', modify
 label define `nv' 16097 `"Fara Olivana con Sola"', modify
 label define `nv' 16098 `"Filago"', modify
@@ -2083,6 +2391,7 @@ label define `nv' 16134 `"Mezzoldo"', modify
 label define `nv' 16135 `"Misano di Gera d'Adda"', modify
 label define `nv' 16136 `"Moio de' Calvi"', modify
 label define `nv' 16137 `"Monasterolo del Castello"', modify
+label define `nv' 16138 `"Monte Marenzo"', modify
 label define `nv' 16139 `"Montello"', modify
 label define `nv' 16140 `"Morengo"', modify
 label define `nv' 16141 `"Mornico al Serio"', modify
@@ -2175,6 +2484,7 @@ label define `nv' 16227 `"Valnegra"', modify
 label define `nv' 16228 `"Valsecca"', modify
 label define `nv' 16229 `"Valtorta"', modify
 label define `nv' 16230 `"Vedeseta"', modify
+label define `nv' 16231 `"Vercurago"', modify
 label define `nv' 16232 `"Verdellino"', modify
 label define `nv' 16233 `"Verdello"', modify
 label define `nv' 16234 `"Vertova"', modify
@@ -4276,35 +4586,55 @@ label define `nv' 39016 `"Russi"', modify
 label define `nv' 39017 `"Sant'Agata sul Santerno"', modify
 label define `nv' 39018 `"Solarolo"', modify
 label define `nv' 40001 `"Bagno di Romagna"', modify
+label define `nv' 40002 `"Bellaria-Igea Marina"', modify
 label define `nv' 40003 `"Bertinoro"', modify
 label define `nv' 40004 `"Borghi"', modify
 label define `nv' 40005 `"Castrocaro Terme e Terra del Sole"', modify
+label define `nv' 40006 `"Cattolica"', modify
 label define `nv' 40007 `"Cesena"', modify
 label define `nv' 40008 `"Cesenatico"', modify
 label define `nv' 40009 `"Civitella di Romagna"', modify
+label define `nv' 40010 `"Coriano"', modify
 label define `nv' 40011 `"Dovadola"', modify
 label define `nv' 40012 `"Forlì"', modify
 label define `nv' 40013 `"Forlimpopoli"', modify
 label define `nv' 40014 `"Galeata"', modify
 label define `nv' 40015 `"Gambettola"', modify
 label define `nv' 40016 `"Gatteo"', modify
+label define `nv' 40017 `"Gemmano"', modify
 label define `nv' 40018 `"Longiano"', modify
 label define `nv' 40019 `"Meldola"', modify
 label define `nv' 40020 `"Mercato Saraceno"', modify
+label define `nv' 40021 `"Misano Adriatico"', modify
 label define `nv' 40022 `"Modigliana"', modify
+label define `nv' 40023 `"Mondaino"', modify
+label define `nv' 40024 `"Monte Colombo"', modify
+label define `nv' 40025 `"Montefiore Conca"', modify
+label define `nv' 40026 `"Montegridolfo"', modify
+label define `nv' 40027 `"Montescudo"', modify
 label define `nv' 40028 `"Montiano"', modify
+label define `nv' 40029 `"Morciano di Romagna"', modify
+label define `nv' 40030 `"Poggio Berni"', modify
 label define `nv' 40031 `"Portico e San Benedetto"', modify
 label define `nv' 40032 `"Predappio"', modify
 label define `nv' 40033 `"Premilcuore"', modify
+label define `nv' 40034 `"Riccione"', modify
+label define `nv' 40035 `"Rimini"', modify
 label define `nv' 40036 `"Rocca San Casciano"', modify
 label define `nv' 40037 `"Roncofreddo"', modify
+label define `nv' 40038 `"Saludecio"', modify
+label define `nv' 40039 `"San Clemente"', modify
+label define `nv' 40040 `"San Giovanni in Marignano"', modify
 label define `nv' 40041 `"San Mauro Pascoli"', modify
+label define `nv' 40042 `"Santarcangelo di Romagna"', modify
 label define `nv' 40043 `"Santa Sofia"', modify
 label define `nv' 40044 `"Sarsina"', modify
 label define `nv' 40045 `"Savignano sul Rubicone"', modify
 label define `nv' 40046 `"Sogliano al Rubicone"', modify
+label define `nv' 40048 `"Torriana"', modify
 label define `nv' 40049 `"Tredozio"', modify
 label define `nv' 40050 `"Verghereto"', modify
+label define `nv' 40051 `"Verucchio"', modify
 label define `nv' 41001 `"Acqualagna"', modify
 label define `nv' 41002 `"Apecchio"', modify
 label define `nv' 41003 `"Auditore"', modify
@@ -4642,7 +4972,9 @@ label define `nv' 48003 `"Barberino Val d'Elsa"', modify
 label define `nv' 48004 `"Borgo San Lorenzo"', modify
 label define `nv' 48005 `"Calenzano"', modify
 label define `nv' 48006 `"Campi Bisenzio"', modify
+label define `nv' 48007 `"Cantagallo"', modify
 label define `nv' 48008 `"Capraia e Limite"', modify
+label define `nv' 48009 `"Carmignano"', modify
 label define `nv' 48010 `"Castelfiorentino"', modify
 label define `nv' 48011 `"Cerreto Guidi"', modify
 label define `nv' 48012 `"Certaldo"', modify
@@ -4662,10 +4994,12 @@ label define `nv' 48025 `"Londa"', modify
 label define `nv' 48026 `"Marradi"', modify
 label define `nv' 48027 `"Montaione"', modify
 label define `nv' 48028 `"Montelupo Fiorentino"', modify
+label define `nv' 48029 `"Montemurlo"', modify
 label define `nv' 48030 `"Montespertoli"', modify
 label define `nv' 48031 `"Palazzuolo sul Senio"', modify
 label define `nv' 48032 `"Pelago"', modify
 label define `nv' 48033 `"Pontassieve"', modify
+label define `nv' 48034 `"Prato"', modify
 label define `nv' 48035 `"Reggello"', modify
 label define `nv' 48036 `"Rignano sull'Arno"', modify
 label define `nv' 48037 `"Rufina"', modify
@@ -4678,8 +5012,11 @@ label define `nv' 48043 `"Sesto Fiorentino"', modify
 label define `nv' 48044 `"Signa"', modify
 label define `nv' 48045 `"Tavarnelle Val di Pesa"', modify
 label define `nv' 48046 `"Vaglia"', modify
+label define `nv' 48047 `"Vaiano"', modify
+label define `nv' 48048 `"Vernio"', modify
 label define `nv' 48049 `"Vicchio"', modify
 label define `nv' 48050 `"Vinci"', modify
+label define `nv' 48051 `"Poggio a Caiano"', modify
 label define `nv' 48052 `"Figline e Incisa Valdarno"', modify
 label define `nv' 48053 `"Scarperia e San Piero"', modify
 label define `nv' 48054 `"Barberino Tavarnelle"', modify
@@ -6811,88 +7148,165 @@ label define `nv' 78154 `"Villapiana"', modify
 label define `nv' 78155 `"Zumpano"', modify
 label define `nv' 78156 `"Casali del Manco"', modify
 label define `nv' 78157 `"Corigliano-Rossano"', modify
+label define `nv' 79001 `"Acquaro"', modify
 label define `nv' 79002 `"Albi"', modify
 label define `nv' 79003 `"Amaroni"', modify
 label define `nv' 79004 `"Amato"', modify
 label define `nv' 79005 `"Andali"', modify
+label define `nv' 79006 `"Arena"', modify
 label define `nv' 79007 `"Argusto"', modify
 label define `nv' 79008 `"Badolato"', modify
 label define `nv' 79009 `"Belcastro"', modify
+label define `nv' 79010 `"Belvedere di Spinello"', modify
 label define `nv' 79011 `"Borgia"', modify
 label define `nv' 79012 `"Botricello"', modify
+label define `nv' 79013 `"Briatico"', modify
+label define `nv' 79014 `"Brognaturo"', modify
+label define `nv' 79015 `"Caccuri"', modify
+label define `nv' 79016 `"Capistrano"', modify
 label define `nv' 79017 `"Caraffa di Catanzaro"', modify
 label define `nv' 79018 `"Cardinale"', modify
+label define `nv' 79019 `"Carfizzi"', modify
 label define `nv' 79020 `"Carlopoli"', modify
+label define `nv' 79021 `"Casabona"', modify
+label define `nv' 79022 `"Castelsilano"', modify
 label define `nv' 79023 `"Catanzaro"', modify
 label define `nv' 79024 `"Cenadi"', modify
 label define `nv' 79025 `"Centrache"', modify
+label define `nv' 79026 `"Cerenzia"', modify
 label define `nv' 79027 `"Cerva"', modify
+label define `nv' 79028 `"Cessaniti"', modify
 label define `nv' 79029 `"Chiaravalle Centrale"', modify
 label define `nv' 79030 `"Cicala"', modify
+label define `nv' 79031 `"Cirò"', modify
+label define `nv' 79032 `"Cirò Marina"', modify
 label define `nv' 79033 `"Conflenti"', modify
 label define `nv' 79034 `"Cortale"', modify
+label define `nv' 79035 `"Cotronei"', modify
 label define `nv' 79036 `"Cropani"', modify
+label define `nv' 79037 `"Crotone"', modify
+label define `nv' 79038 `"Crucoli"', modify
 label define `nv' 79039 `"Curinga"', modify
+label define `nv' 79040 `"Cutro"', modify
+label define `nv' 79041 `"Dasà"', modify
 label define `nv' 79042 `"Davoli"', modify
 label define `nv' 79043 `"Decollatura"', modify
+label define `nv' 79044 `"Dinami"', modify
+label define `nv' 79045 `"Drapia"', modify
+label define `nv' 79046 `"Fabrizia"', modify
 label define `nv' 79047 `"Falerna"', modify
 label define `nv' 79048 `"Feroleto Antico"', modify
+label define `nv' 79049 `"Filadelfia"', modify
+label define `nv' 79050 `"Filandari"', modify
+label define `nv' 79051 `"Filogaso"', modify
 label define `nv' 79052 `"Fossato Serralta"', modify
+label define `nv' 79053 `"Francavilla Angitola"', modify
+label define `nv' 79054 `"Francica"', modify
 label define `nv' 79055 `"Gagliato"', modify
 label define `nv' 79056 `"Gasperina"', modify
+label define `nv' 79057 `"Gerocarne"', modify
 label define `nv' 79058 `"Gimigliano"', modify
 label define `nv' 79059 `"Girifalco"', modify
 label define `nv' 79060 `"Gizzeria"', modify
 label define `nv' 79061 `"Guardavalle"', modify
+label define `nv' 79062 `"Ionadi"', modify
 label define `nv' 79063 `"Isca sullo Ionio"', modify
+label define `nv' 79064 `"Isola di Capo Rizzuto"', modify
 label define `nv' 79065 `"Jacurso"', modify
+label define `nv' 79066 `"Joppolo"', modify
+label define `nv' 79067 `"Limbadi"', modify
 label define `nv' 79068 `"Magisano"', modify
 label define `nv' 79069 `"Maida"', modify
+label define `nv' 79070 `"Maierato"', modify
 label define `nv' 79071 `"Marcedusa"', modify
 label define `nv' 79072 `"Marcellinara"', modify
 label define `nv' 79073 `"Martirano"', modify
 label define `nv' 79074 `"Martirano Lombardo"', modify
+label define `nv' 79075 `"Melissa"', modify
+label define `nv' 79076 `"Mesoraca"', modify
 label define `nv' 79077 `"Miglierina"', modify
+label define `nv' 79078 `"Mileto"', modify
+label define `nv' 79079 `"Mongiana"', modify
 label define `nv' 79080 `"Montauro"', modify
 label define `nv' 79081 `"Montepaone"', modify
+label define `nv' 79082 `"Monterosso Calabro"', modify
 label define `nv' 79083 `"Motta Santa Lucia"', modify
+label define `nv' 79084 `"Nardodipace"', modify
 label define `nv' 79085 `"Nicastro"', modify
+label define `nv' 79086 `"Nicotera"', modify
 label define `nv' 79087 `"Nocera Terinese"', modify
 label define `nv' 79088 `"Olivadi"', modify
 label define `nv' 79089 `"Palermiti"', modify
+label define `nv' 79090 `"Pallagorio"', modify
+label define `nv' 79091 `"Parghelia"', modify
 label define `nv' 79092 `"Pentone"', modify
+label define `nv' 79093 `"Petilia Policastro"', modify
 label define `nv' 79094 `"Petrizzi"', modify
 label define `nv' 79095 `"Petronà"', modify
 label define `nv' 79096 `"Pianopoli"', modify
+label define `nv' 79097 `"Pizzo"', modify
+label define `nv' 79098 `"Pizzoni"', modify
 label define `nv' 79099 `"Platania"', modify
+label define `nv' 79100 `"Polia"', modify
+label define `nv' 79101 `"Ricadi"', modify
+label define `nv' 79102 `"Roccabernarda"', modify
+label define `nv' 79103 `"Rocca di Neto"', modify
+label define `nv' 79104 `"Rombiolo"', modify
 label define `nv' 79105 `"Sambiase"', modify
+label define `nv' 79106 `"San Calogero"', modify
+label define `nv' 79107 `"San Costantino Calabro"', modify
 label define `nv' 79108 `"San Floro"', modify
+label define `nv' 79109 `"San Gregorio d'Ippona"', modify
 label define `nv' 79110 `"San Mango d'Aquino"', modify
+label define `nv' 79111 `"San Mauro Marchesato"', modify
+label define `nv' 79112 `"San Nicola da Crissa"', modify
+label define `nv' 79113 `"San Nicola dell'Alto"', modify
 label define `nv' 79114 `"San Pietro a Maida"', modify
 label define `nv' 79115 `"San Pietro Apostolo"', modify
 label define `nv' 79116 `"San Sostene"', modify
 label define `nv' 79117 `"Santa Caterina dello Ionio"', modify
 label define `nv' 79118 `"Sant'Andrea Apostolo dello Ionio"', modify
+label define `nv' 79119 `"Santa Severina"', modify
 label define `nv' 79120 `"SantEufemia Lamezia"', modify
+label define `nv' 79121 `"Sant'Onofrio"', modify
 label define `nv' 79122 `"San Vito sullo Ionio"', modify
 label define `nv' 79123 `"Satriano"', modify
+label define `nv' 79124 `"Savelli"', modify
+label define `nv' 79125 `"Scandale"', modify
 label define `nv' 79126 `"Sellia"', modify
 label define `nv' 79127 `"Sellia Marina"', modify
+label define `nv' 79128 `"Serra San Bruno"', modify
 label define `nv' 79129 `"Serrastretta"', modify
 label define `nv' 79130 `"Sersale"', modify
 label define `nv' 79131 `"Settingiano"', modify
+label define `nv' 79132 `"Simbario"', modify
 label define `nv' 79133 `"Simeri Crichi"', modify
 label define `nv' 79134 `"Sorbo San Basile"', modify
+label define `nv' 79135 `"Sorianello"', modify
+label define `nv' 79136 `"Soriano Calabro"', modify
 label define `nv' 79137 `"Soverato"', modify
 label define `nv' 79138 `"Soveria Mannelli"', modify
 label define `nv' 79139 `"Soveria Simeri"', modify
+label define `nv' 79140 `"Spadola"', modify
+label define `nv' 79141 `"Spilinga"', modify
 label define `nv' 79142 `"Squillace"', modify
 label define `nv' 79143 `"Stalettì"', modify
+label define `nv' 79144 `"Stefanaconi"', modify
+label define `nv' 79145 `"Strongoli"', modify
 label define `nv' 79146 `"Taverna"', modify
 label define `nv' 79147 `"Tiriolo"', modify
 label define `nv' 79148 `"Torre di Ruggiero"', modify
+label define `nv' 79149 `"Tropea"', modify
+label define `nv' 79150 `"Umbriatico"', modify
 label define `nv' 79151 `"Vallefiorita"', modify
+label define `nv' 79152 `"Vallelonga"', modify
+label define `nv' 79153 `"Vazzano"', modify
+label define `nv' 79154 `"Verzino"', modify
+label define `nv' 79155 `"Vibo Valentia"', modify
+label define `nv' 79156 `"Zaccanopoli"', modify
 label define `nv' 79157 `"Zagarise"', modify
+label define `nv' 79158 `"Zambrone"', modify
+label define `nv' 79159 `"Zungri"', modify
 label define `nv' 79160 `"Lamezia Terme"', modify
 label define `nv' 80001 `"Africo"', modify
 label define `nv' 80002 `"Agnana Calabra"', modify
@@ -8594,7 +9008,7 @@ label define `nv' 111065 `"San Sperate"', modify
 label define `nv' 111066 `"San Vito"', modify
 label define `nv' 111067 `"Sanluri"', modify
 label define `nv' 111068 `"Santadi"', modify
-label define `nv' 111069 `"Sant'Andrea Frius"', modify 
+label define `nv' 111069 `"Sant'Andrea Frius"', modify
 label define `nv' 111070 `"Sant'Anna Arresi"', modify
 label define `nv' 111071 `"Sant'Antioco"', modify
 label define `nv' 111072 `"Sardara"', modify

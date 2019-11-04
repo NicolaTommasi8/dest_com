@@ -1,62 +1,67 @@
 capture program drop dest_com
 program define dest_com, sortpreserve
 
+*! Nicola Tommasi
+*! nicola.tommasi@univr.it
+
 if c(stata_version) >= 16 & c(processors_lic) > 1 version 16
 else version 13
 
-**! version 4.2019
-** adesso i comuni che hanno cambiato provincia vengono correttamente riconosciuti
-** completato il label dei nomi dei comuni
-** se il comando viene lanciato su Stata 16MP dovrebbe essere più veloce
-** minor bugs correction
 
+*! version 11.2019
+*!   sistemati i cambi di provincia del 1992
+*!   minor bugs correction
 
-**! version 3.2019
-**  aggiornati i nuovi comuni del 2019
-** minor bugs correction
+*! version 4.2019
+*!   adesso i comuni che hanno cambiato provincia vengono correttamente riconosciuti
+*!   completato il label dei nomi dei comuni
+*!   se il comando viene lanciato su Stata 16MP dovrebbe essere più veloce
+*!   minor bugs correction
 
-**! version 3.2018
-**  aggiornati i nuovi comuni del 2018
-** minor bugs correction
+*! version 3.2019
+*!   aggiornati i nuovi comuni del 2019
+*!   minor bugs correction
 
-**! version 3.2
-**  aggiornati i nuovi comuni del 2017
+*! version 3.2018
+*!   aggiornati i nuovi comuni del 2018
+*!   minor bugs correction
 
-**! version 3.1
-**  Imposto Stata 13 come versione minima
-**  Uso della funzione ustrfrom() per risolvere problemi legati a databse non in fomrato utf-8 (solo per Stata 14 e successivi  )
+*! version 3.2
+*!   aggiornati i nuovi comuni del 2017
 
-**! version 3.0
-**  aggiunte le opzioni per creare le variabili
-**     codice provincia istat (gprov)
-**     codice regione istat  (gregio)
-**     codice nuts3 (gnuts3)
-**     codice nuts2 (gnuts2)
-**     codice nuts1 (gnuts1)
+*! version 3.1
+*!   Imposto Stata 13 come versione minima
+*!   Uso della funzione ustrfrom() per risolvere problemi legati a database non in formato utf-8 (solo per Stata 14 e successivi  )
 
-**! version 2.5
-**     possibilità di fare solo il label dei valori quando la variabile è già numerica
-**     aggiunte le variazioni amministrative del 2016
-**     introdotta l'opzione time: x esempio Campiglia Cervo fino al 2015 ha codice 96011, dal 2016 ha codice 96086
+*! version 3.0
+*!   aggiunte le opzioni per creare le variabili
+*!     codice provincia istat (gprov)
+*!     codice regione istat  (gregio)
+*!     codice nuts3 (gnuts3)
+*!     codice nuts2 (gnuts2)
+*!     codice nuts1 (gnuts1)
 
-**! version 2
-**     eliminata la  necessità di installare il comando unlabeld
-**     creazione file di help
-**     aggiornato elenco comuni al 30/01/2015
+*! version 2.5
+*!   possibilità di fare solo il label dei valori quando la variabile è già numerica
+*!   aggiunte le variazioni amministrative del 2016
+*!   introdotta l'opzione time: x esempio Campiglia Cervo fino al 2015 ha codice 96011, dal 2016 ha codice 96086
 
-**! version 1.1.0  06nov2014 aggiunta opzione ignore
+*! version 2
+*!   eliminata la  necessità di installare il comando unlabeld
+*!   creazione file di help
+*!   aggiornato elenco comuni al 30/01/2015
 
-**! version 1.0.0  02oct2014
-**                   -tutte le variabili usate nel comando sono di tipo tempvar
-**                   -introduzione  di contract _CLONE e successivo merge
-**                   -di fatto parallel non serve più (eliminata la relativa opzione)
-**                   -correzioni nel riconoscimento di alcuni comuni
-**                   -eliminazione di codebook, problems che per dataset molto numerosi poteva allungare i tempi di esecuzione
-**                   -il label della variabile con i codici dei comuni corrisponde al nome della variabile stessa
+*! version 1.1.0  06nov2014 aggiunta opzione ignore
 
-**! version 0.0.2  01sep2014  aggiunta di parallel (ora tolta)
+*! version 1.0.0  02oct2014
+*!   tutte le variabili usate nel comando sono di tipo tempvar
+*!   introduzione  di contract _CLONE e successivo merge
+*!   di fatto parallel non serve più (eliminata la relativa opzione)
+*!   correzioni nel riconoscimento di alcuni comuni
+*!   eliminazione di codebook, problems che per dataset molto numerosi poteva allungare i tempi di esecuzione
+*!   il label della variabile con i codici dei comuni corrisponde al nome della variabile stessa
 
-**! version 0.0.1  TomaHawk  27aug2014
+*! version 0.0.1  TomaHawk  27aug2014
 
 
 
@@ -143,9 +148,9 @@ if "`mkc'" != "" {
   **replace cod_com=22028 if cod_com==17030 & cod_prov==22
   replace `nv'=22028 if `mkc'==22 & `nv'==17030
   replace `nv'=22035 if `mkc'==22 & `nv'==5014
-  replace `nv'=75096 if `mkc'==75 & `nv'==16065
+  replace `nv'=75096 if `mkc'==75 & `nv'==16065 /*castro*/
   replace `nv'=22106 if `mkc'==22 & `nv'==13130
-  replace `nv'=41041 if `mkc'==41 & `nv'==13178
+  replace `nv'=41041 if `mkc'==41 & `nv'==13178 /*peglio*/
   replace `nv'=22165 if `mkc'==22 & `nv'==1235
   replace `nv'=87052 if `mkc'==87 & `nv'==18170
   replace `nv'=104023 if `mkc'==104 & `nv'==83090
@@ -155,7 +160,7 @@ if "`mkc'" != "" {
   replace `nv' = 023037 if strmatch(`_CLONE',"gazzo") & `mkc'==23 /*gazzo veronese*/
 
   replace `nv' = 021112 if strmatch(`_CLONE',"verano") & `mkc'==21 /* verano */
-  replace `nv' = 108048 if strmatch(`_CLONE',"verano") & `mkc'==108 /*vernao brianza */
+  replace `nv' = 108048 if strmatch(`_CLONE',"verano") & `mkc'==108 /*verano brianza */
 
   replace `nv' = 013038 if `nv' == 022030 & `mkc'==13 /* cagno */
   replace `nv' = 022030 if `nv' == 013038 & `mkc'==22 /* cagn� */
