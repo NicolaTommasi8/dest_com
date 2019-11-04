@@ -12,11 +12,17 @@ Autore
   
 Changelog
 *! Nicola Tommasi
+
 *! nicola.tommasi@univr.it
+
 *! version 11.2019
+
 *!   sistemati i cambi di provincia del 1992
+
 *!   minor bugs correction
+
 *! version 4.2019
+
 *!   adesso i comuni che hanno cambiato provincia vengono correttamente riconosciuti
 *!   completato il label dei nomi dei comuni
 *!   se il comando viene lanciato su Stata 16MP dovrebbe essere più veloce
