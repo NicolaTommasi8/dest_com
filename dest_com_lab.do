@@ -3464,6 +3464,9 @@ label define `nv' 22248 `"Vallelaghi"', modify
 label define `nv' 22249 `"Ville d'Anaunia"', modify
 label define `nv' 22250 `"Sèn Jan di Fassa"', modify
 label define `nv' 22251 `"Terre d'Adige"', modify
+label define `nv' 22252 `"Borgo d'Anaunia"', modify
+label define `nv' 22253 `"Novella"', modify
+label define `nv' 22254 `"Ville di Fiemme"', modify
 label define `nv' 23001 `"Affi"', modify
 label define `nv' 23002 `"Albaredo d'Adige"', modify
 label define `nv' 23003 `"Angiari"', modify

@@ -8,6 +8,9 @@ if c(stata_version) >= 16 & c(processors_lic) > 1 version 16
 else version 13
 
 
+*! version 01.2020
+*!   aggiornati i nuovi comuni del 2020
+
 *! version 11.2019
 *!   sistemati i cambi di provincia del 1992
 *!   minor bugs correction
@@ -58,7 +61,7 @@ else version 13
 *!   introduzione  di contract _CLONE e successivo merge
 *!   di fatto parallel non serve più (eliminata la relativa opzione)
 *!   correzioni nel riconoscimento di alcuni comuni
-*!   eliminazione di codebook, problems che per dataset molto numerosi poteva allungare i tempi di esecuzione
+*!   eliminazione di codebook, problems che per dataset molto grandi poteva allungare i tempi di esecuzione
 *!   il label della variabile con i codici dei comuni corrisponde al nome della variabile stessa
 
 *! version 0.0.1  TomaHawk  27aug2014
