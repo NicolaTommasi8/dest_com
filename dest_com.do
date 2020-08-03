@@ -4784,7 +4784,8 @@ replace `_NV' = 024062 if strmatch(`_CLONE',"montecchio precalcino")
 replace `_NV' = 006106 if strmatch(`_CLONE',"montechiaro *acqui")
 replace `_NV' = 005075 if strmatch(`_CLONE',"montechiaro *asti")
 replace `_NV' = 034023 if strmatch(`_CLONE',"montechiarugolo")
-replace `_NV' = 041032 if strmatch(`_CLONE',"monteciccardo")
+replace `_NV' = 041032 if strmatch(`_CLONE',"monteciccardo") & `TIME'<2020
+replace `_NV' = 041044 if strmatch(`_CLONE',"monteciccardo") & `TIME'>=2020
 replace `_NV' = 070042 if strmatch(`_CLONE',"montecilfone")
 replace `_NV' = 041033 if strmatch(`_CLONE',"montecopiolo")
 replace `_NV' = 065071 if strmatch(`_CLONE',"montecorice")
