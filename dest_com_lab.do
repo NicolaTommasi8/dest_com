@@ -7987,6 +7987,7 @@ label define `nv' 91098 `"Ulassai"', modify
 label define `nv' 91099 `"Urzulei"', modify
 label define `nv' 91100 `"Ussassai"', modify
 label define `nv' 91101 `"Villagrande Strisaili"', modify
+label define `nv' 91102 `"Villanova Tulo"', modify
 label define `nv' 91103 `"Cardedu"', modify
 label define `nv' 91104 `"Lodine"', modify
 label define `nv' 92001 `"Arbus"', modify
@@ -8545,7 +8546,7 @@ label define `nv' 98058 `"Turano Lodigiano"', modify
 label define `nv' 98059 `"Valera Fratta"', modify
 label define `nv' 98060 `"Villanova del Sillaro"', modify
 label define `nv' 98061 `"Zelo Buon Persico"', modify
-label define `nv' 98062 `"castelgerundo"', modify
+label define `nv' 98062 `"Castelgerundo"', modify
 label define `nv' 99001 `"Bellaria-Igea Marina"', modify
 label define `nv' 99002 `"Cattolica"', modify
 label define `nv' 99003 `"Coriano"', modify

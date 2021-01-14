@@ -10,6 +10,7 @@ else version 13
 
 *! version 01.2020
 *!   aggiornati i nuovi comuni del 2020
+*!   generate() non è più obbligatoria per compatibilità con opzione onlylab
 
 *! version 11.2019
 *!   sistemati i cambi di provincia del 1992
@@ -68,8 +69,8 @@ else version 13
 
 
 
-syntax varlist (max=1) [if] [in], time(varname numeric min=1 max=1) GENerate(name) ///
-                                  [mkc(varname numeric min=1 max=1) ignore onlylab gprov(name) gregio(name) macro3(name) macro5(name) gnuts3(name) gnuts2(name) gnuts1(name)]
+syntax varlist (max=1) [if] [in], time(varname numeric min=1 max=1) [GENerate(name) ///
+                                  mkc(varname numeric min=1 max=1) ignore onlylab gprov(name) gregio(name) macro3(name) macro5(name) gnuts3(name) gnuts2(name) gnuts1(name)]
 marksample touse, strok
 **check nv già esistente
 **check varlist sia stringa

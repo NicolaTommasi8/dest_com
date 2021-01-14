@@ -18,7 +18,7 @@
 {title:Syntax}
 
 {p 8 14 2}
-{opt dest_com} {it:varname} {ifin} {cmd:,} {opt gen:erate(varname)} {opt time(varname)} [ {opt mkc(varname)} {opt ignore} {opt onlylab}  {opt gprov(varname)} {opt gregio(name)} {opt macro3(name)}
+{opt dest_com} {it:varname} {ifin} {cmd:,} {opt time(varname)} [ {opt gen:erate(varname)} {opt mkc(varname)} {opt ignore} {opt onlylab}  {opt gprov(varname)} {opt gregio(name)} {opt macro3(name)}
   {opt macro5(name)} {opt gnuts3(name)} {opt gnuts2(name)} {opt gnuts1(name)} ]
 
 

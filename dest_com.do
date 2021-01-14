@@ -6737,7 +6737,7 @@ replace `_NV' = 068036 if strmatch(`_CLONE',"salle")
 replace `_NV' = 004202 if strmatch(`_CLONE',"salmour")
 replace `_NV' = 017170 if strmatch(`_CLONE',"salo'") | strmatch(`_CLONE',"salo") | strmatch(`_CLONE',"salò")
 if `c(stata_version)'>=14 replace `_NV' = 017170 if strmatch(`sec_check_var',"sal%X*")
-replace `_NV' = 021076 if strmatch(`_CLONE',"salorno*") | strmatch(`_CLONE',"salurn")
+replace `_NV' = 021076 if strmatch(`_CLONE',"salorno*") | strmatch(`_CLONE',"salurn") | strmatch(`_CLONE',"salurn an der*")
 replace `_NV' = 034032 if strmatch(`_CLONE',"salsomaggiore terme")
 replace `_NV' = 041050 if strmatch(`_CLONE',"saltara")
 replace `_NV' = 012117 if strmatch(`_CLONE',"saltrio")
@@ -8854,8 +8854,10 @@ replace `_NV' = 090078 if strmatch(`_CLONE',"villanova monteleone")
 replace `_NV' = 004246 if strmatch(`_CLONE',"villanova solaro")
 replace `_NV' = 033046 if strmatch(`_CLONE',"villanova s*arda")
 replace `_NV' = 095071 if strmatch(`_CLONE',"villanova truschedu")
-replace `_NV' = 092122 if strmatch(`_CLONE',"villanova*tulo") & `TIME'<=2016
-replace `_NV' = 111099 if strmatch(`_CLONE',"villanova*tulo") & `TIME'>2016
+replace `_NV' = 091102 if strmatch(`_CLONE',"villanova*tulo") & `TIME'<=2006
+replace `_NV' = 092122 if strmatch(`_CLONE',"villanova*tulo") & `TIME'>=2007 &`TIME'<=2016
+replace `_NV' = 111099 if strmatch(`_CLONE',"villanova*tulo") & `TIME'>=2017
+
 replace `_NV' = 106027 if strmatch(`_CLONE',"villanovaforru") & `TIME'>=2006 & `TIME'<=2016
 replace `_NV' = 092095 if strmatch(`_CLONE',"villanovaforru") & `TIME'<2006
 replace `_NV' = 111100 if strmatch(`_CLONE',"villanovaforru") & `TIME'>2016
