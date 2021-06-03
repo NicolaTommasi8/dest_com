@@ -7432,6 +7432,7 @@ label define `nv' 81021 `"Trapani"', modify
 label define `nv' 81022 `"Valderice"', modify
 label define `nv' 81023 `"Vita"', modify
 label define `nv' 81024 `"Petrosino"', modify
+label define `nv' 81025 `"Misiliscemi"', modify
 label define `nv' 82001 `"Alia"', modify
 label define `nv' 82002 `"Alimena"', modify
 label define `nv' 82003 `"Aliminusa"', modify

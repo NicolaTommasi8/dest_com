@@ -4553,6 +4553,7 @@ replace `_NV' = 083051 if strmatch(`_CLONE',"mirto")
 replace `_NV' = 099005 if strmatch(`_CLONE',"misano adriatico") & `TIME'>=1992
 replace `_NV' = 040021 if strmatch(`_CLONE',"misano adriatico") & `TIME'<1992
 replace `_NV' = 016135 if strmatch(`_CLONE',"misano di gera *adda")
+replace `_NV' = 081025 if strmatch(`_CLONE',"misiliscemi")
 replace `_NV' = 082048 if strmatch(`_CLONE',"misilmeri")
 replace `_NV' = 108032 if strmatch(`_CLONE',"misinto") & `TIME'>=2010
 replace `_NV' = 015147 if strmatch(`_CLONE',"misinto") & `TIME'<2010

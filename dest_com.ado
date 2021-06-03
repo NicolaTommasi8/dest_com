@@ -7,6 +7,8 @@ program define dest_com, sortpreserve
 if c(stata_version) >= 16 & c(processors_lic) > 1 version 16
 else version 13
 
+*! version 01.2021
+*!   aggiornati i nuovi comuni del 2021
 
 *! version 01.2020
 *!   aggiornati i nuovi comuni del 2020
@@ -148,7 +150,7 @@ rename `TIME' `time'
 
 qui {
 if "`mkc'" != "" {
-  ***correzioni casi di omonimia
+  ***correzioni casi di omonimia che si possono risolvere solo se è presente la provincia
   **replace cod_com=22028 if cod_com==17030 & cod_prov==22
   replace `nv'=22028 if `mkc'==22 & `nv'==17030
   replace `nv'=22035 if `mkc'==22 & `nv'==5014
@@ -160,14 +162,17 @@ if "`mkc'" != "" {
   replace `nv'=104023 if `mkc'==104 & `nv'==83090
 
   ***correzioni casi ambigui
-  replace `nv' = 028041 if strmatch(`_CLONE',"gazzo") & `mkc'==28 /*gazzo padovano*/
-  replace `nv' = 023037 if strmatch(`_CLONE',"gazzo") & `mkc'==23 /*gazzo veronese*/
+  replace `nv' = 28041 if strmatch(`_CLONE',"gazzo") & `mkc'==28 /*gazzo padovano*/
+  replace `nv' = 23037 if strmatch(`_CLONE',"gazzo") & `mkc'==23 /*gazzo veronese*/
 
-  replace `nv' = 021112 if strmatch(`_CLONE',"verano") & `mkc'==21 /* verano */
+  replace `nv' = 21112 if strmatch(`_CLONE',"verano") & `mkc'==21 /* verano */
   replace `nv' = 108048 if strmatch(`_CLONE',"verano") & `mkc'==108 /*verano brianza */
 
-  replace `nv' = 013038 if `nv' == 022030 & `mkc'==13 /* cagno */
-  replace `nv' = 022030 if `nv' == 013038 & `mkc'==22 /* cagn� */
+  replace `nv' = 13038 if `nv' == 22030 & `mkc'==13 /* cagno */
+  replace `nv' = 22030 if `nv' == 13038 & `mkc'==22 /* cagn� */
+
+  replace `nv' = 21026 if strmatch(`_CLONE',"corvara") & `mkc'==21
+
   }
 }
 
