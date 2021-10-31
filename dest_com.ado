@@ -201,8 +201,8 @@ qui recode `nv' (1001/1999 = 1 "Torino") (2001/2999 = 2 "Vercelli") (3001/3999 =
             (76001/76999 = 76 "Potenza") (77001/77999 = 77 "Matera") ///
             (78001/78999 = 78 "Cosenza") (79001/79999 = 79 "Catanzaro") (80001/80999 = 80 "Reggio di Calabria") (101001/101999 = 101 "Crotone") (102001/102999 = 102 "Vibo Valentia") ///
             (81001/81999 = 81 "Trapani") (82001/82999 = 82 "Palermo") (83001/83999 = 83 "Messina") (84001/84999 = 84 "Agrigento") (85001/85999 = 85 "Caltanisetta") (86001/86999 = 86 "Enna") (87001/87999 = 87 "Catania") (88001/88999 = 88 "Ragusa") (89001/89999 = 89 "Siracusa") ///
-            (90001/90999 = 90 "Sassari") (91001/91999 = 91 "Nuoro") (92001/92999 = 92 "Cagliari") (95001/95999 = 95 "Oristano") (104001/104999 = 104 "Olbia-Tempio") (105001/105999 = 105 "Ogliastra") (106001/106999 = 106 "Medio Campidano") (107001/107999 = 107 "Carbonia-Iglesias") ///
-            (*=.), gen(`tmpprov')
+            (90001/90999 = 90 "Sassari") (91001/91999 = 91 "Nuoro") (92001/92999 = 92 "Cagliari") (95001/95999 = 95 "Oristano") (104001/104999 = 104 "Olbia-Tempio") (105001/105999 = 105 "Ogliastra") (106001/106999 = 106 "Medio Campidano") (107001/107999 = 107 "Carbonia-Iglesias") (111001/111999 = 111 "Sud Saregna") ///
+            (*=.), gen(`tmpprov') label(`gprov')
 
 qui recode `nv' (1001/1999 2001/2999 3001/3999 4001/4999 5001/5999 6001/6999  96001/96999 103001/103999 = 1 "Piemonte")   ///
             (7001/7999 = 2 "Valle d'Aosta")  ///
@@ -224,19 +224,20 @@ qui recode `nv' (1001/1999 2001/2999 3001/3999 4001/4999 5001/5999 6001/6999  96
             (78001/78999 79001/79999 80001/80999 101001/101999 102001/102999 = 18 "Calabria") ///
             (81001/81999 82001/82999 83001/83999 84001/84999 85001/85999 86001/86999 87001/87999 88001/88999 89001/89999 = 19 "Sicilia") ///
             (90001/90999 91001/91999 92001/92999 95001/95999 104001/104999 105001/105999 106001/106999 107001/107999 = 20 "Sardegna") ///
-            (*=.), gen(`tmpregio')
+            (*=.), gen(`tmpregio')  label(`gregio')
 
 
 if "`gprov'" != "" {
   clonevar `gprov' = `tmpprov'
+  **list `nv' `gprov' if `gprov'==.
   qui assert `nv'==. if `gprov'==.
-  label var `gprov' "Provincia"
-  }
+}
+
 if "`gregio'" != "" {
   clonevar `gregio' = `tmpregio'
   qui assert `nv'==. if `gregio'==.
   label var `gregio' "Regione"
-  }
+}
 
 if "`macro3'" != "" {
   qui recode `tmpregio' (1/8=1 "Nord") (9/12=2 "Centro") (13/20=3 "Sud e Isole"), gen(`macro3')
@@ -340,7 +341,7 @@ if _rc!=0 {
   local ERROR = 1
   di as error "Ci sono voci della variabile `varlist' non convertiti in numerici. Questa è la lista:"
   **fre `varlist' if `nv'==., all
-  qui levelsof `varlist' if `nv'==., local(lista)
+  qui levelsof `varlist' if `nv'==. & `touse', local(lista)
   local cnt = 1
   foreach i of local lista {
 	 di `"`cnt'. `i'"'
