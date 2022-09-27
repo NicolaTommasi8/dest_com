@@ -922,7 +922,7 @@ label define `nv' 5016 `"Camerano Casasco"', modify
 label define `nv' 5017 `"Canelli"', modify
 label define `nv' 5018 `"Cantarana"', modify
 label define `nv' 5019 `"Capriglio"', modify
-label define `nv' 5020 `"Casorzo"', modify
+label define `nv' 5020 `"Casorzo Monferrato"', modify
 label define `nv' 5021 `"Cassinasco"', modify
 label define `nv' 5022 `"Castagnole delle Lanze"', modify
 label define `nv' 5023 `"Castagnole Monferrato"', modify
@@ -8577,6 +8577,8 @@ label define `nv' 99026 `"Sant'Agata Feltria"', modify
 label define `nv' 99027 `"Talamello"', modify
 label define `nv' 99028 `"Poggio Torriana"', modify
 label define `nv' 99029 `"Montescudo-Monte Colombo"', modify
+label define `nv' 99030 `"Montecopiolo"', modify
+label define `nv' 99031 `"Sassofeltrio"', modify
 label define `nv' 100001 `"Cantagallo"', modify
 label define `nv' 100002 `"Carmignano"', modify
 label define `nv' 100003 `"Montemurlo"', modify

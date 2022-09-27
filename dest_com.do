@@ -1715,7 +1715,7 @@ replace `_NV' = 018034 if strmatch(`_CLONE',"casorate primo")
 replace `_NV' = 012039 if strmatch(`_CLONE',"casorate sempione")
 replace `_NV' = 015058 if strmatch(`_CLONE',"casorezzo")
 replace `_NV' = 063023 if strmatch(`_CLONE',"casoria")
-replace `_NV' = 005020 if strmatch(`_CLONE',"casorzo")
+replace `_NV' = 005020 if strmatch(`_CLONE',"casorzo") | strmatch(`_CLONE',"casorzo monferrato") /*dal 03/03/2020*/
 replace `_NV' = 057012 if strmatch(`_CLONE',"casperia")
 replace `_NV' = 014013 if strmatch(`_CLONE',"caspoggio")
 replace `_NV' = 030019 if strmatch(`_CLONE',"cassacco")
@@ -4788,7 +4788,8 @@ replace `_NV' = 034023 if strmatch(`_CLONE',"montechiarugolo")
 replace `_NV' = 041032 if strmatch(`_CLONE',"monteciccardo") & `TIME'<2020
 replace `_NV' = 041044 if strmatch(`_CLONE',"monteciccardo") & `TIME'>=2020
 replace `_NV' = 070042 if strmatch(`_CLONE',"montecilfone")
-replace `_NV' = 041033 if strmatch(`_CLONE',"montecopiolo")
+replace `_NV' = 041033 if strmatch(`_CLONE',"montecopiolo") & `TIME'<2020
+replace `_NV' = 099030 if strmatch(`_CLONE',"montecopiolo") & `TIME'>=2021
 replace `_NV' = 065071 if strmatch(`_CLONE',"montecorice")
 replace `_NV' = 065072 if strmatch(`_CLONE',"montecorvino pugliano")
 replace `_NV' = 065073 if strmatch(`_CLONE',"montecorvino rovella")
@@ -7395,7 +7396,8 @@ replace `_NV' = 076082 if strmatch(`_CLONE',"sasso di castalda")
 replace `_NV' = 037057 if strmatch(`_CLONE',"sasso marconi")
 replace `_NV' = 041059 if strmatch(`_CLONE',"sassocorvaro")
 replace `_NV' = 041071 if strmatch(`_CLONE',"sassocorvaro auditore")
-replace `_NV' = 041060 if strmatch(`_CLONE',"sassofeltrio")
+replace `_NV' = 041060 if strmatch(`_CLONE',"sassofeltrio") & `TIME'<2020
+replace `_NV' = 099031 if strmatch(`_CLONE',"sassofeltrio") & `TIME'>=2021
 replace `_NV' = 042044 if strmatch(`_CLONE',"sassoferrato")
 replace `_NV' = 036040 if strmatch(`_CLONE',"sassuolo")
 replace `_NV' = 079123 if strmatch(`_CLONE',"satriano")
