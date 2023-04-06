@@ -916,7 +916,7 @@ label define `nv' 5010 `"Bruno"', modify
 label define `nv' 5011 `"Bubbio"', modify
 label define `nv' 5012 `"Buttigliera d'Asti"', modify
 label define `nv' 5013 `"Calamandrana"', modify
-label define `nv' 5014 `"Calliano"', modify
+label define `nv' 5014 `"Calliano Monferrato"', modify
 label define `nv' 5015 `"Calosso"', modify
 label define `nv' 5016 `"Camerano Casasco"', modify
 label define `nv' 5017 `"Canelli"', modify
@@ -958,7 +958,7 @@ label define `nv' 5052 `"Dusino San Michele"', modify
 label define `nv' 5053 `"Ferrere"', modify
 label define `nv' 5054 `"Fontanile"', modify
 label define `nv' 5055 `"Frinco"', modify
-label define `nv' 5056 `"Grana"', modify
+label define `nv' 5056 `"Grana Monferrato"', modify
 label define `nv' 5057 `"Grazzano Badoglio"', modify
 label define `nv' 5058 `"Incisa Scapaccino"', modify
 label define `nv' 5059 `"Isola d'Asti"', modify
@@ -1024,6 +1024,7 @@ label define `nv' 5118 `"Villanova d'Asti"', modify
 label define `nv' 5119 `"Villa San Secondo"', modify
 label define `nv' 5120 `"Vinchio"', modify
 label define `nv' 5121 `"Montiglio Monferrato"', modify
+label define `nv' 5122 `"Moransengo-Tonengo"', modify
 label define `nv' 6001 `"Acqui Terme"', modify
 label define `nv' 6002 `"Albera Ligure"', modify
 label define `nv' 6003 `"Alessandria"', modify
@@ -1670,6 +1671,7 @@ label define `nv' 12140 `"Vizzola Ticino"', modify
 label define `nv' 12141 `"Sangiano"', modify
 label define `nv' 12142 `"Maccagno con Pino e Veddasca"', modify
 label define `nv' 12143 `"Cadrezzate con Osmate"', modify
+label define `nv' 12144 `"Bardello con Malgesso e Bregano"', modify
 label define `nv' 13001 `"Abbadia Lariana"', modify
 label define `nv' 13002 `"Airuno"', modify
 label define `nv' 13003 `"Albavilla"', modify

@@ -7,6 +7,10 @@ program define dest_com, sortpreserve
 if c(stata_version) >= 16 & c(processors_lic) > 1 version 16
 else version 13
 
+*! version 01.2023
+*!   aggiornati i nuovi comuni del 2023
+
+
 *! version 01.2022
 *!   aggiornati i nuovi comuni del 2022
 
