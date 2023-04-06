@@ -11,6 +11,10 @@ Autore
 
   
 **Changelog**<br><br>
+*! version 01.2023<br>
+*!   aggiornati i nuovi comuni del 2023<br><br>
+*! version 01.2022<br>
+*!   aggiornati i nuovi comuni del 2022<br><br>
 *! version 01.2021<br>
 *!   aggiornati i nuovi comuni del 2021<br><br>
 *! version 01.2020<br>
