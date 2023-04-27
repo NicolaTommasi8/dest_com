@@ -2832,7 +2832,7 @@ replace `_NV' = 075027 if strmatch(`_CLONE',"diso")
 replace `_NV' = 003060 if strmatch(`_CLONE',"divignano")
 replace `_NV' = 013087 if strmatch(`_CLONE',"dizzasco")
 replace `_NV' = 021028 if strmatch(`_CLONE',"dobbiaco*") | strmatch(`_CLONE',"toblach")
-replace `_NV' = 031003 if strmatch(`_CLONE',"doberd*del lago") | strmatch(`_CLONE',"doberdob")
+replace `_NV' = 031003 if strmatch(`_CLONE',"doberd*del lago*") | strmatch(`_CLONE',"doberdob")
 replace `_NV' = 004081 if strmatch(`_CLONE',"dogliani")
 replace `_NV' = 069029 if strmatch(`_CLONE',"dogliola")
 replace `_NV' = 030033 if strmatch(`_CLONE',"dogna")
@@ -4789,7 +4789,7 @@ replace `_NV' = 034023 if strmatch(`_CLONE',"montechiarugolo")
 replace `_NV' = 041032 if strmatch(`_CLONE',"monteciccardo") & `TIME'<2020
 replace `_NV' = 041044 if strmatch(`_CLONE',"monteciccardo") & `TIME'>=2020
 replace `_NV' = 070042 if strmatch(`_CLONE',"montecilfone")
-replace `_NV' = 041033 if strmatch(`_CLONE',"montecopiolo") & `TIME'<2020
+replace `_NV' = 041033 if strmatch(`_CLONE',"montecopiolo") & `TIME'<=2020
 replace `_NV' = 099030 if strmatch(`_CLONE',"montecopiolo") & `TIME'>=2021
 replace `_NV' = 065071 if strmatch(`_CLONE',"montecorice")
 replace `_NV' = 065072 if strmatch(`_CLONE',"montecorvino pugliano")
@@ -7398,7 +7398,7 @@ replace `_NV' = 076082 if strmatch(`_CLONE',"sasso di castalda")
 replace `_NV' = 037057 if strmatch(`_CLONE',"sasso marconi")
 replace `_NV' = 041059 if strmatch(`_CLONE',"sassocorvaro")
 replace `_NV' = 041071 if strmatch(`_CLONE',"sassocorvaro auditore")
-replace `_NV' = 041060 if strmatch(`_CLONE',"sassofeltrio") & `TIME'<2020
+replace `_NV' = 041060 if strmatch(`_CLONE',"sassofeltrio") & `TIME'<=2020
 replace `_NV' = 099031 if strmatch(`_CLONE',"sassofeltrio") & `TIME'>=2021
 replace `_NV' = 042044 if strmatch(`_CLONE',"sassoferrato")
 replace `_NV' = 036040 if strmatch(`_CLONE',"sassuolo")
@@ -7420,7 +7420,7 @@ replace `_NV' = 010057 if strmatch(`_CLONE',"savignone")
 replace `_NV' = 017175 if strmatch(`_CLONE',"saviore dell*adamello")
 replace `_NV' = 083093 if strmatch(`_CLONE',"savoca")
 replace `_NV' = 030108 if strmatch(`_CLONE',"savogna")
-replace `_NV' = 031022 if strmatch(`_CLONE',"savogna *isonzo") | strmatch(`_CLONE',"sovodnje ob so*")
+replace `_NV' = 031022 if strmatch(`_CLONE',"savogna *isonzo*") | strmatch(`_CLONE',"sovodnje ob so*")
 replace `_NV' = 076084 if strmatch(`_CLONE',"savoia di lucania")
 replace `_NV' = 009056 if strmatch(`_CLONE',"savona")
 replace `_NV' = 068039 if strmatch(`_CLONE',"scafa")
