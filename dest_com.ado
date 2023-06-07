@@ -1,15 +1,20 @@
 capture program drop dest_com
 program define dest_com, sortpreserve
 
+**set tracedepth 1
+**set trace on
+
 *! Nicola Tommasi
 *! nicola.tommasi@univr.it
 
 if c(stata_version) >= 16 & c(processors_lic) > 1 version 16
 else version 13
 
+*! version 02.2023
+*!  l'opzione onlylab  ora è compatibile con le opzioni gprov() gregio() macro3() macro5() gnuts2() gnuts1()
+
 *! version 01.2023
 *!   aggiornati i nuovi comuni del 2023
-
 
 *! version 01.2022
 *!   aggiornati i nuovi comuni del 2022
@@ -78,7 +83,7 @@ else version 13
 
 
 
-syntax varlist (max=1) [if] [in], time(varname numeric min=1 max=1) [GENerate(name) ///
+syntax varlist (max=1) [if] [in], [time(varname numeric min=1 max=1) GENerate(name) ///
                                   mkc(varname numeric min=1 max=1) ignore onlylab gprov(name) gregio(name) macro3(name) macro5(name) gnuts3(name) gnuts2(name) gnuts1(name)]
 marksample touse, strok
 **check nv già esistente
@@ -103,88 +108,101 @@ if "`onlylab'" != "" {
   capture label drop `nv'
   qui include "`c(sysdir_plus)'d/dest_com_lab.do"
   label values `nv' `nv'
-  exit
-}
-
-
-
-if "`generate'" == "" local nv "cod_com"
-else local nv "`generate'"
-capture confirm variable `nv', exact
-if !_rc {
-  di "variable `nv' already exists"
-  exit _rc
-}
-
-
-qui clonevar `_CLONE' = `varlist'
-qui replace `_CLONE' = trim(`_CLONE')
-qui replace `_CLONE' = lower(`_CLONE')
-
-qui clonevar `TIME' = `time'
-
-
-
-/***
-qui findfile un_dest_com.ado, path(PERSONAL)
-local comm_path = r(fn)
-local comm_path: subinstr local comm_path "un_dest_com.ado" ""
-***/
-
-gen `ID' = _n
-preserve
-qui keep if `touse'
-contract `_CLONE' `TIME' `mkc'
-drop _freq
-
-qui gen int `_NV' = .
-
-if `c(stata_version)'>= 14 {
-  tempvar sec_check_var
-  gen `sec_check_var' = ustrfrom(`_CLONE', "utf-8", 4)
-}
-
-qui include "`c(sysdir_plus)'d/dest_com.do"
-
-
-qui clonevar `nv' = `_NV'
-drop `_NV'
-**duplicates report `nv'
-**duplicates tag `nv', gen(dups)
-**list if dups>=1
-
-rename `TIME' `time'
-
-qui {
-if "`mkc'" != "" {
-  ***correzioni casi di omonimia che si possono risolvere solo se è presente la provincia
-  **replace cod_com=22028 if cod_com==17030 & cod_prov==22
-  replace `nv'=22028 if `mkc'==22 & `nv'==17030
-  replace `nv'=22035 if `mkc'==22 & `nv'==5014
-  replace `nv'=75096 if `mkc'==75 & `nv'==16065 /*castro*/
-  replace `nv'=22106 if `mkc'==22 & `nv'==13130
-  replace `nv'=41041 if `mkc'==41 & `nv'==13178 /*peglio*/
-  replace `nv'=22165 if `mkc'==22 & `nv'==1235
-  replace `nv'=87052 if `mkc'==87 & `nv'==18170
-  replace `nv'=104023 if `mkc'==104 & `nv'==83090
-
-  ***correzioni casi ambigui
-  replace `nv' = 28041 if strmatch(`_CLONE',"gazzo") & `mkc'==28 /*gazzo padovano*/
-  replace `nv' = 23037 if strmatch(`_CLONE',"gazzo") & `mkc'==23 /*gazzo veronese*/
-
-  replace `nv' = 21112 if strmatch(`_CLONE',"verano") & `mkc'==21 /* verano */
-  replace `nv' = 108048 if strmatch(`_CLONE',"verano") & `mkc'==108 /*verano brianza */
-
-  replace `nv' = 13038 if `nv' == 22030 & `mkc'==13 /* cagno */
-  replace `nv' = 22030 if `nv' == 13038 & `mkc'==22 /* cagn� */
-
-  replace `nv' = 21026 if strmatch(`_CLONE',"corvara") & `mkc'==21
-
+  qui clonevar `_CLONE' = `varlist'
+  gen `ID' = _n
+  if "`time'"=="" {
+     local time time
+     local date c(current_date)
+     local date = substr(`date',-4,.)
+     qui gen `time' = `date'
   }
 }
 
 
+if "`onlylab'" == "" {
+  if "`generate'" == "" local nv "cod_com"
+  else local nv "`generate'"
+  capture confirm variable `nv', exact
+  if !_rc {
+    di "variable `nv' already exists"
+    exit _rc
+  }
 
+  capture confirm variable `time', exact
+  if _rc {
+    di "option time() required"
+    exit
+  }
+
+
+
+
+  qui clonevar `_CLONE' = `varlist'
+  qui replace `_CLONE' = trim(`_CLONE')
+  qui replace `_CLONE' = lower(`_CLONE')
+
+  qui clonevar `TIME' = `time'
+
+
+
+  /***
+  qui findfile un_dest_com.ado, path(PERSONAL)
+  local comm_path = r(fn)
+  local comm_path: subinstr local comm_path "un_dest_com.ado" ""
+  ***/
+
+  gen `ID' = _n
+  preserve
+  qui keep if `touse'
+  contract `_CLONE' `TIME' `mkc'
+  drop _freq
+
+  qui gen int `_NV' = .
+
+  if `c(stata_version)'>= 14 {
+    tempvar sec_check_var
+    gen `sec_check_var' = ustrfrom(`_CLONE', "utf-8", 4)
+  }
+
+  qui include "`c(sysdir_plus)'d/dest_com.do"
+
+
+  qui clonevar `nv' = `_NV'
+  drop `_NV'
+  **duplicates report `nv'
+  **duplicates tag `nv', gen(dups)
+  **list if dups>=1
+
+  rename `TIME' `time'
+
+  qui {
+  if "`mkc'" != "" {
+    ***correzioni casi di omonimia che si possono risolvere solo se è presente la provincia
+    **replace cod_com=22028 if cod_com==17030 & cod_prov==22
+    replace `nv'=22028 if `mkc'==22 & `nv'==17030
+    replace `nv'=22035 if `mkc'==22 & `nv'==5014
+    replace `nv'=75096 if `mkc'==75 & `nv'==16065 /*castro*/
+    replace `nv'=22106 if `mkc'==22 & `nv'==13130
+    replace `nv'=41041 if `mkc'==41 & `nv'==13178 /*peglio*/
+    replace `nv'=22165 if `mkc'==22 & `nv'==1235
+    replace `nv'=87052 if `mkc'==87 & `nv'==18170
+    replace `nv'=104023 if `mkc'==104 & `nv'==83090
+
+    ***correzioni casi ambigui
+    replace `nv' = 28041 if strmatch(`_CLONE',"gazzo") & `mkc'==28 /*gazzo padovano*/
+    replace `nv' = 23037 if strmatch(`_CLONE',"gazzo") & `mkc'==23 /*gazzo veronese*/
+
+    replace `nv' = 21112 if strmatch(`_CLONE',"verano") & `mkc'==21 /* verano */
+    replace `nv' = 108048 if strmatch(`_CLONE',"verano") & `mkc'==108 /*verano brianza */
+
+    replace `nv' = 13038 if `nv' == 22030 & `mkc'==13 /* cagno */
+    replace `nv' = 22030 if `nv' == 13038 & `mkc'==22 /* cagn� */
+
+    replace `nv' = 21026 if strmatch(`_CLONE',"corvara") & `mkc'==21
+
+    }
+  }
+}
 
 
 if "`gprov'" != "" | "`gregio'" != "" | "`macro3'" != "" | "`macro5'" != "" | "`gnuts3'" != "" | "`gnuts2'" != "" | "`gnuts1'" != ""  {
@@ -230,7 +248,7 @@ qui recode `nv' (1001/1999 2001/2999 3001/3999 4001/4999 5001/5999 6001/6999  96
             (76001/76999 77001/77999 = 17 "Basilicata") ///
             (78001/78999 79001/79999 80001/80999 101001/101999 102001/102999 = 18 "Calabria") ///
             (81001/81999 82001/82999 83001/83999 84001/84999 85001/85999 86001/86999 87001/87999 88001/88999 89001/89999 = 19 "Sicilia") ///
-            (90001/90999 91001/91999 92001/92999 95001/95999 104001/104999 105001/105999 106001/106999 107001/107999 = 20 "Sardegna") ///
+            (90001/90999 91001/91999 92001/92999 95001/95999 104001/104999 105001/105999 106001/106999 107001/107999 111001/111999 = 20 "Sardegna") ///
             (*=.), gen(`tmpregio')  label(`gregio')
 
 
@@ -238,6 +256,7 @@ if "`gprov'" != "" {
   clonevar `gprov' = `tmpprov'
   **list `nv' `gprov' if `gprov'==.
   qui assert `nv'==. if `gprov'==.
+  label var `gprov' "Provincia"
 }
 
 if "`gregio'" != "" {
@@ -281,10 +300,11 @@ if "`gnuts3'" != "" {
             76 "ITF51" 77 "ITF52" ///
             78 "ITF61" 79 "ITF63" 80 "ITF65" 101 "ITF62" 102 "ITF64" ///
             81 "ITG11" 82 "ITG12" 83 "ITG13" 84 "ITG14" 85 "ITG15" 86 "ITG16" 87 "ITG17" 88 "ITG18" 89 "ITG19" ///
-            90 "ITG25" 91 "ITG26" 92 "ITG27" 95 "ITG28" 104 "ITG29" 105 "ITG2A" 106 "ITG2B" 107 "ITG2C"
+            90 "ITG25" 91 "ITG26" 92 "ITG27" 95 "ITG28" 104 "ITG29" 105 "ITG2A" 106 "ITG2B" 107 "ITG2C" 111 ""
   label values `gnuts3num' `labnuts3'
   decode `gnuts3num', gen(`gnuts3')
   label var `gnuts3' "NUTS3 2010"
+  note `gnuts3' : il codice NUTS3 per Sud Sardegna non esiste.
   drop `gnuts3num'
   }
 
@@ -321,7 +341,7 @@ if "`gnuts1'" != "" {
 
 qui save `TMPF', replace
 **save check, replace
-restore
+if "`onlylab'" == "" restore
 tempvar merge
 qui merge m:1 `_CLONE' `time' `mkc' using `TMPF', assert(1 3) keepusing(`nv' `gprov' `gregio' `macro3' `macro5' `gnuts3' `gnuts2' `gnuts1') generate(`merge')
 qui keep if inlist(`merge',1,3)
@@ -330,46 +350,44 @@ sort `ID'
 drop `ID'
 
 
+
 capture label drop `nv'
 qui include "`c(sysdir_plus)'d/dest_com_lab.do"
 label values `nv' `nv'
 
+if "`onlylab'" == "" {
+  order `nv', after(`varlist')
+
+  /*** CHECKS  ***/
+  local ERROR = 0
+
+  capture assert `nv'!=. if `_CLONE'!="" & `touse', fast
+  if _rc!=0 {
+    local ERROR = 1
+    di as error "Ci sono voci della variabile `varlist' non convertiti in numerici. Questa è la lista:"
+    **fre `varlist' if `nv'==., all
+    qui levelsof `varlist' if `nv'==. & `touse', local(lista)
+    local cnt = 1
+    foreach i of local lista {
+  	 di `"`cnt'. `i'"'
+     local cnt `++cnt'
+  	}
+  }
 
 
-order `nv', after(`varlist')
-
-
-
-/*** CHECKS  ***/
-local ERROR = 0
-
-capture assert `nv'!=. if `_CLONE'!="" & `touse', fast
-if _rc!=0 {
-  local ERROR = 1
-  di as error "Ci sono voci della variabile `varlist' non convertiti in numerici. Questa è la lista:"
-  **fre `varlist' if `nv'==., all
-  qui levelsof `varlist' if `nv'==. & `touse', local(lista)
-  local cnt = 1
-  foreach i of local lista {
-	 di `"`cnt'. `i'"'
-   local cnt `++cnt'
-	}
+  qui count if `nv'==11020
+  if r(N)>0 di "Luni si chiamava Ortonovo fino ad aprile 2017"
+  qui count if `nv'==20061
+  if r(N)>0 di "Sermide e Felonica si chiamava Sermide fino a marzo 2017"
+  qui count if `nv'==23014
+  if r(N)>0 di "Brenzone sul Garda si chiamava Brenzone fino al 2013"
+  qui count if `nv'==65025
+  if r(N)>0 di "Capaccio Paestum si chiamava Capaccio fino a metà 2016"
+  qui count if `nv'==4051
+  if r(N)>0 di "Castellinaldo d'Alba si chiamava Castellinaldo fino al 2014"
+  qui count if `nv'==20057
+  if r(N)>0 di "San Giorgio Bigarello si chiamava San Giorgio di Mantova fino al 2018"
 }
-
-
-qui count if `nv'==11020
-if r(N)>0 di "Luni si chiamava Ortonovo fino ad aprile 2017"
-qui count if `nv'==20061
-if r(N)>0 di "Sermide e Felonica si chiamava Sermide fino a marzo 2017"
-qui count if `nv'==23014
-if r(N)>0 di "Brenzone sul Garda si chiamava Brenzone fino al 2013"
-qui count if `nv'==65025
-if r(N)>0 di "Capaccio Paestum si chiamava Capaccio fino a metà 2016"
-qui count if `nv'==4051
-if r(N)>0 di "Castellinaldo d'Alba si chiamava Castellinaldo fino al 2014"
-qui count if `nv'==20057
-if r(N)>0 di "San Giorgio Bigarello si chiamava San Giorgio di Mantova fino al 2018"
-
 
 
 
@@ -403,14 +421,14 @@ if $S_1==1 {
 
 drop `_CLONE'
 
-if `ERROR'==1 & "`ignore'" == "" {
-   di _newline "Non sono stati passati tutti i check!"
-   di "Correggere i valori nella variabile `varlist', quindi riprovare. Oppure specifica l'opzione ignore"
-   capture drop `nv'
-   exit
-
+if "`onlylab'" == "" {
+  if `ERROR'==1 & "`ignore'" == "" {
+     di _newline "Non sono stati passati tutti i check!"
+     di "Correggere i valori nella variabile `varlist', quindi riprovare. Oppure specifica l'opzione ignore"
+     capture drop `nv'
+     exit
+  }
 }
-
 label var `nv' "Codice ISTAT comune"
 
 di "L'attribuzione del codice numerico sembra andata a buon fine, ma non ci può essere la certezza al 100%"
