@@ -3149,7 +3149,7 @@ label define `nv' 21049 `"Martello"', modify
 label define `nv' 21050 `"Meltina"', modify
 label define `nv' 21051 `"Merano"', modify
 label define `nv' 21052 `"Monguelfo-Tesido"', modify
-label define `nv' 21053 `"Montagna"', modify
+label define `nv' 21053 `"Montagna sulla Strada del Vino"', modify /*dal 2023, prima era solo Montagna*/
 label define `nv' 21054 `"Moso in Passiria"', modify
 label define `nv' 21055 `"Nalles"', modify
 label define `nv' 21056 `"Naturno"', modify
