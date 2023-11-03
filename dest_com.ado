@@ -10,6 +10,9 @@ program define dest_com, sortpreserve
 if c(stata_version) >= 16 & c(processors_lic) > 1 version 16
 else version 13
 
+*! version 11.2023
+*!  Montagna --> Montagna sulla strada del vino
+
 *! version 02.2023
 *!  l'opzione onlylab  ora è compatibile con le opzioni gprov() gregio() macro3() macro5() gnuts2() gnuts1()
 
@@ -374,7 +377,8 @@ if "`onlylab'" == "" {
   	}
   }
 
-
+  qui count if `nv'==21053
+  if r(N)>0 di "Montagna sulla strada del Vino si chiamava Montagna fino al 2022"
   qui count if `nv'==11020
   if r(N)>0 di "Luni si chiamava Ortonovo fino ad aprile 2017"
   qui count if `nv'==20061
