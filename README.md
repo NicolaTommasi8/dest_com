@@ -11,6 +11,8 @@ Autore
 
   
 **Changelog**<br><br>
+*! version 11.2023<br>
+*!   aggiornato nome del comune di Montagna in Montagna sulla strada del vino<br><br>
 *! version 01.2023<br>
 *!   aggiornati i nuovi comuni del 2023<br><br>
 *! version 01.2022<br>
