@@ -111,18 +111,10 @@ if "`onlylab'" != "" {
   capture label drop `nv'
   qui include "`c(sysdir_plus)'d/dest_com_lab.do"
   label values `nv' `nv'
-  qui clonevar `_CLONE' = `varlist'
-  gen `ID' = _n
-  if "`time'"=="" {
-     local time time
-     local date c(current_date)
-     local date = substr(`date',-4,.)
-     qui gen `time' = `date'
-  }
+  exit
 }
 
 
-if "`onlylab'" == "" {
   if "`generate'" == "" local nv "cod_com"
   else local nv "`generate'"
   capture confirm variable `nv', exact
@@ -205,7 +197,7 @@ if "`onlylab'" == "" {
 
     }
   }
-}
+
 
 
 if "`gprov'" != "" | "`gregio'" != "" | "`macro3'" != "" | "`macro5'" != "" | "`gnuts3'" != "" | "`gnuts2'" != "" | "`gnuts1'" != ""  {
@@ -344,7 +336,7 @@ if "`gnuts1'" != "" {
 
 qui save `TMPF', replace
 **save check, replace
-if "`onlylab'" == "" restore
+restore
 tempvar merge
 qui merge m:1 `_CLONE' `time' `mkc' using `TMPF', assert(1 3) keepusing(`nv' `gprov' `gregio' `macro3' `macro5' `gnuts3' `gnuts2' `gnuts1') generate(`merge')
 qui keep if inlist(`merge',1,3)
@@ -358,7 +350,7 @@ capture label drop `nv'
 qui include "`c(sysdir_plus)'d/dest_com_lab.do"
 label values `nv' `nv'
 
-if "`onlylab'" == "" {
+
   order `nv', after(`varlist')
 
   /*** CHECKS  ***/
@@ -391,7 +383,6 @@ if "`onlylab'" == "" {
   if r(N)>0 di "Castellinaldo d'Alba si chiamava Castellinaldo fino al 2014"
   qui count if `nv'==20057
   if r(N)>0 di "San Giorgio Bigarello si chiamava San Giorgio di Mantova fino al 2018"
-}
 
 
 
@@ -425,14 +416,12 @@ if $S_1==1 {
 
 drop `_CLONE'
 
-if "`onlylab'" == "" {
   if `ERROR'==1 & "`ignore'" == "" {
      di _newline "Non sono stati passati tutti i check!"
      di "Correggere i valori nella variabile `varlist', quindi riprovare. Oppure specifica l'opzione ignore"
      capture drop `nv'
      exit
   }
-}
 label var `nv' "Codice ISTAT comune"
 
 di "L'attribuzione del codice numerico sembra andata a buon fine, ma non ci può essere la certezza al 100%"
