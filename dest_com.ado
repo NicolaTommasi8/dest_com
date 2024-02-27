@@ -10,6 +10,9 @@ program define dest_com, sortpreserve
 if c(stata_version) >= 16 & c(processors_lic) > 1 version 16
 else version 13
 
+*! version 02.2024
+*!  aggiornati nuovi comuni 2024 e cambi di denominazione
+
 *! version 11.2023
 *!  Montagna --> Montagna sulla strada del vino
 
@@ -369,6 +372,10 @@ label values `nv' `nv'
   	}
   }
 
+  qui count if `nv'==68033
+  if r(N)>0 di "Popoli Terme si chiamava Popoli fino al 2023"
+  qui count if `nv'==5077
+  if r(N)>0 di "Montemagno Monferrato si chiamava Montemagno fino al 2023"
   qui count if `nv'==21053
   if r(N)>0 di "Montagna sulla strada del Vino si chiamava Montagna fino al 2022"
   qui count if `nv'==11020

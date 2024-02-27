@@ -979,7 +979,7 @@ label define `nv' 5073 `"Montafia"', modify
 label define `nv' 5074 `"Montaldo Scarampi"', modify
 label define `nv' 5075 `"Montechiaro d'Asti"', modify
 label define `nv' 5076 `"Montegrosso d'Asti"', modify
-label define `nv' 5077 `"Montemagno"', modify
+label define `nv' 5077 `"Montemagno Monferrato"', modify
 label define `nv' 5078  `"Montiglio"', modify
 label define `nv' 5079 `"Moransengo"', modify
 label define `nv' 5080 `"Nizza Monferrato"', modify
@@ -1927,6 +1927,7 @@ label define `nv' 13252 `"Tremezzina"', modify
 label define `nv' 13253 `"Alta Valle Intelvi"', modify
 label define `nv' 13254 `"Centro Valle Intelvi"', modify
 label define `nv' 13255 `"Solbiate con Cagni"', modify
+label define `nv' 13256 `"Uggiate con Ronago"', modify
 label define `nv' 14001 `"Albaredo per San Marco"', modify
 label define `nv' 14002 `"Albosaggia"', modify
 label define `nv' 14003 `"Andalo Valtellino"', modify
@@ -2740,7 +2741,7 @@ label define `nv' 18022 `"Breme"', modify
 label define `nv' 18023 `"Bressana Bottarone"', modify
 label define `nv' 18024 `"Broni"', modify
 label define `nv' 18025 `"Calvignano"', modify
-label define `nv' 18026 `"Campospinoso"', modify
+label define `nv' 18026 `"Campospinoso Albaredo"', modify
 label define `nv' 18027 `"Candia Lomellina"', modify
 label define `nv' 18028 `"Canevino"', modify
 label define `nv' 18029 `"Canneto Pavese"', modify
@@ -3694,6 +3695,7 @@ label define `nv' 24124 `"Barbarano Mossano"', modify
 label define `nv' 24125 `"Valbrenta"', modify
 label define `nv' 24126 `"Colceresa"', modify
 label define `nv' 24127 `"Lusiana Conco"', modify
+label define `nv' 24128 `"Sovizzo"', modify
 label define `nv' 25001 `"Agordo"', modify
 label define `nv' 25002 `"Alano di Piave"', modify
 label define `nv' 25003 `"Alleghe"', modify
@@ -3768,6 +3770,7 @@ label define `nv' 25071 `"Longarone"', modify
 label define `nv' 25072 `"Alpago"', modify
 label define `nv' 25073 `"Val di Zoldo"', modify
 label define `nv' 25074 `"Borgo Valbelluna"', modify
+label define `nv' 25075 `"Setteville"', modify
 label define `nv' 26001 `"Altivole"', modify
 label define `nv' 26002 `"Arcade"', modify
 label define `nv' 26003 `"Asolo"', modify
@@ -4015,6 +4018,7 @@ label define `nv' 28104 `"Villanova di Camposampiero"', modify
 label define `nv' 28105 `"Vo'"', modify
 label define `nv' 28106 `"Due Carrare"', modify
 label define `nv' 28107 `"Borgo Veneto"', modify
+label define `nv' 28108 `"Santa Caterina d'Este"', modify
 label define `nv' 29001 `"Adria"', modify
 label define `nv' 29002 `"Ariano nel Polesine"', modify
 label define `nv' 29003 `"Arquà Polesine"', modify
@@ -6404,7 +6408,7 @@ label define `nv' 68029 `"Pescosansonesco"', modify
 label define `nv' 68030 `"Pianella"', modify
 label define `nv' 68031 `"Picciano"', modify
 label define `nv' 68032 `"Pietranico"', modify
-label define `nv' 68033 `"Popoli"', modify
+label define `nv' 68033 `"Popoli Terme"', modify
 label define `nv' 68034 `"Roccamorice"', modify
 label define `nv' 68035 `"Rosciano"', modify
 label define `nv' 68036 `"Salle"', modify
