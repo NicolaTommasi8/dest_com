@@ -1,3 +1,3 @@
-v 01.2023
+v 02.2024
 
 p dest_com Comando per convertire i nomi dei comuni italiani nel rispettivo codice ISTAT.
