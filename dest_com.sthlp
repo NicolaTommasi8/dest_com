@@ -1,11 +1,11 @@
 {smcl}
-{* *! version 01.2023  apr2023}{...}
+{* *! version 02.2024  feb2024}{...}
 {cmd:help dest_com}
 {hline}
 
 
 {title:Version}
-01.2023  April 2023
+02.2024  February 2024
 
 
 
