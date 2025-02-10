@@ -11,6 +11,12 @@ Autore
 
   
 **Changelog**<br><br>
+*! version 2025.02<br>
+*!   Comando testato sui dati ISTAT di Gennaio 2025<br>
+*!   Aggiornata la nomenclatura NUTS alla verione 2024<br>
+*!   Modificato il sistema di numerazione della versione<br><br>
+*! version 02.2024<br>
+*!   aggiornati nuovi comuni 2024 e cambi di denominazione<br><br>
 *! version 11.2023<br>
 *!   aggiornato nome del comune di Montagna in Montagna sulla strada del vino<br><br>
 *! version 01.2023<br>
