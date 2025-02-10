@@ -1,11 +1,11 @@
 {smcl}
-{* *! version 02.2024  feb2024}{...}
+{* *! version 2025.01  feb2024}{...}
 {cmd:help dest_com}
 {hline}
 
 
 {title:Version}
-02.2024  February 2024
+2025.02  February 2025
 
 
 
@@ -44,9 +44,9 @@ si assume che l'anno di riferimento sia il 2015.{p_end}
 {p2coldent : {opt gregio(varname)}} genera una variabile con i codici ISTAT delle regioni.{p_end}
 {p2coldent : {opt macro3(varname)}} genera una variabile con l'appartenenza a 3 macro regioni (Nord, Centro, Sud e Isole).{p_end}
 {p2coldent : {opt macro5(varname)}} genera una variabile con l'appartenenza a 5 macro regioni (Nord-Ovest, Nord-Est, Centro, Sud, Isole).{p_end}
-{p2coldent : {opt gnuts3(varname)}} genera una variabile (stringa) con i codici NUTS3 2010.{p_end}
-{p2coldent : {opt gnuts2(varname)}} genera una variabile (stringa) con i codici NUTS2 2010.{p_end}
-{p2coldent : {opt gnuts1(varname)}} genera una variabile (stringa) con i codici NUTS1 2010.{p_end}
+{p2coldent : {opt gnuts3(varname)}} genera una variabile (stringa) con i codici NUTS3 2024.{p_end}
+{p2coldent : {opt gnuts2(varname)}} genera una variabile (stringa) con i codici NUTS2 2024.{p_end}
+{p2coldent : {opt gnuts1(varname)}} genera una variabile (stringa) con i codici NUTS1 2024.{p_end}
 {synoptline}
 {p2colreset}{...}
 
