@@ -7,7 +7,7 @@ Per maggiori informazioni leggi il file [dest_com.pdf](https://github.com/Nicola
 Autore
 ------
   **Nicola Tommasi**  
-  _nicola.tommasi@gmail.com_     
+  _nicola.tommasi@univr.it_     _nicola.tommasi@gmail.com_     
 
   
 **Changelog**<br><br>
