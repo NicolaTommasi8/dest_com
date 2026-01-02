@@ -1,11 +1,11 @@
 {smcl}
-{* *! version 2025.12}{...}
+{* *! version 2026.01}{...}
 {cmd:help dest_com}
 {hline}
 
 
 {title:Version}
-2025.12  December 2025
+2026.01  January 2026
 
 
 
@@ -95,8 +95,8 @@ e questa deve essere indicata nell'opzione {opt mkc(varname)}. Se {opt mkc(varna
 
 {title:References}
 {phang}
-Istat {browse "http://www.istat.it/it/archivio/6789": Pagina di riferimento}
-
+Istat {browse "http://www.istat.it/it/archivio/6789": Pagina di riferimento Istat}
+Istat {browse "https://situas.istat.it/web/#/home": Pagina di riferimento SITUAS}
 
 
 {title:Author}
