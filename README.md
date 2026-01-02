@@ -13,8 +13,8 @@ Autore
 **Changelog**<br><br>
 *! version 2026.01<br>
 *!   Comando testato sui dati ISTAT di Dicembre 2025<br>
-*!   Comando testato sui dati SITUAS<br><br>
-*!   Aggiunta comatibilità con i comuni a partire dal 1948<br><br>
+*!   Comando testato sui dati SITUAS<br>
+*!   Aggiunta comatibilità con i comuni a partire dal 1948<br><br><br>
 
 *! version 2025.02<br>
 *!   Comando testato sui dati ISTAT di Gennaio 2025<br>
