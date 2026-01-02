@@ -1,4 +1,5 @@
-*! version 2025.01  09feb2025  Nicola Tommasi nicola.tommasi@univr.it
+*! version 2026.01  02jan2026  Nicola Tommasi (nicola.tommasi@univr.it)
+
 capture program drop dest_com
 program define dest_com, sortpreserve
 
@@ -8,6 +9,9 @@ else version 13
 syntax varlist (max=1) [if] [in], [time(varname numeric min=1 max=1) GENerate(name) ///
                                   mkc(varname numeric min=1 max=1) ignore onlylab gprov(name) gregio(name) macro3(name) macro5(name) gnuts3(name) gnuts2(name) gnuts1(name)]
 marksample touse, strok
+
+**set tracedepth 1
+**set trace on
 
 tempvar dups clone ID _CLONE _NV TIME
 tempfile TMPF
@@ -19,7 +23,8 @@ if "`onlylab'" != "" {
   assert "`mkc'" == ""
   local nv = "`varlist'"
   capture label drop `nv'
-  qui include "`c(sysdir_plus)'d/dest_com_lab.do"
+  **qui include "`c(sysdir_plus)'d/dest_com_lab.do"
+  qui include "dest_com_lab.do"
   label values `nv' `nv'
   exit
 }
@@ -32,10 +37,12 @@ if !_rc {
   exit _rc
 }
 
-capture confirm variable `time', exact
+capture assert "`time'"!=""
 if _rc {
-  di "option time() required"
-  exit
+  di _newline "The time() option has not been specified."
+  di "Please be aware that dest_com will utilize the current year as the time reference point!" _newline
+  tempvar time
+  qui gen `time'=real(substr("`c(current_date)'",-4,.))
 }
 
 qui clonevar `_CLONE' = `varlist'
@@ -62,25 +69,14 @@ if `c(stata_version)'>= 14 {
   gen `sec_check_var' = ustrfrom(`_CLONE', "utf-8", 4)
 }
 
-qui include "`c(sysdir_plus)'d/dest_com.do"
-
+**qui include "`c(sysdir_plus)'d/dest_com.do"
+qui include "dest_com.do"
 qui clonevar `nv' = `_NV'
 drop `_NV'
 rename `TIME' `time'
 
 qui {
 if "`mkc'" != "" {
-  ***correzioni casi di omonimia che si possono risolvere solo se è presente la provincia
-  **replace cod_com=22028 if cod_com==17030 & cod_prov==22
-  replace `nv'=22028 if `mkc'==22 & `nv'==17030
-  replace `nv'=22035 if `mkc'==22 & `nv'==5014
-  replace `nv'=75096 if `mkc'==75 & `nv'==16065 /*castro*/
-  replace `nv'=22106 if `mkc'==22 & `nv'==13130
-  replace `nv'=41041 if `mkc'==41 & `nv'==13178 /*peglio*/
-  replace `nv'=22165 if `mkc'==22 & `nv'==1235
-  replace `nv'=87052 if `mkc'==87 & `nv'==18170
-  replace `nv'=104023 if `mkc'==104 & `nv'==83090
-
   ***correzioni casi ambigui
   replace `nv' = 28041 if strmatch(`_CLONE',"gazzo") & `mkc'==28 /*gazzo padovano*/
   replace `nv' = 23037 if strmatch(`_CLONE',"gazzo") & `mkc'==23 /*gazzo veronese*/
@@ -118,6 +114,7 @@ if "`gprov'" != "" | "`gregio'" != "" | "`macro3'" != "" | "`macro5'" != "" | "`
                   (78001/78999 = 78 "Cosenza") (79001/79999 = 79 "Catanzaro") (80001/80999 = 80 "Reggio di Calabria") (101001/101999 = 101 "Crotone") (102001/102999 = 102 "Vibo Valentia") ///
                   (81001/81999 = 81 "Trapani") (82001/82999 = 82 "Palermo") (83001/83999 = 83 "Messina") (84001/84999 = 84 "Agrigento") (85001/85999 = 85 "Caltanisetta") (86001/86999 = 86 "Enna") (87001/87999 = 87 "Catania") (88001/88999 = 88 "Ragusa") (89001/89999 = 89 "Siracusa") ///
                   (90001/90999 = 90 "Sassari") (91001/91999 = 91 "Nuoro") (92001/92999 = 92 "Cagliari") (95001/95999 = 95 "Oristano") (104001/104999 = 104 "Olbia-Tempio") (105001/105999 = 105 "Ogliastra") (106001/106999 = 106 "Medio Campidano") (107001/107999 = 107 "Carbonia-Iglesias") (111001/111999 = 111 "Sud Saregna") ///
+                  (112001/112999 = 112 "Sassari") (113001/113999 = 113 "Gallura Nord-Est Sardegna") (114001/114999 = 114 "Nuoro") (115001/115999 = 115 "Oristano") (116001/116999 = 116 "Ogliastra") (117001/117999 = 117 "Medio Campidano") (118001/118999 = 118 "Cagliari") (119001/119999 = 119 "Sulcis Iglesiente") ///
                   (*=.), gen(`tmpprov') label(`gprov')
 
   qui recode `nv' (1001/1999 2001/2999 3001/3999 4001/4999 5001/5999 6001/6999  96001/96999 103001/103999 = 1 "Piemonte")   ///
@@ -139,7 +136,7 @@ if "`gprov'" != "" | "`gregio'" != "" | "`macro3'" != "" | "`macro5'" != "" | "`
                   (76001/76999 77001/77999 = 17 "Basilicata") ///
                   (78001/78999 79001/79999 80001/80999 101001/101999 102001/102999 = 18 "Calabria") ///
                   (81001/81999 82001/82999 83001/83999 84001/84999 85001/85999 86001/86999 87001/87999 88001/88999 89001/89999 = 19 "Sicilia") ///
-                  (90001/90999 91001/91999 92001/92999 95001/95999 104001/104999 105001/105999 106001/106999 107001/107999 111001/111999 = 20 "Sardegna") ///
+                  (90001/90999 91001/91999 92001/92999 95001/95999 104001/104999 105001/105999 106001/106999 107001/107999 111001/111999 112001/112999 113001/113999 114001/114999 115001/115999 116001/116999 117001/117999 118001/118999 119001/119999= 20 "Sardegna") ///
                   (*=.), gen(`tmpregio') label(`gregio')
 
   if "`gprov'" != "" {
@@ -151,6 +148,7 @@ if "`gprov'" != "" | "`gregio'" != "" | "`macro3'" != "" | "`macro5'" != "" | "`
 
   if "`gregio'" != "" {
     clonevar `gregio' = `tmpregio'
+    **list  if `gregio'==.
     qui assert `nv'==. if `gregio'==.
     label var `gregio' "Regione"
   }
@@ -190,11 +188,14 @@ if "`gprov'" != "" | "`gregio'" != "" | "`macro3'" != "" | "`macro5'" != "" | "`
                             76 "ITF51" 77 "ITF52" ///
                             78 "ITF61" 79 "ITF63" 80 "ITF65" 101 "ITF62" 102 "ITF64" ///
                             81 "ITG11" 82 "ITG12" 83 "ITG13" 84 "ITG14" 85 "ITG15" 86 "ITG16" 87 "ITG17" 88 "ITG18" 89 "ITG19" ///
-                            90 "ITG2D" 91 "ITG2E" 92 "ITG2F" 95 "ITG2G" 104 "ITG29" 105 "ITG2A" 106 "ITG2B" 107 "ITG2C" 111 "ITG2H"
+                            90 "ITG2D" 91 "ITG2E" 92 "ITG2F" 292 "ITG2F" 95 "ITG2G" 104 "" 105 "" 106 "" 107 "" 111 "ITG2H" ///
+                            112	"ITG2D" 312	"ITG2D" 113	"" 114 "ITG2E" 115 "ITG2G" 116 "" 117	"" 118 "ITG2F" 318 "ITG2F" 119 ""
     label values `gnuts3num' `labnuts3'
     decode `gnuts3num', gen(`gnuts3')
     label var `gnuts3' "NUTS3 2024"
-    note `gnuts3' : il codice NUTS3 2024 Olbia-Tempio, Ogliastra, Medio Campidano e Carbonia-Inglesias non esiste. Si è tenuto il NUTS 2010.
+    note `gnuts3' : il codice NUTS3 2024 di Olbia-Tempio (104), Ogliastra (105), Medio Campidano (106) e Carbonia-Iglesias (107) non esiste.
+    note `gnuts3' : il codice NUTS3 2024 di Gallura Nord-Est Sardegna (113), Ogliastra (116), Medio Campidano (117) e Sulcis Iglesiente (119) non esiste.
+    note `gnuts3' : il codice NUTS3 2024 di della città metropolitana di Sassari (312) non esiste, sè tenuto quello di Sassari (112).
     drop `gnuts3num'
   }
 
@@ -227,11 +228,11 @@ if "`gprov'" != "" | "`gregio'" != "" | "`macro3'" != "" | "`macro5'" != "" | "`
     drop `gnuts1num'
   }
 }
-
-
-
 qui save `TMPF', replace
 restore
+
+
+
 tempvar merge
 qui merge m:1 `_CLONE' `time' `mkc' using `TMPF', assert(1 3) keepusing(`nv' `gprov' `gregio' `macro3' `macro5' `gnuts3' `gnuts2' `gnuts1') generate(`merge')
 qui keep if inlist(`merge',1,3)
@@ -241,26 +242,19 @@ drop `ID'
 
 
 capture label drop `nv'
-qui include "`c(sysdir_plus)'d/dest_com_lab.do"
+**qui include "`c(sysdir_plus)'d/dest_com_lab.do"
+qui include "dest_com_lab.do"
 label values `nv' `nv'
 order `nv', after(`varlist')
 
 /*** CHECKS  ***/
 local ERROR = 0
 
-capture assert `nv'!=. if `_CLONE'!="" & `touse', fast
-if _rc!=0 {
-  local ERROR = 1
-  di as error "Ci sono voci della variabile `varlist' non convertiti in numerici. Questa è la lista:"
-  **fre `varlist' if `nv'==., all
-  qui levelsof `varlist' if `nv'==. & `touse', local(lista)
-  local cnt = 1
-  foreach i of local lista {
-	  di `"`cnt'. `i'"'
-    local cnt `++cnt'
-	}
-}
-
+/************************
+qui count if `nv'==83100
+if r(N)>0 di "Tripi-Abakainon si chiamava Tripi fino al 06/2025"
+qui count if `nv'==6113
+if r(N)>0 di "Murisengo Monferrato si chiamava Murisengo fino al 10/2025"
 qui count if `nv'==68033
 if r(N)>0 di "Popoli Terme si chiamava Popoli fino al 2023"
 qui count if `nv'==5077
@@ -279,6 +273,9 @@ qui count if `nv'==4051
 if r(N)>0 di "Castellinaldo d'Alba si chiamava Castellinaldo fino al 2014"
 qui count if `nv'==20057
 if r(N)>0 di "San Giorgio Bigarello si chiamava San Giorgio di Mantova fino al 2018"
+*************/
+
+
 
 qui levelsof `nv', local(test)
 foreach k of local test {
@@ -306,18 +303,42 @@ if $S_1==1 {
 ****************/
 
 
-drop `_CLONE'
+
 if `ERROR'==1 & "`ignore'" == "" {
   di _newline "Non sono stati passati tutti i check!"
   di "Correggere i valori nella variabile `varlist', quindi riprovare. Oppure specifica l'opzione ignore"
   capture drop `nv'
   exit
 }
-label var `nv' "Codice ISTAT comune"
 
-di "L'attribuzione del codice numerico sembra andata a buon fine, ma non ci può essere la certezza al 100%"
-di "Usare i dati con attenzione!"
+if "`onlylab'" == "" {
+  qui count if `varlist'!=""
+  local ncom = r(N)
+  qui count if `nv'!=.
+  local nval = r(N)
+  di "Numero di osservazioni con dato comunale stringa: `ncom'"
+  di "Numero di osservazioni convertite con dato numerico: `nval'"
+}
 
+capture assert `nv'!=. if `_CLONE'!="" & `touse', fast
+if _rc!=0 {
+  local ERROR = 1
+  di as error _newline "Ci sono voci della variabile `varlist' non convertiti in numerici. Questa è la lista:"
+  **fre `varlist' if `nv'==., all
+  qui levelsof `varlist' if `nv'==. & `touse', local(lista)
+  local cnt = 1
+  foreach i of local lista {
+	  di as text `"`cnt'. `i'"'
+    local cnt `++cnt'
+	}
+  di _newline
+}
+
+drop `_CLONE'
+
+label var `nv' "Codice Istat comune"
+di _newline "The numerical code attribution appears to have been successful," _newline "but 100% certainty cannot be guaranteed."
+di "Use the data with caution!"
 end
 
 /*** HISTORY
@@ -374,8 +395,8 @@ end
 
 *! version 3.0
 *!   aggiunte le opzioni per creare le variabili
-*!     codice provincia istat (gprov)
-*!     codice regione istat  (gregio)
+*!     codice provincia Istat (gprov)
+*!     codice regione Istat  (gregio)
 *!     codice nuts3 (gnuts3)
 *!     codice nuts2 (gnuts2)
 *!     codice nuts1 (gnuts1)
