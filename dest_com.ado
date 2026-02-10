@@ -23,8 +23,8 @@ if "`onlylab'" != "" {
   assert "`mkc'" == ""
   local nv = "`varlist'"
   capture label drop `nv'
-  **qui include "`c(sysdir_plus)'d/dest_com_lab.do"
-  qui include "dest_com_lab.do"
+  qui include "`c(sysdir_plus)'d/dest_com_lab.do"
+  **qui include "dest_com_lab.do"
   label values `nv' `nv'
   exit
 }
@@ -69,8 +69,8 @@ if `c(stata_version)'>= 14 {
   gen `sec_check_var' = ustrfrom(`_CLONE', "utf-8", 4)
 }
 
-**qui include "`c(sysdir_plus)'d/dest_com.do"
-qui include "dest_com.do"
+qui include "`c(sysdir_plus)'d/dest_com.do"
+**qui include "dest_com.do"
 qui clonevar `nv' = `_NV'
 drop `_NV'
 rename `TIME' `time'
@@ -242,8 +242,8 @@ drop `ID'
 
 
 capture label drop `nv'
-**qui include "`c(sysdir_plus)'d/dest_com_lab.do"
-qui include "dest_com_lab.do"
+qui include "`c(sysdir_plus)'d/dest_com_lab.do"
+**qui include "dest_com_lab.do"
 label values `nv' `nv'
 order `nv', after(`varlist')
 
@@ -342,6 +342,11 @@ di "Use the data with caution!"
 end
 
 /*** HISTORY
+*! version 2025.01
+*! Comando testato sui dati ISTAT di Dicembre 2025
+*! Comando testato sui dati SITUAS
+*! Aggiunta compatibilità con i comuni a partire dal 1948
+
 *! version 2025.01
 *! testato sulle denominazioni dei comuni a gennaio 2025
 *! cambiata indicazione della versione (inspired by require package)
