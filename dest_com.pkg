@@ -1,9 +1,9 @@
-v 2026.01
+v 2026.02
 d dest_com. Package to convert the names of Italian municipalities into the corresponding numerical code of ISTAT.
 
 d Program by {bf:Nicola Tommasi} (nicola.tommasi@univr.it)
 d
-d Distribution-Date: 20260102
+d Distribution-Date: 20260210
 
 
 * I can also insert comments; these will not be displayed.
